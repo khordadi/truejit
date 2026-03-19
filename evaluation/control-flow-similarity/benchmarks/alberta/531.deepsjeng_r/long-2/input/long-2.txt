@@ -1,0 +1,16 @@
+5k2/R1p5/p1R3Pb/2K5/2B5/2q2b2/8/8 w - - bm g7+; id "E_E_T 096 - T&T&L vs D&L&L";
+15
+4kn2/r4p1r/p3bQ2/q1nNP1Np/1p5P/8/PPP3P1/2KR3R w - - bm Qe7+; id "WAC.184";
+16
+R5bk/5r2/P7/1P1pR3/3P4/7p/5p1K/8 w - - bm Rh5+; id "E_E_T 092 - T&T vs T&L";
+16
+r1b2r1k/pp2q1pp/2p2p2/2p1n2N/4P3/1PNP2QP/1PP2RP1/5RK1 w - - bm Nd1; id "LCTPOS07 (Nd1!)";
+15
+1rr2k2/p1q5/3p2Q1/3Pp2p/8/1P3P2/1KPRN3/8 w - e6 bm Rd1; id "E_E_T 018 - D&T&S vs D&T&T";
+16
+r1b3r1/4qk2/1nn1p1p1/3pPp1P/p4P2/1p3BQN/PKPBN3/3R3R b - - bm Qa3+; id "WAC.177";
+16
+r1b2r2/3pNpkp/3pn1p1/2pN3P/2PnP3/q3QP2/4BKP1/1R5R w - - bm Qh6+; id "ECM.1224";
+15
+3r1r1k/1p4pp/p4p2/8/1PQR4/6Pq/P3PP2/2R3K1 b - - bm Rc8; id "WAC.040";
+16

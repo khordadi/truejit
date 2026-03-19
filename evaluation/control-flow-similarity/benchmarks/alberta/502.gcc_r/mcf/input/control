@@ -1,0 +1,20 @@
+mcf.c -o mcf.s
+mcf.c -O2 -o mcf_O2.s
+mcf.c -O3 -o mcf_O3.s
+mcf.c -O5 -o mcf_O5.s
+mcf.c -Os -o mcf_Os.s
+mcf.c -finline-limit=50000 -o mcf_finline_limit_50000.s
+mcf.c -fif-conversion -fif-conversion2 -o mcf_fif_conversion_fif_conversion2.s
+mcf.c -fpic -o mcf_fpic.s
+mcf.c -fipa-pta -o mcf_fipa_pta.s
+mcf.c -fselective-scheduling -fselective-scheduling2 -o mcf_fselective_scheduling_fselective_scheduling2.s
+mcf.c -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o mcf_fgcse_fgcse_las_fgcse_lm_fgcse_sm.s
+mcf.c -fexpensive-optimizations -o mcf_fexpensive_optimizations.s
+mcf.c -O5 -finline-limit=40000 -fif-conversion -fif-conversion2 -o mcf_O5_finline_limit_40000_fif_conversion_fif_conversion2.s
+mcf.c -O5 -fpic -fipa-pta -fselective-scheduling -fselective-scheduling2 -o mcf_O5_fpic_fpic_pta_fselective_scheduling_fselective_scheduling2.s
+mcf.c -falign-functions -falign-jumps -falign-labels -falign-loops -o mcf_falign_functions_falign_jumps_falign_labels_falign_loops.s
+mcf.c -fbranch-probabilities -fbranch-target-load-optimize -fbranch-target-load-optimize2 -o mcf_fbranch_probabilities_fbranch_target_load_optimize_fbranch_target_load_optimize2.s
+mcf.c -fcaller-saves -o mcf_fcaller_saves.s
+mcf.c -fconserve-stack -o mcf_fconserve_stack.s
+mcf.c -fcprop-registers -o mcf_fcprop_registers.s
+mcf.c -fearly-inlining -o mcf_fearly_inlining.s

@@ -1,0 +1,16 @@
+b6r/2q2k2/4pPp1/1p1n2Bp/2pPB1PP/2P2Q2/8/4R1K1 w - - bm Bxg6+; id "ECM.1223";
+15
+r3k3/P5bp/2N1bp2/4p3/2p5/6NP/1PP2PP1/3R2K1 w q - bm Rd8+; id "WAC.221";
+16
+4r1k1/p1qr1p2/2pb1Bp1/1p5p/3P1n1R/3B1P2/PP3PK1/2Q4R w - - bm Qxf4; id "test 17";
+15
+5rk1/Q2nqppp/5n2/2p5/8/1B2PP1P/Pr1B1P2/R3K2R b KQ - bm Ne4; id "ECM.1127";
+16
+r7/n1rqppk1/p2p2p1/1b1P3p/2B4R/1P2QN1P/P4PP1/4R1K1 w - h6 bm Rxh5; id "arasan17.72"; c0 "Zhong Zhang-Sandipan, Mindsports Beijing 2008";
+16
+r1bq1rk1/pp2bppp/1n2p3/3pP3/8/2RBBN2/PP2QPPP/2R3K1 w - - bm Bxh7+; id "arasan17.205"; c0 "Trent-Deslandes, Cap d'Agde CCAS op 2008";
+16
+6r1/8/2k5/1pPp1p1p/pP3P2/P3P1P1/4K3/4B3 b - - bm d4; id "arasan17.106"; c0 "Chess Tiger 2007.1-Hiarcs 13.1, ChessWar XV A 2010";
+15
+3r4/7p/Rp4k1/5p2/4p3/2P5/PP3P1P/5K2 b - - bm Rd2;              id "PET034: rook endgame";
+15

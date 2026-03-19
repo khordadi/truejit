@@ -1,0 +1,20 @@
+oggenc.c -o oggenc.s
+oggenc.c -O2 -o oggenc_O2.s
+oggenc.c -O3 -o oggenc_O3.s
+oggenc.c -O5 -o oggenc_O5.s
+oggenc.c -Os -o oggenc_Os.s
+oggenc.c -finline-limit=50000 -o oggenc_finline_limit_50000.s
+oggenc.c -fif-conversion -fif-conversion2 -o oggenc_fif_conversion_fif_conversion2.s
+oggenc.c -fpic -o oggenc_fpic.s
+oggenc.c -fipa-pta -o oggenc_fipa_pta.s
+oggenc.c -fselective-scheduling -fselective-scheduling2 -o oggenc_fselective_scheduling_fselective_scheduling2.s
+oggenc.c -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o oggenc_fgcse_fgcse_las_fgcse_lm_fgcse_sm.s
+oggenc.c -fexpensive-optimizations -o oggenc_fexpensive_optimizations.s
+oggenc.c -O5 -finline-limit=40000 -fif-conversion -fif-conversion2 -o oggenc_O5_finline_limit_40000_fif_conversion_fif_conversion2.s
+oggenc.c -O5 -fpic -fipa-pta -fselective-scheduling -fselective-scheduling2 -o oggenc_O5_fpic_fpic_pta_fselective_scheduling_fselective_scheduling2.s
+oggenc.c -falign-functions -falign-jumps -falign-labels -falign-loops -o oggenc_falign_functions_falign_jumps_falign_labels_falign_loops.s
+oggenc.c -fbranch-probabilities -fbranch-target-load-optimize -fbranch-target-load-optimize2 -o oggenc_fbranch_probabilities_fbranch_target_load_optimize_fbranch_target_load_optimize2.s
+oggenc.c -fcaller-saves -o oggenc_fcaller_saves.s
+oggenc.c -fconserve-stack -o oggenc_fconserve_stack.s
+oggenc.c -fcprop-registers -o oggenc_fcprop_registers.s
+oggenc.c -fearly-inlining -o oggenc_fearly_inlining.s

@@ -1,0 +1,11 @@
+bzip2.c -Os
+cam_operator.c -Os
+gcc.c -Os
+gzip.c -Os
+img_process.c -Os
+johnripper.c -Os
+lbm.c -Os
+oggenc.c -Os
+scilab.c -Os
+train01.c -Os
+200.c -Os

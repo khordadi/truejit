@@ -1,0 +1,651 @@
+[
+    {
+        "name": "2mm",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/2mm.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "3mm",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/3mm.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "adi",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/adi.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "atax",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/atax.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "bicg",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/bicg.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "cholesky",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/cholesky.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "correlation",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/correlation.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "covariance",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/covariance.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "deriche",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/deriche.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "doitgen",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/doitgen.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "durbin",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/durbin.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "fdtd-2d",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/fdtd-2d.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "floyd-warshall",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/floyd-warshall.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "gemm",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/gemm.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "gemver",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/gemver.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "gesummv",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/gesummv.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "gramschmidt",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/gramschmidt.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "heat-3d",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/heat-3d.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "jacobi-1d",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/jacobi-1d.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "jacobi-2d",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/jacobi-2d.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "lu",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/lu.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "ludcmp",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/ludcmp.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "mvt",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/mvt.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "nussinov",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/nussinov.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "seidel-2d",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/seidel-2d.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "symm",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/symm.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "syr2k",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/syr2k.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "syrk",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/syrk.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "trisolv",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/trisolv.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "trmm",
+        "suite": "polybench",
+        "binary": "/truejit/benchmarks/polybench/bin/trmm.00.mini.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "bzip2",
+        "suite": "wabench",
+        "binary": "/truejit/benchmarks/wabench/Whole_Applications/bzip2/bzip2.wasm",
+        "args": [
+            "-k",
+            "-f",
+            "-z",
+            "/truejit/benchmarks/wabench/Whole_Applications/bzip2/bzip2.wasm"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/Whole_Applications/bzip2"
+        ]
+    },
+    {
+        "name": "espeak",
+        "suite": "wabench",
+        "binary": "/truejit/benchmarks/wabench/Whole_Applications/espeak/espeak.wasm",
+        "args": [
+            "-f",
+            "/truejit/benchmarks/wabench/Whole_Applications/espeak/input.txt",
+            "-s",
+            "120",
+            "-w",
+            "/truejit/benchmarks/wabench/Whole_Applications/espeak/output_file.wav"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/Whole_Applications/espeak"
+        ]
+    },
+    {
+        "name": "facedetection",
+        "suite": "wabench",
+        "binary": "/truejit/benchmarks/wabench/Whole_Applications/facedetection/facedetection.wasm",
+        "args": [
+            "/truejit/benchmarks/wabench/Whole_Applications/facedetection/input.png"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/Whole_Applications/facedetection"
+        ]
+    },
+    {
+        "name": "gnuchess",
+        "suite": "wabench",
+        "binary": "/truejit/benchmarks/wabench/Whole_Applications/gnuchess/gnuchess.wasm",
+        "args": [
+            "<",
+            "/truejit/benchmarks/wabench/Whole_Applications/gnuchess/input"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/Whole_Applications/gnuchess"
+        ]
+    },
+    {
+        "name": "mnist",
+        "suite": "wabench",
+        "binary": "/truejit/benchmarks/wabench/Whole_Applications/mnist/mnist.wasm",
+        "args": [],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/Whole_Applications/mnist"
+        ]
+    },
+    {
+        "name": "snappy",
+        "suite": "wabench",
+        "binary": "/truejit/benchmarks/wabench/Whole_Applications/snappy/snappy.wasm",
+        "args": [],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/Whole_Applications/snappy"
+        ]
+    },
+    {
+        "name": "whitedb",
+        "suite": "wabench",
+        "binary": "/truejit/benchmarks/wabench/Whole_Applications/whitedb/whitedb.wasm",
+        "args": [],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/Whole_Applications/whitedb"
+        ]
+    },
+    {
+        "name": "basicmath",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/automotive/basicmath/basicmath.wasm",
+        "args": [],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/automotive/basicmath"
+        ]
+    },
+    {
+        "name": "bitcount",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/automotive/bitcount/bitcount.wasm",
+        "args": [
+            "1125000"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/automotive/bitcount"
+        ]
+    },
+    {
+        "name": "cjpeg",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/consumer/jpeg/cjpeg/cjpeg.wasm",
+        "args": [
+            "-dct",
+            "int",
+            "-progressive",
+            "-opt",
+            "-outfile",
+            "output_large_encode.jpeg",
+            "input_large.ppm"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/consumer/jpeg/cjpeg"
+        ]
+    },
+    {
+        "name": "djpeg",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/consumer/jpeg/djpeg/djpeg.wasm",
+        "args": [
+            "-dct",
+            "int",
+            "-ppm",
+            "-outfile",
+            "output_large_decode.ppm",
+            "input_large.jpg"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/consumer/jpeg/djpeg"
+        ]
+    },
+    {
+        "name": "stringsearch",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/office/stringsearch/stringsearch.wasm",
+        "args": [],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/office/stringsearch"
+        ]
+    },
+    {
+        "name": "blowfish-decode",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/security/blowfish/blowfish.wasm",
+        "args": [
+            "d",
+            "input_large.enc",
+            "output_large.asc",
+            "1234567890abcdeffedcba0987654321"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/security/blowfish"
+        ]
+    },
+    {
+        "name": "blowfish-encode",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/security/blowfish/blowfish.wasm",
+        "args": [
+            "e",
+            "input_large.asc",
+            "output_large.enc",
+            "1234567890abcdeffedcba0987654321"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/security/blowfish"
+        ]
+    },
+    {
+        "name": "rijndael-decode",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/security/rijndael/rijndael.wasm",
+        "args": [
+            "input_large.enc",
+            "output_large.dec",
+            "d",
+            "1234567890abcdeffedcba09876543211234567890abcdeffedcba0987654321"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/security/rijndael"
+        ]
+    },
+    {
+        "name": "rijndael-encode",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/security/rijndael/rijndael.wasm",
+        "args": [
+            "input_large.asc",
+            "output_large.enc",
+            "e",
+            "1234567890abcdeffedcba09876543211234567890abcdeffedcba0987654321"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/security/rijndael"
+        ]
+    },
+    {
+        "name": "sha",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/security/sha/sha.wasm",
+        "args": [
+            "input_large.asc"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/security/sha"
+        ]
+    },
+    {
+        "name": "rawcaudio",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/telecomm/adpcm/rawcaudio/rawcaudio.wasm",
+        "args": [
+            "<",
+            "large.pcm"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/telecomm/adpcm/rawcaudio"
+        ]
+    },
+    {
+        "name": "rawdaudio",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/telecomm/adpcm/rawdaudio/rawdaudio.wasm",
+        "args": [
+            "<",
+            "large.adpcm"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/telecomm/adpcm/rawdaudio"
+        ]
+    },
+    {
+        "name": "crc32",
+        "suite": "mibench",
+        "binary": "/truejit/benchmarks/wabench/MiBench/telecomm/crc32/crc32.wasm",
+        "args": [
+            "large.pcm"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/wabench/MiBench/telecomm/crc32"
+        ]
+    },
+    {
+        "name": "bt",
+        "suite": "npb",
+        "binary": "/truejit/benchmarks/npb/bin/bt.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "cg",
+        "suite": "npb",
+        "binary": "/truejit/benchmarks/npb/bin/cg.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "ep",
+        "suite": "npb",
+        "binary": "/truejit/benchmarks/npb/bin/ep.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "ft",
+        "suite": "npb",
+        "binary": "/truejit/benchmarks/npb/bin/ft.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "is",
+        "suite": "npb",
+        "binary": "/truejit/benchmarks/npb/bin/is.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "mg",
+        "suite": "npb",
+        "binary": "/truejit/benchmarks/npb/bin/mg.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "sp",
+        "suite": "npb",
+        "binary": "/truejit/benchmarks/npb/bin/sp.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "coremark",
+        "suite": "coremark",
+        "binary": "/truejit/benchmarks/coremark/bin/coremark.wasm",
+        "args": [],
+        "pre_opens": []
+    },
+    {
+        "name": "gcc-loops",
+        "suite": "jetstream",
+        "binary": "/truejit/benchmarks/jetstream/bin/gcc-loops.wasm",
+        "args": [],
+        "pre_opens": [
+            "."
+        ]
+    },
+    {
+        "name": "float-mm",
+        "suite": "jetstream",
+        "binary": "/truejit/benchmarks/jetstream/bin/float-mm.wasm",
+        "args": [],
+        "pre_opens": [
+            "."
+        ]
+    },
+    {
+        "name": "HashSet",
+        "suite": "jetstream",
+        "binary": "/truejit/benchmarks/jetstream/bin/HashSet.wasm",
+        "args": [],
+        "pre_opens": [
+            "."
+        ]
+    },
+    {
+        "name": "quicksort",
+        "suite": "jetstream",
+        "binary": "/truejit/benchmarks/jetstream/bin/quicksort.wasm",
+        "args": [],
+        "pre_opens": [
+            "."
+        ]
+    },
+    {
+        "name": "tsf",
+        "suite": "jetstream",
+        "binary": "/truejit/benchmarks/jetstream/bin/tsf.wasm",
+        "args": [],
+        "pre_opens": [
+            "."
+        ]
+    },
+    {
+        "name": "lbm",
+        "suite": "spec",
+        "binary": "/truejit/benchmarks/spec/lbm/lbm.wasm",
+        "args": [
+            "128",
+            "reference.dat",
+            "0",
+            "1",
+            "/truejit/benchmarks/spec/lbm/100_100_130_ldc.of"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/spec/lbm"
+        ]
+    },
+    {
+        "name": "mcf",
+        "suite": "spec",
+        "binary": "/truejit/benchmarks/spec/mcf/mcf.wasm",
+        "args": [
+            "/truejit/benchmarks/spec/mcf/inp.in"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/spec/mcf"
+        ]
+    },
+    {
+        "name": "x264",
+        "suite": "spec",
+        "binary": "/truejit/benchmarks/spec/x264/x264.wasm",
+        "args": [
+            "--dumpyuv",
+            "50",
+            "--frames",
+            "142",
+            "-o",
+            "/truejit/benchmarks/spec/x264/BuckBunny_New.264",
+            "/truejit/benchmarks/spec/x264/BuckBunny.yuv",
+            "1280x720"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/spec/x264"
+        ]
+    },
+    {
+        "name": "nab",
+        "suite": "spec",
+        "binary": "/truejit/benchmarks/spec/nab/nab.wasm",
+        "args": [
+            "aminos",
+            "391519156",
+            "1000"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/spec/nab"
+        ]
+    },
+    {
+        "name": "namd",
+        "suite": "spec",
+        "binary": "/truejit/benchmarks/spec/namd/namd.wasm",
+        "args": [
+            "--input",
+            "/truejit/benchmarks/spec/namd/apoa1.input"
+        ],
+        "pre_opens": [
+            ".",
+            "/truejit/benchmarks/spec/namd"
+        ]
+    }
+]

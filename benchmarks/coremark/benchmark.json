@@ -1,0 +1,6 @@
+{
+  "bin": [
+    "/tmp/truejit/benchmarks/coremark/coremark.wasm"
+  ],
+  "args": []
+}

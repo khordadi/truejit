@@ -1,0 +1,3 @@
+add_library(DigitalSignatureService DigitalSignatureService.cpp)
+target_link_libraries(DigitalSignatureService OpenSSL::SSL OpenSSL::Crypto)
+target_include_directories(DigitalSignatureService PUBLIC ${PROJECT_SOURCE_DIR}/lib)

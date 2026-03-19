@@ -1,0 +1,598 @@
+[
+  {
+    "ID": "0",
+    "Mode": "INT"
+  },
+  {
+    "ID": "107",
+    "Mode": "INT"
+  },
+  {
+    "ID": "112",
+    "Mode": "INT"
+  },
+  {
+    "ID": "113",
+    "Mode": "INT"
+  },
+  {
+    "ID": "115",
+    "Mode": "INT"
+  },
+  {
+    "ID": "116",
+    "Mode": "INT"
+  },
+  {
+    "ID": "117",
+    "Mode": "INT"
+  },
+  {
+    "ID": "118",
+    "Mode": "INT"
+  },
+  {
+    "ID": "119",
+    "Mode": "INT"
+  },
+  {
+    "ID": "11",
+    "Mode": "INT"
+  },
+  {
+    "ID": "121",
+    "Mode": "INT"
+  },
+  {
+    "ID": "128",
+    "Mode": "INT"
+  },
+  {
+    "ID": "129",
+    "Mode": "INT"
+  },
+  {
+    "ID": "132",
+    "Mode": "INT"
+  },
+  {
+    "ID": "139",
+    "Mode": "INT"
+  },
+  {
+    "ID": "13",
+    "Mode": "INT"
+  },
+  {
+    "ID": "142",
+    "Mode": "INT"
+  },
+  {
+    "ID": "144",
+    "Mode": "INT"
+  },
+  {
+    "ID": "156",
+    "Mode": "INT"
+  },
+  {
+    "ID": "15",
+    "Mode": "BGJIT"
+  },
+  {
+    "ID": "16",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "17",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "18",
+    "Mode": "BGJIT"
+  },
+  {
+    "ID": "19",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "1",
+    "Mode": "INT"
+  },
+  {
+    "ID": "20",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "210",
+    "Mode": "INT"
+  },
+  {
+    "ID": "211",
+    "Mode": "INT"
+  },
+  {
+    "ID": "212",
+    "Mode": "INT"
+  },
+  {
+    "ID": "213",
+    "Mode": "INT"
+  },
+  {
+    "ID": "216",
+    "Mode": "INT"
+  },
+  {
+    "ID": "217",
+    "Mode": "INT"
+  },
+  {
+    "ID": "21",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "22",
+    "Mode": "BGJIT"
+  },
+  {
+    "ID": "23",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "24",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "25",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "26",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "27",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "28",
+    "Mode": "BGJIT"
+  },
+  {
+    "ID": "29",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "30",
+    "Mode": "BGJIT"
+  },
+  {
+    "ID": "31",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "32",
+    "Mode": "BGJIT"
+  },
+  {
+    "ID": "331",
+    "Mode": "INT"
+  },
+  {
+    "ID": "332",
+    "Mode": "INT"
+  },
+  {
+    "ID": "333",
+    "Mode": "INT"
+  },
+  {
+    "ID": "334",
+    "Mode": "INT"
+  },
+  {
+    "ID": "335",
+    "Mode": "INT"
+  },
+  {
+    "ID": "336",
+    "Mode": "INT"
+  },
+  {
+    "ID": "337",
+    "Mode": "INT"
+  },
+  {
+    "ID": "338",
+    "Mode": "INT"
+  },
+  {
+    "ID": "339",
+    "Mode": "INT"
+  },
+  {
+    "ID": "33",
+    "Mode": "INT"
+  },
+  {
+    "ID": "340",
+    "Mode": "INT"
+  },
+  {
+    "ID": "341",
+    "Mode": "INT"
+  },
+  {
+    "ID": "342",
+    "Mode": "INT"
+  },
+  {
+    "ID": "343",
+    "Mode": "INT"
+  },
+  {
+    "ID": "344",
+    "Mode": "INT"
+  },
+  {
+    "ID": "345",
+    "Mode": "INT"
+  },
+  {
+    "ID": "346",
+    "Mode": "INT"
+  },
+  {
+    "ID": "347",
+    "Mode": "INT"
+  },
+  {
+    "ID": "348",
+    "Mode": "INT"
+  },
+  {
+    "ID": "349",
+    "Mode": "INT"
+  },
+  {
+    "ID": "34",
+    "Mode": "INT"
+  },
+  {
+    "ID": "350",
+    "Mode": "INT"
+  },
+  {
+    "ID": "351",
+    "Mode": "INT"
+  },
+  {
+    "ID": "352",
+    "Mode": "INT"
+  },
+  {
+    "ID": "353",
+    "Mode": "INT"
+  },
+  {
+    "ID": "354",
+    "Mode": "INT"
+  },
+  {
+    "ID": "355",
+    "Mode": "INT"
+  },
+  {
+    "ID": "356",
+    "Mode": "INT"
+  },
+  {
+    "ID": "357",
+    "Mode": "INT"
+  },
+  {
+    "ID": "358",
+    "Mode": "INT"
+  },
+  {
+    "ID": "359",
+    "Mode": "INT"
+  },
+  {
+    "ID": "360",
+    "Mode": "INT"
+  },
+  {
+    "ID": "361",
+    "Mode": "INT"
+  },
+  {
+    "ID": "362",
+    "Mode": "INT"
+  },
+  {
+    "ID": "363",
+    "Mode": "INT"
+  },
+  {
+    "ID": "367",
+    "Mode": "INT"
+  },
+  {
+    "ID": "368",
+    "Mode": "INT"
+  },
+  {
+    "ID": "369",
+    "Mode": "INT"
+  },
+  {
+    "ID": "370",
+    "Mode": "INT"
+  },
+  {
+    "ID": "37",
+    "Mode": "INT"
+  },
+  {
+    "ID": "386",
+    "Mode": "INT"
+  },
+  {
+    "ID": "393",
+    "Mode": "INT"
+  },
+  {
+    "ID": "394",
+    "Mode": "INT"
+  },
+  {
+    "ID": "400",
+    "Mode": "INT"
+  },
+  {
+    "ID": "401",
+    "Mode": "INT"
+  },
+  {
+    "ID": "402",
+    "Mode": "INT"
+  },
+  {
+    "ID": "405",
+    "Mode": "INT"
+  },
+  {
+    "ID": "409",
+    "Mode": "INT"
+  },
+  {
+    "ID": "410",
+    "Mode": "INT"
+  },
+  {
+    "ID": "411",
+    "Mode": "INT"
+  },
+  {
+    "ID": "451",
+    "Mode": "INT"
+  },
+  {
+    "ID": "452",
+    "Mode": "INT"
+  },
+  {
+    "ID": "461",
+    "Mode": "INT"
+  },
+  {
+    "ID": "4",
+    "Mode": "INT"
+  },
+  {
+    "ID": "52",
+    "Mode": "INT"
+  },
+  {
+    "ID": "546",
+    "Mode": "INT"
+  },
+  {
+    "ID": "547",
+    "Mode": "INT"
+  },
+  {
+    "ID": "550",
+    "Mode": "INT"
+  },
+  {
+    "ID": "551",
+    "Mode": "INT"
+  },
+  {
+    "ID": "553",
+    "Mode": "INT"
+  },
+  {
+    "ID": "554",
+    "Mode": "INT"
+  },
+  {
+    "ID": "555",
+    "Mode": "INT"
+  },
+  {
+    "ID": "558",
+    "Mode": "INT"
+  },
+  {
+    "ID": "560",
+    "Mode": "INT"
+  },
+  {
+    "ID": "561",
+    "Mode": "INT"
+  },
+  {
+    "ID": "562",
+    "Mode": "INT"
+  },
+  {
+    "ID": "565",
+    "Mode": "INT"
+  },
+  {
+    "ID": "567",
+    "Mode": "INT"
+  },
+  {
+    "ID": "572",
+    "Mode": "INT"
+  },
+  {
+    "ID": "576",
+    "Mode": "INT"
+  },
+  {
+    "ID": "57",
+    "Mode": "INT"
+  },
+  {
+    "ID": "587",
+    "Mode": "INT"
+  },
+  {
+    "ID": "588",
+    "Mode": "INT"
+  },
+  {
+    "ID": "589",
+    "Mode": "INT"
+  },
+  {
+    "ID": "597",
+    "Mode": "INT"
+  },
+  {
+    "ID": "599",
+    "Mode": "INT"
+  },
+  {
+    "ID": "603",
+    "Mode": "INT"
+  },
+  {
+    "ID": "608",
+    "Mode": "INT"
+  },
+  {
+    "ID": "609",
+    "Mode": "INT"
+  },
+  {
+    "ID": "611",
+    "Mode": "INT"
+  },
+  {
+    "ID": "615",
+    "Mode": "INT"
+  },
+  {
+    "ID": "618",
+    "Mode": "INT"
+  },
+  {
+    "ID": "619",
+    "Mode": "INT"
+  },
+  {
+    "ID": "61",
+    "Mode": "INT"
+  },
+  {
+    "ID": "624",
+    "Mode": "INT"
+  },
+  {
+    "ID": "625",
+    "Mode": "INT"
+  },
+  {
+    "ID": "633",
+    "Mode": "INT"
+  },
+  {
+    "ID": "634",
+    "Mode": "INT"
+  },
+  {
+    "ID": "640",
+    "Mode": "INT"
+  },
+  {
+    "ID": "644",
+    "Mode": "INT"
+  },
+  {
+    "ID": "650",
+    "Mode": "INT"
+  },
+  {
+    "ID": "651",
+    "Mode": "INT"
+  },
+  {
+    "ID": "652",
+    "Mode": "INT"
+  },
+  {
+    "ID": "655",
+    "Mode": "INT"
+  },
+  {
+    "ID": "656",
+    "Mode": "INT"
+  },
+  {
+    "ID": "678",
+    "Mode": "INT"
+  },
+  {
+    "ID": "679",
+    "Mode": "JITSPEC"
+  },
+  {
+    "ID": "681",
+    "Mode": "INT"
+  },
+  {
+    "ID": "6",
+    "Mode": "INT"
+  },
+  {
+    "ID": "78",
+    "Mode": "INT"
+  },
+  {
+    "ID": "83",
+    "Mode": "INT"
+  },
+  {
+    "ID": "84",
+    "Mode": "INT"
+  },
+  {
+    "ID": "85",
+    "Mode": "INT"
+  },
+  {
+    "ID": "86",
+    "Mode": "INT"
+  },
+  {
+    "ID": "90",
+    "Mode": "INT"
+  }
+]

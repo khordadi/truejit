@@ -1,0 +1,29 @@
+# CMake
+cmake-build-*/
+build/
+debug/
+release/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# IDE
+.idea/
+
+# OS
+.DS_Store
+
+# Logs
+*.log

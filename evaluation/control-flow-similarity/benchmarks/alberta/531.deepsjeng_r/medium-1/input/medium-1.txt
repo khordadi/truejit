@@ -1,0 +1,16 @@
+5k2/8/8/3R4/6K1/8/3b2pP/8 w - - bm Rf5+;                       id "PET027: rook vs bishop";
+13
+8/1p4kP/5pP1/3p4/8/4P3/7K/8 w - - bm e4;                       id "PET002: Pawn endgame";
+13
+1k2qb1r/pp3ppb/2n1p3/2N1PP2/3B2P1/8/PP2Q3/2R2RK1 w - - bm Nxb7; id "arasan17.182"; c0 "Stockfish 2.2.2JA SSE42-Rybka 4.1 SSE42, 2012 (Brent M)";
+13
+8/8/1p3p2/p3k1pp/4P2P/P3K1P1/1P6/8 w - - bm g4;                id "PET008: Pawn endgame";
+13
+1b5k/7P/p1p2np1/2P2p2/PP3P2/4RQ1R/q2r3P/6K1 w - - bm Re8+; id "WAC.250";
+14
+r2q1rk1/pb1nbp1p/1pp1pp2/8/2BPN2P/5N2/PPP1QPP1/2KR3R w - - bm Nfg5; id "arasan17.148"; c0 "Loop M1-P 4CPU-Deep Junior 10.1 4CPU, CEGT Quad 40/120 2007";
+14
+2k1r2r/1pqb1p2/p2pp2b/4n1p1/PQ1NP2p/1P3P1P/2P1NBP1/R4RK1 w - - bm Nb5; id "arasan17.95"; c0 "Pacificrabbit (Rybka 3)-Anarquia69 (Rybka 3), playchess.com 2009";
+13
+2r2rk1/6p1/p3pq1p/1p1b1p2/3P1n2/PP3N2/3N1PPP/1Q2RR1K b - - bm Nxg2; id "WAC.174";
+14

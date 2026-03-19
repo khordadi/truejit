@@ -1,0 +1,16 @@
+2qrrbk1/1b3ppp/pn1Pp3/6P1/1Pp2B2/1nN2NQB/1P3P1P/3RR1K1 w - - bm g6; id "arasan17.73"; c0 "Gulko-Popovic, Paris 1986";
+16
+3r1qk1/5p1p/4b1pP/1pRp4/1P1Q4/r5P1/5P2/4RBK1 w - - bm Rxe6; id "ECM.1448";
+16
+1n1rn3/3rbpk1/p1qpp2p/2p3p1/2P1NBP1/P1NR3Q/1P2PP1P/3R2K1 w - - bm Bxg5 Nxg5; id "arasan17.143"; c0 "Gustafsson-Postny, EU-chT Novi Sad 2009";
+16
+2rq1rk1/pp3ppp/2n2b2/4NR2/3P4/PB5Q/1P4PP/3R2K1 w - - bm Qxh7+; id "WAC.241";
+16
+5k2/8/3pPp2/p1p3p1/Pp2PP2/1P3n2/7R/7K w - - bm Rh8+; id "arasan17.199"; c0 "Yilmaz-Lie, EU-chT (Men) 2011 (analysis)";
+16
+2b2rk1/p1p4p/2p1p1p1/br2N1Q1/1p2q3/8/PB3PPP/3R1RK1 w - - bm Nf7; id "WAC.226";
+16
+4k3/p4prp/1p6/2b5/8/2Q3P1/P2R1PKP/4q3 w - - bm Qd3 Rd8+; id "WAC.038";
+15
+8/5p2/5rp1/p2k1r1p/P1pNp2P/RP1bP1P1/5P1R/4K3 b - - bm c3; id "E_E_T 099 - T&T&S vs T&T&L";
+15

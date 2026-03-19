@@ -1,0 +1,3 @@
+add_library(CompilationService CompilationService.cpp)
+target_link_libraries(CompilationService PRIVATE LLVMCompiler CraneliftCompiler)
+target_include_directories(CompilationService PUBLIC ${PROJECT_SOURCE_DIR}/lib)

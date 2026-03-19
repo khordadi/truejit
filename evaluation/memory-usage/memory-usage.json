@@ -1,0 +1,3357 @@
+[
+  {
+    "benchmark": "facedetection",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 409820,
+        "time": 9.32
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 239444,
+        "time": 15.56
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 240284,
+        "time": 3.26
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 49724,
+        "time": 0.06
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 40800,
+        "time": 0.05
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 37504,
+        "time": 0.04
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 59664,
+        "time": 0.57
+      },
+      {
+        "vm": "wazero",
+        "memory": 140420,
+        "time": 2.37
+      },
+      {
+        "vm": "wavm",
+        "memory": 191540,
+        "time": 9.28
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 1290996,
+        "time": 8.29
+      }
+    ]
+  },
+  {
+    "benchmark": "bzip2",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 249720,
+        "time": 6.06
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 180268,
+        "time": 8.26
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 179928,
+        "time": 1.58
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 20816,
+        "time": 0.15
+      },
+      {
+        "vm": "wazero",
+        "memory": 39408,
+        "time": 0.59
+      },
+      {
+        "vm": "wavm",
+        "memory": 78316,
+        "time": 3.75
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 1569756,
+        "time": 15.98
+      }
+    ]
+  },
+  {
+    "benchmark": "gnuchess",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 228112,
+        "time": 11.39
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 172680,
+        "time": 13.96
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 172424,
+        "time": 6.23
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 38528,
+        "time": 18.37
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 37148,
+        "time": 6.65
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 36432,
+        "time": 4.05
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 19568,
+        "time": 5.89
+      },
+      {
+        "vm": "wazero",
+        "memory": 23480,
+        "time": 18.26
+      },
+      {
+        "vm": "wavm",
+        "memory": 69316,
+        "time": 6.89
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 1951588,
+        "time": 28.58
+      }
+    ]
+  },
+  {
+    "benchmark": "snappy",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 1239396,
+        "time": 4.86
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 1212476,
+        "time": 5.57
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 1212452,
+        "time": 3.0
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 1083320,
+        "time": 5.25
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 1082320,
+        "time": 2.78
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 1082652,
+        "time": 1.98
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 1066276,
+        "time": 3.25
+      },
+      {
+        "vm": "wazero",
+        "memory": 1825732,
+        "time": 6.19
+      },
+      {
+        "vm": "wavm",
+        "memory": 1092996,
+        "time": 2.68
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 2200788,
+        "time": 6.9
+      }
+    ]
+  },
+  {
+    "benchmark": "whitedb",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 1290036,
+        "time": 29.79
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 1248472,
+        "time": 30.22
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 1249080,
+        "time": 25.42
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 1118388,
+        "time": 54.02
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 1117312,
+        "time": 26.62
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 1116920,
+        "time": 18.94
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 1100168,
+        "time": 22.46
+      },
+      {
+        "vm": "wazero",
+        "memory": 3387580,
+        "time": 44.02
+      },
+      {
+        "vm": "wavm",
+        "memory": 1133888,
+        "time": 20.52
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 2989752,
+        "time": 27.99
+      }
+    ]
+  },
+  {
+    "benchmark": "espeak",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 274920,
+        "time": 82.74
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 184340,
+        "time": 86.51
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 184292,
+        "time": 76.85
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 19344,
+        "time": 107.72999999999999
+      },
+      {
+        "vm": "wazero",
+        "memory": 23036,
+        "time": 196.5
+      },
+      {
+        "vm": "wavm",
+        "memory": 94180,
+        "time": 80.41
+      },
+      {
+        "vm": "graalwasm",
+        "memory": Infinity,
+        "time": Infinity
+      }
+    ]
+  },
+  {
+    "benchmark": "mnist",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 245972,
+        "time": 368.17
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 216904,
+        "time": 369.12
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 216020,
+        "time": 366.54
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 109664,
+        "time": 364.87
+      },
+      {
+        "vm": "wazero",
+        "memory": 119884,
+        "time": 373.94
+      },
+      {
+        "vm": "wavm",
+        "memory": 94548,
+        "time": 365.86
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 1053268,
+        "time": 365.88
+      }
+    ]
+  },
+  {
+    "benchmark": "basicmath",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 180692,
+        "time": 2.67
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 163464,
+        "time": 3.38
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 164504,
+        "time": 1.36
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 35100,
+        "time": 28.69
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 35756,
+        "time": 38.54
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 35720,
+        "time": 33.13
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 17868,
+        "time": 0.79
+      },
+      {
+        "vm": "wazero",
+        "memory": 16384,
+        "time": 1.07
+      },
+      {
+        "vm": "wavm",
+        "memory": 43080,
+        "time": 1.25
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 1446828,
+        "time": 7.63
+      }
+    ]
+  },
+  {
+    "benchmark": "bitcount",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 182016,
+        "time": 2.31
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 163688,
+        "time": 2.8
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 162692,
+        "time": 0.91
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 36432,
+        "time": 0.24
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 35012,
+        "time": 0.14
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 35844,
+        "time": 0.11
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 17772,
+        "time": 0.1
+      },
+      {
+        "vm": "wazero",
+        "memory": 16368,
+        "time": 0.31
+      },
+      {
+        "vm": "wavm",
+        "memory": 41316,
+        "time": 0.74
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 666420,
+        "time": 0.92
+      }
+    ]
+  },
+  {
+    "benchmark": "cjpeg",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 232196,
+        "time": 4.85
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 170996,
+        "time": 7.34
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 171260,
+        "time": 1.41
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 18928,
+        "time": 0.06
+      },
+      {
+        "vm": "wazero",
+        "memory": 21140,
+        "time": 0.43
+      },
+      {
+        "vm": "wavm",
+        "memory": 69984,
+        "time": 3.44
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 1313944,
+        "time": 2.78
+      }
+    ]
+  },
+  {
+    "benchmark": "djpeg",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 226696,
+        "time": 4.79
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 172392,
+        "time": 6.88
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 172248,
+        "time": 1.33
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 18604,
+        "time": 0.03
+      },
+      {
+        "vm": "wazero",
+        "memory": 20028,
+        "time": 0.3
+      },
+      {
+        "vm": "wavm",
+        "memory": 70964,
+        "time": 3.52
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 804396,
+        "time": 0.48
+      }
+    ]
+  },
+  {
+    "benchmark": "stringsearch",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 173056,
+        "time": 1.64
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 162872,
+        "time": 1.96
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 162892,
+        "time": 0.79
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 35052,
+        "time": 0.08
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 35672,
+        "time": 0.08
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 35172,
+        "time": 0.08
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 17696,
+        "time": 0.01
+      },
+      {
+        "vm": "wazero",
+        "memory": 14672,
+        "time": 0.09
+      },
+      {
+        "vm": "wavm",
+        "memory": 40144,
+        "time": 0.51
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 712836,
+        "time": 0.31
+      }
+    ]
+  },
+  {
+    "benchmark": "blowfish-decode",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 183856,
+        "time": 2.06
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 162700,
+        "time": 2.75
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 163016,
+        "time": 1.06
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 18524,
+        "time": 0.37
+      },
+      {
+        "vm": "wazero",
+        "memory": 12700,
+        "time": 0.27
+      },
+      {
+        "vm": "wavm",
+        "memory": 36260,
+        "time": 0.55
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 778904,
+        "time": 1.09
+      }
+    ]
+  },
+  {
+    "benchmark": "blowfish-encode",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 183448,
+        "time": 2.07
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 162608,
+        "time": 1.06
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 163596,
+        "time": 1.01
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 18480,
+        "time": 0.37
+      },
+      {
+        "vm": "wazero",
+        "memory": 12488,
+        "time": 0.29
+      },
+      {
+        "vm": "wavm",
+        "memory": 35980,
+        "time": 0.55
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 776208,
+        "time": 1.11
+      }
+    ]
+  },
+  {
+    "benchmark": "rijndael-decode",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 185760,
+        "time": 2.17
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 165220,
+        "time": 2.89
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 164500,
+        "time": 1.01
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 18660,
+        "time": 0.3
+      },
+      {
+        "vm": "wazero",
+        "memory": 16508,
+        "time": 0.36
+      },
+      {
+        "vm": "wavm",
+        "memory": 43628,
+        "time": 0.96
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 796372,
+        "time": 1.58
+      }
+    ]
+  },
+  {
+    "benchmark": "rijndael-encode",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 188932,
+        "time": 2.23
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 164468,
+        "time": 1.44
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 164272,
+        "time": 1.03
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 18820,
+        "time": 0.31
+      },
+      {
+        "vm": "wazero",
+        "memory": 16464,
+        "time": 0.35
+      },
+      {
+        "vm": "wavm",
+        "memory": 43584,
+        "time": 0.96
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 784772,
+        "time": 1.65
+      }
+    ]
+  },
+  {
+    "benchmark": "sha",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 187576,
+        "time": 2.52
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 163284,
+        "time": 3.38
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 163392,
+        "time": 0.96
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 35844,
+        "time": 0.03
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 35948,
+        "time": 0.03
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 35948,
+        "time": 0.03
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 18356,
+        "time": 0.05
+      },
+      {
+        "vm": "wazero",
+        "memory": 16052,
+        "time": 0.2
+      },
+      {
+        "vm": "wavm",
+        "memory": 42336,
+        "time": 0.76
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 460764,
+        "time": 0.37
+      }
+    ]
+  },
+  {
+    "benchmark": "rawcaudio",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 172520,
+        "time": 1.88
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 162172,
+        "time": 2.1
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 162672,
+        "time": 1.03
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 35912,
+        "time": 1.24
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 35708,
+        "time": 1.08
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 36096,
+        "time": 1.04
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 17904,
+        "time": 0.95
+      },
+      {
+        "vm": "wazero",
+        "memory": 14672,
+        "time": 0.46
+      },
+      {
+        "vm": "wavm",
+        "memory": 40184,
+        "time": 0.77
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 444484,
+        "time": 0.52
+      }
+    ]
+  },
+  {
+    "benchmark": "rawdaudio",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 172092,
+        "time": 1.79
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 163188,
+        "time": 2.07
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 162976,
+        "time": 0.94
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 36412,
+        "time": 0.88
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 35944,
+        "time": 0.82
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 36276,
+        "time": 0.71
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 17824,
+        "time": 0.54
+      },
+      {
+        "vm": "wazero",
+        "memory": 15012,
+        "time": 0.33
+      },
+      {
+        "vm": "wavm",
+        "memory": 39816,
+        "time": 0.64
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 439164,
+        "time": 0.35
+      }
+    ]
+  },
+  {
+    "benchmark": "crc32",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 189164,
+        "time": 2.65
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 163884,
+        "time": 3.45
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 163416,
+        "time": 1.18
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 18472,
+        "time": 0.68
+      },
+      {
+        "vm": "wazero",
+        "memory": 15444,
+        "time": 0.48
+      },
+      {
+        "vm": "wavm",
+        "memory": 41648,
+        "time": 0.94
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 375976,
+        "time": 0.58
+      }
+    ]
+  },
+  {
+    "benchmark": "lbm",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 612396,
+        "time": 24.6
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 582352,
+        "time": 25.65
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 583044,
+        "time": 22.82
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 454424,
+        "time": 48.33
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 475164,
+        "time": 23.23
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 564032,
+        "time": 21.38
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 437488,
+        "time": 21.32
+      },
+      {
+        "vm": "wazero",
+        "memory": 740696,
+        "time": 29.58
+      },
+      {
+        "vm": "wavm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "graalwasm",
+        "memory": Infinity,
+        "time": Infinity
+      }
+    ]
+  },
+  {
+    "benchmark": "mcf",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 622496,
+        "time": 22.13
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 583396,
+        "time": 23.76
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 583004,
+        "time": 19.35
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 457940,
+        "time": 36.47
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 476884,
+        "time": 23.13
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 571176,
+        "time": 17.24
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 436296,
+        "time": 20.8
+      },
+      {
+        "vm": "wazero",
+        "memory": 1672644,
+        "time": 34.48
+      },
+      {
+        "vm": "wavm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "graalwasm",
+        "memory": Infinity,
+        "time": Infinity
+      }
+    ]
+  },
+  {
+    "benchmark": "nab",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 233344,
+        "time": 20.37
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 172964,
+        "time": 22.88
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 172884,
+        "time": 14.82
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 19484,
+        "time": 15.23
+      },
+      {
+        "vm": "wazero",
+        "memory": 31444,
+        "time": 24.65
+      },
+      {
+        "vm": "wavm",
+        "memory": 71872,
+        "time": 16.31
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 1760264,
+        "time": 30.93
+      }
+    ]
+  },
+  {
+    "benchmark": "x264",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 520800,
+        "time": 105.0
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 360288,
+        "time": 111.11
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 359988,
+        "time": 83.53999999999999
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 233540,
+        "time": 318.55
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 326360,
+        "time": 67.72
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 525144,
+        "time": 49.63
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 177588,
+        "time": 71.87
+      },
+      {
+        "vm": "wazero",
+        "memory": 823808,
+        "time": 122.54
+      },
+      {
+        "vm": "wavm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "graalwasm",
+        "memory": Infinity,
+        "time": Infinity
+      }
+    ]
+  },
+  {
+    "benchmark": "namd",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 437112,
+        "time": 465.84000000000003
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 377064,
+        "time": 470.89
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 377884,
+        "time": 455.23
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 262352,
+        "time": 1781.62
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 443616,
+        "time": 596.56
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 713852,
+        "time": 478.8
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 182460,
+        "time": 552.27
+      },
+      {
+        "vm": "wazero",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "wavm",
+        "memory": Infinity,
+        "time": Infinity
+      },
+      {
+        "vm": "graalwasm",
+        "memory": Infinity,
+        "time": Infinity
+      }
+    ]
+  },
+  {
+    "benchmark": "2mm",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 355468,
+        "time": 147.94
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 339828,
+        "time": 147.57
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 339784,
+        "time": 147.23
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 215628,
+        "time": 198.23
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 222372,
+        "time": 148.96
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 301492,
+        "time": 153.63
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 208604,
+        "time": 152.67000000000002
+      },
+      {
+        "vm": "wazero",
+        "memory": 654276,
+        "time": 156.94
+      },
+      {
+        "vm": "wavm",
+        "memory": 219716,
+        "time": 148.54
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 624948,
+        "time": 168.36
+      }
+    ]
+  },
+  {
+    "benchmark": "3mm",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 420316,
+        "time": 235.31
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 403688,
+        "time": 235.69
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 403888,
+        "time": 230.71
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 279888,
+        "time": 299.64
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 286240,
+        "time": 243.53
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 366344,
+        "time": 245.99
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 273936,
+        "time": 245.38
+      },
+      {
+        "vm": "wazero",
+        "memory": 953584,
+        "time": 260.55
+      },
+      {
+        "vm": "wavm",
+        "memory": 282044,
+        "time": 230.95
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 789548,
+        "time": 265.7
+      }
+    ]
+  },
+  {
+    "benchmark": "adi",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 336464,
+        "time": 211.09
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 320456,
+        "time": 211.01
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 320332,
+        "time": 209.91
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 194996,
+        "time": 392.63
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 202164,
+        "time": 212.87
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 282048,
+        "time": 212.66
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 189992,
+        "time": 211.78
+      },
+      {
+        "vm": "wazero",
+        "memory": 557544,
+        "time": 253.24
+      },
+      {
+        "vm": "wavm",
+        "memory": 197728,
+        "time": 211.28
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 660936,
+        "time": 317.73
+      }
+    ]
+  },
+  {
+    "benchmark": "atax",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 242672,
+        "time": 2.38
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 225908,
+        "time": 2.87
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 226808,
+        "time": 0.93
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 101384,
+        "time": 0.22
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 107364,
+        "time": 0.23
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 186468,
+        "time": 0.99
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 93884,
+        "time": 0.21
+      },
+      {
+        "vm": "wazero",
+        "memory": 162220,
+        "time": 0.4
+      },
+      {
+        "vm": "wavm",
+        "memory": 103228,
+        "time": 0.78
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 247644,
+        "time": 0.66
+      }
+    ]
+  },
+  {
+    "benchmark": "bicg",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 242268,
+        "time": 2.39
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 225624,
+        "time": 2.93
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 225768,
+        "time": 0.93
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 99844,
+        "time": 0.22
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 108212,
+        "time": 0.25
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 187056,
+        "time": 0.99
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 94996,
+        "time": 0.2
+      },
+      {
+        "vm": "wazero",
+        "memory": 162668,
+        "time": 0.57
+      },
+      {
+        "vm": "wavm",
+        "memory": 105188,
+        "time": 0.79
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 247112,
+        "time": 0.65
+      }
+    ]
+  },
+  {
+    "benchmark": "cholesky",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 428564,
+        "time": 995.29
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 411720,
+        "time": 993.52
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 412084,
+        "time": 973.72
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 287524,
+        "time": 983.87
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 295184,
+        "time": 937.7
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 374024,
+        "time": 915.37
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 281520,
+        "time": 999.25
+      },
+      {
+        "vm": "wazero",
+        "memory": 447624,
+        "time": 932.43
+      },
+      {
+        "vm": "wavm",
+        "memory": 289752,
+        "time": 976.7
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 571872,
+        "time": 971.59
+      }
+    ]
+  },
+  {
+    "benchmark": "correlation",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 324784,
+        "time": 250.12
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 308480,
+        "time": 249.68
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 308300,
+        "time": 246.9
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 183880,
+        "time": 251.02
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 191556,
+        "time": 245.81
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 270396,
+        "time": 244.37
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 178612,
+        "time": 247.8
+      },
+      {
+        "vm": "wazero",
+        "memory": 346436,
+        "time": 241.03
+      },
+      {
+        "vm": "wavm",
+        "memory": 185992,
+        "time": 246.01
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 501936,
+        "time": 247.59
+      }
+    ]
+  },
+  {
+    "benchmark": "covariance",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 324952,
+        "time": 250.3
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 309220,
+        "time": 249.14
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 309068,
+        "time": 248.76
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 184444,
+        "time": 247.83
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 191088,
+        "time": 245.82
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 270408,
+        "time": 245.38
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 177160,
+        "time": 247.17
+      },
+      {
+        "vm": "wazero",
+        "memory": 346156,
+        "time": 241.0
+      },
+      {
+        "vm": "wavm",
+        "memory": 188836,
+        "time": 247.66
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 452936,
+        "time": 241.59
+      }
+    ]
+  },
+  {
+    "benchmark": "deriche",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 729280,
+        "time": 5.5
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 713548,
+        "time": 6.1
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 713416,
+        "time": 4.03
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 589024,
+        "time": 4.68
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 595716,
+        "time": 3.54
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 674244,
+        "time": 4.41
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 581444,
+        "time": 3.42
+      },
+      {
+        "vm": "wazero",
+        "memory": 1479440,
+        "time": 6.21
+      },
+      {
+        "vm": "wavm",
+        "memory": 591140,
+        "time": 3.84
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 1041892,
+        "time": 5.8
+      }
+    ]
+  },
+  {
+    "benchmark": "doitgen",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 328212,
+        "time": 8.39
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 311484,
+        "time": 9.14
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 311400,
+        "time": 6.94
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 187232,
+        "time": 35.01
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 193100,
+        "time": 7.42
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 272912,
+        "time": 7.32
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 181972,
+        "time": 6.54
+      },
+      {
+        "vm": "wazero",
+        "memory": 459440,
+        "time": 17.77
+      },
+      {
+        "vm": "wavm",
+        "memory": 191588,
+        "time": 6.67
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 442036,
+        "time": 17.66
+      }
+    ]
+  },
+  {
+    "benchmark": "durbin",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 211624,
+        "time": 2.32
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 194988,
+        "time": 2.91
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 194708,
+        "time": 0.9
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 69048,
+        "time": 0.16
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 76612,
+        "time": 0.15
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 155340,
+        "time": 0.93
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 62880,
+        "time": 0.13
+      },
+      {
+        "vm": "wazero",
+        "memory": 49644,
+        "time": 0.26
+      },
+      {
+        "vm": "wavm",
+        "memory": 72644,
+        "time": 0.74
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 282648,
+        "time": 0.59
+      }
+    ]
+  },
+  {
+    "benchmark": "fdtd-2d",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 333308,
+        "time": 39.07
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 316924,
+        "time": 39.66
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 317108,
+        "time": 37.62
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 192452,
+        "time": 146.39
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 200508,
+        "time": 43.23
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 279408,
+        "time": 43.18
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 185268,
+        "time": 39.42
+      },
+      {
+        "vm": "wazero",
+        "memory": 436856,
+        "time": 112.78
+      },
+      {
+        "vm": "wavm",
+        "memory": 196976,
+        "time": 34.51
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 487260,
+        "time": 91.18
+      }
+    ]
+  },
+  {
+    "benchmark": "floyd-warshall",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 333936,
+        "time": 299.29
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 317556,
+        "time": 299.99
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 317568,
+        "time": 297.76
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 193472,
+        "time": 1371.63
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 199976,
+        "time": 388.67
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 278848,
+        "time": 305.34
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 186308,
+        "time": 274.52
+      },
+      {
+        "vm": "wazero",
+        "memory": 330236,
+        "time": 824.38
+      },
+      {
+        "vm": "wavm",
+        "memory": 195300,
+        "time": 280.29
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 390280,
+        "time": 1014.9
+      }
+    ]
+  },
+  {
+    "benchmark": "gemm",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 334708,
+        "time": 21.22
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 317844,
+        "time": 21.84
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 318924,
+        "time": 19.76
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 193748,
+        "time": 85.13
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 200716,
+        "time": 20.46
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 279768,
+        "time": 19.85
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 185808,
+        "time": 17.69
+      },
+      {
+        "vm": "wazero",
+        "memory": 465676,
+        "time": 58.66
+      },
+      {
+        "vm": "wavm",
+        "memory": 195856,
+        "time": 19.51
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 494100,
+        "time": 66.06
+      }
+    ]
+  },
+  {
+    "benchmark": "gemver",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 336432,
+        "time": 2.82
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 320896,
+        "time": 3.48
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 320556,
+        "time": 1.35
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 194864,
+        "time": 0.96
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 201536,
+        "time": 0.73
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 281200,
+        "time": 1.47
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 190792,
+        "time": 0.74
+      },
+      {
+        "vm": "wazero",
+        "memory": 494320,
+        "time": 1.61
+      },
+      {
+        "vm": "wavm",
+        "memory": 197644,
+        "time": 1.25
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 442272,
+        "time": 1.94
+      }
+    ]
+  },
+  {
+    "benchmark": "gesummv",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 333824,
+        "time": 2.56
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 317088,
+        "time": 3.06
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 317160,
+        "time": 1.1
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 193380,
+        "time": 0.5
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 198556,
+        "time": 0.43
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 278184,
+        "time": 1.21
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 186092,
+        "time": 0.46
+      },
+      {
+        "vm": "wazero",
+        "memory": 414352,
+        "time": 1.07
+      },
+      {
+        "vm": "wavm",
+        "memory": 195000,
+        "time": 0.96
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 444000,
+        "time": 0.98
+      }
+    ]
+  },
+  {
+    "benchmark": "gramschmidt",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 345808,
+        "time": 461.68
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 329444,
+        "time": 450.34
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 328808,
+        "time": 456.82
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 203608,
+        "time": 449.46
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 212192,
+        "time": 461.01
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 290928,
+        "time": 470.73
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 198464,
+        "time": 456.8
+      },
+      {
+        "vm": "wazero",
+        "memory": 480512,
+        "time": 464.1
+      },
+      {
+        "vm": "wavm",
+        "memory": 206736,
+        "time": 459.75
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 489292,
+        "time": 448.8
+      }
+    ]
+  },
+  {
+    "benchmark": "heat-3d",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 336336,
+        "time": 101.36
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 319812,
+        "time": 101.97999999999999
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 319592,
+        "time": 99.88
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 194948,
+        "time": 277.40999999999997
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 202684,
+        "time": 103.83
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 281996,
+        "time": 107.46000000000001
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 188920,
+        "time": 101.47
+      },
+      {
+        "vm": "wazero",
+        "memory": 423332,
+        "time": 235.24
+      },
+      {
+        "vm": "wavm",
+        "memory": 199568,
+        "time": 99.02000000000001
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 505944,
+        "time": 187.16
+      }
+    ]
+  },
+  {
+    "benchmark": "jacobi-1d",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 211136,
+        "time": 2.3
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 194448,
+        "time": 2.91
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 194944,
+        "time": 0.9
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 69980,
+        "time": 0.15
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 77204,
+        "time": 0.14
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 155008,
+        "time": 0.92
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 62060,
+        "time": 0.14
+      },
+      {
+        "vm": "wazero",
+        "memory": 49324,
+        "time": 0.29
+      },
+      {
+        "vm": "wavm",
+        "memory": 75072,
+        "time": 0.72
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 171172,
+        "time": 0.46
+      }
+    ]
+  },
+  {
+    "benchmark": "jacobi-2d",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 334128,
+        "time": 63.37
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 317324,
+        "time": 63.91
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 317276,
+        "time": 61.9
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 192844,
+        "time": 204.69
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 199556,
+        "time": 62.19
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 277948,
+        "time": 72.05
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 185804,
+        "time": 67.21
+      },
+      {
+        "vm": "wazero",
+        "memory": 415756,
+        "time": 164.94
+      },
+      {
+        "vm": "wavm",
+        "memory": 197364,
+        "time": 61.52
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 418756,
+        "time": 143.5
+      }
+    ]
+  },
+  {
+    "benchmark": "lu",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 428208,
+        "time": 1220.76
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 412560,
+        "time": 1250.93
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 412560,
+        "time": 1246.9
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 287852,
+        "time": 1245.76
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 295072,
+        "time": 1180.43
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 373488,
+        "time": 1161.1
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 282064,
+        "time": 1232.88
+      },
+      {
+        "vm": "wazero",
+        "memory": 447692,
+        "time": 1217.25
+      },
+      {
+        "vm": "wavm",
+        "memory": 292336,
+        "time": 1228.62
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 571544,
+        "time": 1161.89
+      }
+    ]
+  },
+  {
+    "benchmark": "ludcmp",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 428364,
+        "time": 1229.11
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 412884,
+        "time": 1221.66
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 411932,
+        "time": 1239.91
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 287948,
+        "time": 1160.1
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 295776,
+        "time": 1206.98
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 374912,
+        "time": 1186.12
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 282744,
+        "time": 1251.57
+      },
+      {
+        "vm": "wazero",
+        "memory": 604388,
+        "time": 1208.15
+      },
+      {
+        "vm": "wavm",
+        "memory": 291984,
+        "time": 1222.25
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 644012,
+        "time": 1145.72
+      }
+    ]
+  },
+  {
+    "benchmark": "mvt",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 336652,
+        "time": 2.85
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 319744,
+        "time": 3.45
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 319676,
+        "time": 1.33
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 194272,
+        "time": 0.78
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 200988,
+        "time": 0.64
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 281252,
+        "time": 1.44
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 188400,
+        "time": 0.67
+      },
+      {
+        "vm": "wazero",
+        "memory": 493900,
+        "time": 1.17
+      },
+      {
+        "vm": "wavm",
+        "memory": 200052,
+        "time": 1.19
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 394076,
+        "time": 1.49
+      }
+    ]
+  },
+  {
+    "benchmark": "nussinov",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 330004,
+        "time": 330.31
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 313636,
+        "time": 331.57
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 312660,
+        "time": 329.03
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 188440,
+        "time": 408.96
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 195408,
+        "time": 344.55
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 274568,
+        "time": 329.18
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 182144,
+        "time": 328.79
+      },
+      {
+        "vm": "wazero",
+        "memory": 319996,
+        "time": 419.69
+      },
+      {
+        "vm": "wavm",
+        "memory": 190824,
+        "time": 330.7
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 427608,
+        "time": 436.11
+      }
+    ]
+  },
+  {
+    "benchmark": "seidel-2d",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 336456,
+        "time": 256.34
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 319264,
+        "time": 256.87
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 320544,
+        "time": 254.87
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 195460,
+        "time": 330.78
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 202276,
+        "time": 273.0
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 281152,
+        "time": 248.75
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 188220,
+        "time": 266.29
+      },
+      {
+        "vm": "wazero",
+        "memory": 336364,
+        "time": 276.54
+      },
+      {
+        "vm": "wavm",
+        "memory": 199648,
+        "time": 248.08
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 391512,
+        "time": 333.95
+      }
+    ]
+  },
+  {
+    "benchmark": "syr2k",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 345960,
+        "time": 182.97
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 329696,
+        "time": 184.51
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 328760,
+        "time": 181.31
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 204668,
+        "time": 187.94
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 211340,
+        "time": 175.98
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 290168,
+        "time": 174.8
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 196620,
+        "time": 177.22
+      },
+      {
+        "vm": "wazero",
+        "memory": 537020,
+        "time": 188.92
+      },
+      {
+        "vm": "wavm",
+        "memory": 206476,
+        "time": 180.52
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 443592,
+        "time": 191.29
+      }
+    ]
+  },
+  {
+    "benchmark": "syrk",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 304768,
+        "time": 77.08
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 288364,
+        "time": 77.57
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 288236,
+        "time": 75.43
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 164532,
+        "time": 87.75
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 172164,
+        "time": 72.5
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 249780,
+        "time": 73.52
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 156144,
+        "time": 73.71000000000001
+      },
+      {
+        "vm": "wazero",
+        "memory": 302412,
+        "time": 79.78999999999999
+      },
+      {
+        "vm": "wavm",
+        "memory": 168400,
+        "time": 75.4
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 363140,
+        "time": 74.8
+      }
+    ]
+  },
+  {
+    "benchmark": "symm",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 323104,
+        "time": 150.41
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 307384,
+        "time": 149.69
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 307016,
+        "time": 150.36
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 182184,
+        "time": 151.65
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 190960,
+        "time": 146.81
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 269132,
+        "time": 151.71
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 175700,
+        "time": 147.39
+      },
+      {
+        "vm": "wazero",
+        "memory": 416496,
+        "time": 152.98
+      },
+      {
+        "vm": "wavm",
+        "memory": 187036,
+        "time": 150.2
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 454468,
+        "time": 155.29
+      }
+    ]
+  },
+  {
+    "benchmark": "trisolv",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 288452,
+        "time": 2.45
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 271704,
+        "time": 3.0
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 271768,
+        "time": 1.01
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 147268,
+        "time": 0.32
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 153696,
+        "time": 0.3
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 232916,
+        "time": 1.04
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 140304,
+        "time": 0.25
+      },
+      {
+        "vm": "wazero",
+        "memory": 492412,
+        "time": 0.83
+      },
+      {
+        "vm": "wavm",
+        "memory": 152088,
+        "time": 0.87
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 385012,
+        "time": 1.0
+      }
+    ]
+  },
+  {
+    "benchmark": "trmm",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 273804,
+        "time": 143.62
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 258576,
+        "time": 144.59
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 258144,
+        "time": 140.7
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 133824,
+        "time": 132.84
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 140620,
+        "time": 138.85
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 219976,
+        "time": 139.05
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 127376,
+        "time": 141.6
+      },
+      {
+        "vm": "wazero",
+        "memory": 232544,
+        "time": 132.87
+      },
+      {
+        "vm": "wavm",
+        "memory": 138060,
+        "time": 141.15
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 354224,
+        "time": 171.96
+      }
+    ]
+  },
+  {
+    "benchmark": "gcc-loops",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 356684,
+        "time": 16.72
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 192476,
+        "time": 21.71
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 193108,
+        "time": 13.44
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 70252,
+        "time": 42.24
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 93692,
+        "time": 14.82
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 203860,
+        "time": 11.56
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 81840,
+        "time": 12.0
+      },
+      {
+        "vm": "wazero",
+        "memory": 24188,
+        "time": 38.19
+      },
+      {
+        "vm": "wavm",
+        "memory": 126608,
+        "time": 16.09
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 929480,
+        "time": 31.57
+      }
+    ]
+  },
+  {
+    "benchmark": "float-mm",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 172632,
+        "time": 1.95
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 162772,
+        "time": 2.34
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 162396,
+        "time": 1.12
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 41124,
+        "time": 1.83
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 49776,
+        "time": 0.8
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 103188,
+        "time": 1.37
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 36568,
+        "time": 0.93
+      },
+      {
+        "vm": "wazero",
+        "memory": 15016,
+        "time": 1.06
+      },
+      {
+        "vm": "wavm",
+        "memory": 39588,
+        "time": 1.07
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 815124,
+        "time": 1.78
+      }
+    ]
+  },
+  {
+    "benchmark": "HashSet",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 442428,
+        "time": 13.77
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 181048,
+        "time": 14.7
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 180824,
+        "time": 1.86
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 57684,
+        "time": 1.75
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 92488,
+        "time": 1.24
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 221824,
+        "time": 12.78
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 78676,
+        "time": 1.14
+      },
+      {
+        "vm": "wazero",
+        "memory": 131212,
+        "time": 1.98
+      },
+      {
+        "vm": "wavm",
+        "memory": 182384,
+        "time": 13.28
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 1361524,
+        "time": 5.15
+      }
+    ]
+  },
+  {
+    "benchmark": "quicksort",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 171200,
+        "time": 1.64
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 162164,
+        "time": 1.88
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 162652,
+        "time": 0.82
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 40740,
+        "time": 0.15
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 48896,
+        "time": 0.21
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 104324,
+        "time": 0.85
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 36320,
+        "time": 0.15
+      },
+      {
+        "vm": "wazero",
+        "memory": 14912,
+        "time": 0.17
+      },
+      {
+        "vm": "wavm",
+        "memory": 39244,
+        "time": 0.53
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 639996,
+        "time": 0.58
+      }
+    ]
+  },
+  {
+    "benchmark": "tsf",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 308048,
+        "time": 12.62
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 174444,
+        "time": 17.05
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 174560,
+        "time": 4.58
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 71620,
+        "time": 6.11
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 110120,
+        "time": 4.49
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 225432,
+        "time": 7.57
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 81028,
+        "time": 4.66
+      },
+      {
+        "vm": "wazero",
+        "memory": 42736,
+        "time": 6.17
+      },
+      {
+        "vm": "wavm",
+        "memory": 77044,
+        "time": 6.9
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 1945172,
+        "time": 99.84
+      }
+    ]
+  },
+  {
+    "benchmark": "coremark",
+    "vms": [
+      {
+        "vm": "truejit-local",
+        "memory": 189004,
+        "time": 46.28
+      },
+      {
+        "vm": "truejit-cold",
+        "memory": 163660,
+        "time": 47.41
+      },
+      {
+        "vm": "truejit-warm",
+        "memory": 163780,
+        "time": 44.69
+      },
+      {
+        "vm": "wasmer-single-pass",
+        "memory": 44016,
+        "time": 102.11
+      },
+      {
+        "vm": "wasmer-cranelift",
+        "memory": 58128,
+        "time": 55.21
+      },
+      {
+        "vm": "wasmer-llvm",
+        "memory": 136300,
+        "time": 43.18
+      },
+      {
+        "vm": "wasmtime-cranelift",
+        "memory": 17852,
+        "time": 49.97
+      },
+      {
+        "vm": "wazero",
+        "memory": 16628,
+        "time": 94.69
+      },
+      {
+        "vm": "wavm",
+        "memory": 43664,
+        "time": 42.86
+      },
+      {
+        "vm": "graalwasm",
+        "memory": 1326608,
+        "time": 50.71
+      }
+    ]
+  }
+]

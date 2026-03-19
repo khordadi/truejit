@@ -1,0 +1,20 @@
+bzip2.c -o bzip2.s
+bzip2.c -O2 -o bzip2_O2.s
+bzip2.c -O3 -o bzip2_O3.s
+bzip2.c -O5 -o bzip2_O5.s
+bzip2.c -Os -o bzip2_Os.s
+bzip2.c -finline-limit=50000 -o bzip2_finline_limit_50000.s
+bzip2.c -fif-conversion -fif-conversion2 -o bzip2_fif_conversion_fif_conversion2.s
+bzip2.c -fpic -o bzip2_fpic.s
+bzip2.c -fipa-pta -o bzip2_fipa_pta.s
+bzip2.c -fselective-scheduling -fselective-scheduling2 -o bzip2_fselective_scheduling_fselective_scheduling2.s
+bzip2.c -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o bzip2_fgcse_fgcse_las_fgcse_lm_fgcse_sm.s
+bzip2.c -fexpensive-optimizations -o bzip2_fexpensive_optimizations.s
+bzip2.c -O5 -finline-limit=40000 -fif-conversion -fif-conversion2 -o bzip2_O5_finline_limit_40000_fif_conversion_fif_conversion2.s
+bzip2.c -O5 -fpic -fipa-pta -fselective-scheduling -fselective-scheduling2 -o bzip2_O5_fpic_fpic_pta_fselective_scheduling_fselective_scheduling2.s
+bzip2.c -falign-functions -falign-jumps -falign-labels -falign-loops -o bzip2_falign_functions_falign_jumps_falign_labels_falign_loops.s
+bzip2.c -fbranch-probabilities -fbranch-target-load-optimize -fbranch-target-load-optimize2 -o bzip2_fbranch_probabilities_fbranch_target_load_optimize_fbranch_target_load_optimize2.s
+bzip2.c -fcaller-saves -o bzip2_fcaller_saves.s
+bzip2.c -fconserve-stack -o bzip2_fconserve_stack.s
+bzip2.c -fcprop-registers -o bzip2_fcprop_registers.s
+bzip2.c -fearly-inlining -o bzip2_fearly_inlining.s

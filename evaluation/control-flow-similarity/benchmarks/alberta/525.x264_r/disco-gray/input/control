@@ -1,0 +1,2 @@
+-o Disco-Gray.yuv Disco-Gray.mkv 1280x720 5 0 500 0 100 100 300 499
+-o Disco-Gray.yuv Disco-Gray.mkv 1280x720 5 0 500 1 100 100 300 499

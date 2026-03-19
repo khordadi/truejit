@@ -1,0 +1,20 @@
+lbm.c -o lbm.s
+lbm.c -O2 -o lbm_O2.s
+lbm.c -O3 -o lbm_O3.s
+lbm.c -O5 -o lbm_O5.s
+lbm.c -Os -o lbm_Os.s
+lbm.c -finline-limit=50000 -o lbm_finline_limit_50000.s
+lbm.c -fif-conversion -fif-conversion2 -o lbm_fif_conversion_fif_conversion2.s
+lbm.c -fpic -o lbm_fpic.s
+lbm.c -fipa-pta -o lbm_fipa_pta.s
+lbm.c -fselective-scheduling -fselective-scheduling2 -o lbm_fselective_scheduling_fselective_scheduling2.s
+lbm.c -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o lbm_fgcse_fgcse_las_fgcse_lm_fgcse_sm.s
+lbm.c -fexpensive-optimizations -o lbm_fexpensive_optimizations.s
+lbm.c -O5 -finline-limit=40000 -fif-conversion -fif-conversion2 -o lbm_O5_finline_limit_40000_fif_conversion_fif_conversion2.s
+lbm.c -O5 -fpic -fipa-pta -fselective-scheduling -fselective-scheduling2 -o lbm_O5_fpic_fpic_pta_fselective_scheduling_fselective_scheduling2.s
+lbm.c -falign-functions -falign-jumps -falign-labels -falign-loops -o lbm_falign_functions_falign_jumps_falign_labels_falign_loops.s
+lbm.c -fbranch-probabilities -fbranch-target-load-optimize -fbranch-target-load-optimize2 -o lbm_fbranch_probabilities_fbranch_target_load_optimize_fbranch_target_load_optimize2.s
+lbm.c -fcaller-saves -o lbm_fcaller_saves.s
+lbm.c -fconserve-stack -o lbm_fconserve_stack.s
+lbm.c -fcprop-registers -o lbm_fcprop_registers.s
+lbm.c -fearly-inlining -o lbm_fearly_inlining.s

@@ -1,0 +1,20 @@
+img_process.c -o img_process.s
+img_process.c -O2 -o img_process_O2.s
+img_process.c -O3 -o img_process_O3.s
+img_process.c -O5 -o img_process_O5.s
+img_process.c -Os -o img_process_Os.s
+img_process.c -finline-limit=50000 -o img_process_finline_limit_50000.s
+img_process.c -fif-conversion -fif-conversion2 -o img_process_fif_conversion_fif_conversion2.s
+img_process.c -fpic -o img_process_fpic.s
+img_process.c -fipa-pta -o img_process_fipa_pta.s
+img_process.c -fselective-scheduling -fselective-scheduling2 -o img_process_fselective_scheduling_fselective_scheduling2.s
+img_process.c -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o img_process_fgcse_fgcse_las_fgcse_lm_fgcse_sm.s
+img_process.c -fexpensive-optimizations -o img_process_fexpensive_optimizations.s
+img_process.c -O5 -finline-limit=40000 -fif-conversion -fif-conversion2 -o img_process_O5_finline_limit_40000_fif_conversion_fif_conversion2.s
+img_process.c -O5 -fpic -fipa-pta -fselective-scheduling -fselective-scheduling2 -o img_process_O5_fpic_fpic_pta_fselective_scheduling_fselective_scheduling2.s
+img_process.c -falign-functions -falign-jumps -falign-labels -falign-loops -o img_process_falign_functions_falign_jumps_falign_labels_falign_loops.s
+img_process.c -fbranch-probabilities -fbranch-target-load-optimize -fbranch-target-load-optimize2 -o img_process_fbranch_probabilities_fbranch_target_load_optimize_fbranch_target_load_optimize2.s
+img_process.c -fcaller-saves -o img_process_fcaller_saves.s
+img_process.c -fconserve-stack -o img_process_fconserve_stack.s
+img_process.c -fcprop-registers -o img_process_fcprop_registers.s
+img_process.c -fearly-inlining -o img_process_fearly_inlining.s

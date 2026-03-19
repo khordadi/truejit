@@ -1,0 +1,2 @@
+FormatStyle: llvm
+Checks: -modernize-use-nodiscard

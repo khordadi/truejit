@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+package networking;
+
+import "google/protobuf/empty.proto";
+
+message ConnectRequest {
+  string application = 1;
+}
+message ConnectResponse {
+  uint32 session_id = 1;
+}
+message DisconnectRequest {
+  uint32 session_id = 1;
+}
+message DisconnectResponse {
+}
+message CompilationRequest {
+  uint32 session_id = 1;
+  uint32 request_id = 2;
+  repeated uint32 history = 3;
+}
+message Function {
+  uint32 function_index = 1;
+  bytes code = 2;
+}
+message CompilationResponse {
+  uint32 request_id = 1;
+  repeated Function functions = 2;
+}
+
+service Compiler {
+  rpc RemoteConnect (ConnectRequest) returns (ConnectResponse) {}
+  rpc RemoteDisconnect (DisconnectRequest) returns (DisconnectResponse) {}
+  rpc RemoteGet (CompilationRequest) returns (CompilationResponse) {}
+}
+
+// TODO: move to a separate file
+message Sync {
+  string address = 1;
+}
+message Ack {
+  bool connected = 1;
+}
+message Command {
+  string payload = 1; // json
+}
+message Result {
+  string payload = 1; // json
+}
+
+service Orchestrator {
+  rpc Connect (Sync) returns (Ack) {}
+  rpc Disconnect (Result) returns (google.protobuf.Empty) {}
+}
+
+service Worker {
+  rpc Execute (Command) returns (google.protobuf.Empty) {}
+}

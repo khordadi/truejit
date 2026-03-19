@@ -1,0 +1,16 @@
+r1bq2rk/pp3pbp/2p1p1pQ/7P/3P4/2PB1N2/PP3PPR/2KR4 w - - bm Qxh7+; id "WAC.004";
+12
+2r4r/3bk1b1/1q2pp2/3pPp1p/1p1N1P1P/1P1R1BP1/P2Q4/1K1R4 w - - bm Nxf5+; id "ECM.1409";
+11
+8/1Pk2Kpp/8/8/4nPP1/7P/8/8 b - - bm Nf2; id "E_E_T 008 - B vs S";
+11
+4r1k1/1p5p/5ppP/1qnP4/r4R2/P6P/1B1Q2K1/5R2 w - - bm Rxf6; id "ECM.1347";
+11
+r2q1rk1/pp3ppp/2p2b2/8/B2pPPb1/7P/PPP1N1P1/R2Q1RK1 b - - bm d3; id "WAC.144";
+11
+3r1bk1/ppq3pp/2p5/2P2Q1B/8/1P4P1/P6P/5RK1 w - - bm Bf7+; id "WAC.208";
+12
+r3k2r/pbp2pp1/3b1n2/1p6/3P3p/1B2N1Pq/PP1PQP1P/R1B2RK1 b kq - bm Qxh2+; id "WAC.079";
+11
+r1b2r1k/4qp1p/p2ppb1Q/4nP2/1p1NP3/2N5/PPP4P/2KR1BR1 w - - bm Nc6; id "arasan17.241"; c0 "Kholmov-Bronstein, URS-ch32 Kiev 1964";
+12

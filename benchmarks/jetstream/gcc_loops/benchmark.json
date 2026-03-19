@@ -1,0 +1,5 @@
+{
+  "Args": [
+    "/tmp/truejit/benchmarks/jetstream/gcc_loops/gcc-loops.wasm"
+  ]
+}

@@ -1,0 +1,32 @@
+diff --git a/playbooks/reset.yml b/playbooks/reset.yml
+index 5742bd844..4ea534332 100644
+--- a/playbooks/reset.yml
++++ b/playbooks/reset.yml
+@@ -8,25 +8,8 @@
+ - name: Reset cluster
+   hosts: etcd:k8s_cluster:calico_rr
+   gather_facts: False
+-  pre_tasks:
+-    - name: Reset Confirmation
+-      pause:
+-        prompt: "Are you sure you want to reset cluster state? Type 'yes' to reset your cluster."
+-      register: reset_confirmation_prompt
+-      run_once: True
+-      when:
+-        - not (skip_confirmation | default(false) | bool)
+-        - reset_confirmation is not defined
+-
+-    - name: Check confirmation
+-      fail:
+-        msg: "Reset confirmation failed"
+-      when:
+-        - not reset_confirmation | default(false) | bool
+-        - not reset_confirmation_prompt.user_input | default("") == "yes"
+-
+-    - name: Gather information about installed services
+-      service_facts:
++  vars:
++    reset_confirmation: true
+
+   environment: "{{ proxy_disable_env }}"
+   roles:

@@ -1,0 +1,20 @@
+gzip.c -o gzip.s
+gzip.c -O2 -o gzip_O2.s
+gzip.c -O3 -o gzip_O3.s
+gzip.c -O5 -o gzip_O5.s
+gzip.c -Os -o gzip_Os.s
+gzip.c -finline-limit=50000 -o gzip_finline_limit_50000.s
+gzip.c -fif-conversion -fif-conversion2 -o gzip_fif_conversion_fif_conversion2.s
+gzip.c -fpic -o gzip_fpic.s
+gzip.c -fipa-pta -o gzip_fipa_pta.s
+gzip.c -fselective-scheduling -fselective-scheduling2 -o gzip_fselective_scheduling_fselective_scheduling2.s
+gzip.c -fgcse -fgcse-las -fgcse-lm -fgcse-sm -o gzip_fgcse_fgcse_las_fgcse_lm_fgcse_sm.s
+gzip.c -fexpensive-optimizations -o gzip_fexpensive_optimizations.s
+gzip.c -O5 -finline-limit=40000 -fif-conversion -fif-conversion2 -o gzip_O5_finline_limit_40000_fif_conversion_fif_conversion2.s
+gzip.c -O5 -fpic -fipa-pta -fselective-scheduling -fselective-scheduling2 -o gzip_O5_fpic_fpic_pta_fselective_scheduling_fselective_scheduling2.s
+gzip.c -falign-functions -falign-jumps -falign-labels -falign-loops -o gzip_falign_functions_falign_jumps_falign_labels_falign_loops.s
+gzip.c -fbranch-probabilities -fbranch-target-load-optimize -fbranch-target-load-optimize2 -o gzip_fbranch_probabilities_fbranch_target_load_optimize_fbranch_target_load_optimize2.s
+gzip.c -fcaller-saves -o gzip_fcaller_saves.s
+gzip.c -fconserve-stack -o gzip_fconserve_stack.s
+gzip.c -fcprop-registers -o gzip_fcprop_registers.s
+gzip.c -fearly-inlining -o gzip_fearly_inlining.s

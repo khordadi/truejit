@@ -1,0 +1,67 @@
+[
+  [
+    25,
+    "$example10a(short*, short*, short*, int*, int*, int*)",
+    "[i32:20704, i32:22752, i32:24800, i32:30944, i32:35040, i32:39136]"
+  ],
+  [
+    26,
+    "$example10b(short*, short*, short*, int*, int*, int*)",
+    "[i32:282544, i32:22752, i32:282544, i32:30944, i32:282544, i32:282544]"
+  ],
+  [
+    17,
+    "$example2b(int, int)",
+    "[i32:1024, i32:282544]"
+  ],
+  [
+    20,
+    "$example4b(int, int*, int*)",
+    "[i32:1014, i32:282544, i32:282544]"
+  ],
+  [
+    23,
+    "$example8(int)",
+    "[i32:8]"
+  ],
+  [
+    21,
+    "$example4c(int, int*, int*)",
+    "[i32:1024, i32:282544, i32:282544]"
+  ],
+  [
+    29,
+    "$example23(unsigned short*, unsigned int*)",
+    "[i32:18656, i32:26848]"
+  ],
+  [
+    19,
+    "$example4a(int, int*, int*)",
+    "[i32:1024, i32:30944, i32:35040]"
+  ],
+  [
+    22,
+    "$example7(int)",
+    "[i32:4]"
+  ],
+  [
+    16,
+    "$example2a(int, int)",
+    "[i32:1024, i32:2]"
+  ],
+  [
+    30,
+    "$example24(short, short)",
+    "[i32:2, i32:4]"
+  ],
+  [
+    24,
+    "$example9(unsigned int*)",
+    "[i32:282592]"
+  ],
+  [
+    18,
+    "$example3(int, int*, int*)",
+    "[i32:1024, i32:30944, i32:35040]"
+  ]
+]                                                                                                                                                                               ~ ❯                                                                                                                                                         base khordadi@node0

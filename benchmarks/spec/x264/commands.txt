@@ -1,0 +1,93 @@
+--crf 24 -o output1.264 in.yuv 1280x720
+--vbv-bufsize 2000 --bitrate 1000 -o output5.264 in.yuv 1280x720
+--preset veryfast --tune film -o output6.264 in.yuv 1280x720
+--bitrate 1500 --keyint 30 -o output7.264 in.yuv 1280x720
+--crf 20 --tune grain -o output8.264 in.yuv 1280x720
+--preset ultrafast --bitrate 2000 -o output9.264 in.yuv 1280x720
+--fps 30 --frames 1000 -o output10.264 in.yuv 1280x720
+--crf 26 -o output12.264 in.yuv 1280x720
+--pass 1 --bitrate 1200 -o output13.264 in.yuv 1280x720
+--pass 2 --bitrate 1200 -o output14.264 in.yuv 1280x720
+--preset slow --tune film --vbv-bufsize 2500 -o output15.264 in.yuv 1280x720
+--preset medium --weightp 0 --aq-mode 2 -o output16.264 in.yuv 1280x720
+--no-fast-pskip --preset faster -o output17.264 in.yuv 1280x720
+--no-psy --preset faster --crf 16 -o output18.264 in.yuv 1280x720
+--no-cabac --preset superfast --crf 22 -o output19.264 in.yuv 1280x720
+--no-mixed-refs --preset faster --crf 20 -o output20.264 in.yuv 1280x720
+--subme 8 --preset slower --crf 18 -o output21.264 in.yuv 1280x720
+--preset veryfast --no-8x8dct --crf 21 -o output22.264 in.yuv 1280x720
+--preset slow --crf 25 --me esa -o output23.264 in.yuv 1280x720
+--profile high --crf 23 -o output24.264 in.yuv 1280x720
+--profile main --crf 22 -o output25.264 in.yuv 1280x720
+--profile baseline --crf 21 -o output26.264 in.yuv 1280x720
+--crf 25 --me tesa --preset slower -o output27.264 in.yuv 1280x720
+--bitrate 1200 --preset faster -o output28.264 in.yuv 1280x720
+--preset fast --aq-mode 0 -o output29.264 in.yuv 1280x720
+--crf 19 --preset veryslow -o output30.264 in.yuv 1280x720
+--preset slow --tune animation --crf 25 -o output31.264 in.yuv 1280x720
+--preset veryslow --tune grain --crf 18 -o output32.264 in.yuv 1280x720
+--preset placebo --crf 20 --sar 1:1 -o output33.264 in.yuv 1280x720
+--preset slower --tune stillimage --fps 30 -o output34.264 in.yuv 1280x720
+--vbv-maxrate 2000 --bitrate 2500 -o output35.264 in.yuv 1280x720
+--level 4.1 --preset medium -o output36.264 in.yuv 1280x720
+--vbv-bufsize 3000 --bitrate 1800 -o output37.264 in.yuv 1280x720
+--preset slow --tune stillimage --me umh --crf 17 -o output39.264 in.yuv 1280x720
+--level 2.0 --preset superfast --crf 15 -o output40.264 in.yuv 1280x720
+--preset medium --crf 22 --tune fastdecode -o output41.264 in.yuv 1280x720
+--level 3.0 --preset veryfast --crf 23 --tune psnr -o output42.264 in.yuv 1280x720
+--preset fast --bframes 8 --crf 23 -o output43.264 in.yuv 1280x720
+--level 4.2 --vbv-bufsize 5000 --bitrate 1800 -o output44.264 in.yuv 1280x720
+--preset slower --scenecut 40 --fps 60 -o output45.264 in.yuv 1280x720
+--preset veryslow --tune grain --keyint 30 --crf 25 -o output46.264 in.yuv 1280x720
+--preset fast --no-mbtree --crf 24 -o output47.264 in.yuv 1280x720
+--preset slow --me dia --weightp 1 -o output48.264 in.yuv 1280x720
+--profile main --preset veryfast --crf 22 --fps 60 -o output49.264 in.yuv 1280x720
+--preset medium --vbv-maxrate 1000 --bitrate 1500 -o output50.264 in.yuv 1280x720
+--crf 27 --me umh --tune ssim -o output51.264 in.yuv 1280x720
+--preset slower --bitrate 2500 --deblock 3:3 -o output52.264 in.yuv 1280x720
+--vbv-maxrate 1200 --vbv-bufsize 2400 -o output53.264 in.yuv 1280x720
+--preset medium --bitrate 3000 --level 4.2 -o output54.264 in.yuv 1280x720
+--crf 22 --preset veryslow --me dia -o output55.264 in.yuv 1280x720
+--level 4.1 --preset placebo --crf 26 -o output56.264 in.yuv 1280x720
+--preset slow --tune grain --crf 24 --fps 40 -o output57.264 in.yuv 1280x720
+--vbv-bufsize 1500 --preset fast --crf 17 -o output58.264 in.yuv 1280x720
+--profile baseline --preset superfast --bitrate 1100 -o output59.264 in.yuv 1280x720
+--crf 13 --preset faster --me umh -o output60.264 in.yuv 1280x720
+--preset slow --tune animation --vbv-bufsize 2500 -o output61.264 in.yuv 1280x720
+--profile high --crf 24 --bframes 4 -o output62.264 in.yuv 1280x720
+--preset medium --crf 23 --me tesa -o output63.264 in.yuv 1280x720
+--level 3.1 --preset slower --crf 19 --tune ssim -o output64.264 in.yuv 1280x720
+--preset fast --crf 16 --weightp 0 -o output65.264 in.yuv 1280x720
+--vbv-maxrate 3000 --preset veryfast --bitrate 3500 -o output66.264 in.yuv 1280x720
+--crf 23 --profile main --preset slower -o output67.264 in.yuv 1280x720
+--preset slow --tune fastdecode --crf 22 -o output68.264 in.yuv 1280x720
+--preset veryslow --vbv-maxrate 2500 --bitrate 2000 -o output69.264 in.yuv 1280x720
+--no-fast-pskip --preset medium --crf 23 -o output70.264 in.yuv 1280x720
+--vbv-bufsize 2000 --preset faster --bitrate 2000 -o output71.264 in.yuv 1280x720
+--preset ultrafast --crf 24 --tune stillimage -o output72.264 in.yuv 1280x720
+--preset medium --no-cabac --crf 25 -o output73.264 in.yuv 1280x720
+--level 4.2 --preset placebo --crf 22 -o output74.264 in.yuv 1280x720
+--crf 19 --preset slow --tune animation -o output75.264 in.yuv 1280x720
+--preset veryslow --bitrate 3000 --vbv-maxrate 3500 -o output76.264 in.yuv 1280x720
+--preset slower --me umh --crf 23 -o output77.264 in.yuv 1280x720
+--profile high --crf 20 --vbv-maxrate 2500 -o output79.264 in.yuv 1280x720
+--crf 28 --preset medium --me hex -o output80.264 in.yuv 1280x720
+--preset veryslow --crf 24 --weightp 1 --sar 2:1 -o output81.264 in.yuv 1280x720
+--profile baseline --preset veryfast --crf 25 -o output82.264 in.yuv 1280x720
+--preset slower --fps 29.97 --bitrate 1800 -o output83.264 in.yuv 1280x720
+--bitrate 1000 --preset ultrafast --keyint 30 -o output84.264 in.yuv 1280x720
+--vbv-bufsize 2500 --preset slower --crf 26 -o output85.264 in.yuv 1280x720
+--crf 20 --preset veryfast --me esa -o output86.264 in.yuv 1280x720
+--vbv-bufsize 1500 --preset medium --bitrate 1400 -o output87.264 in.yuv 1280x720
+--profile main --crf 24 --preset slower -o output88.264 in.yuv 1280x720
+--profile high --crf 23 --preset slower --tune ssim -o output89.264 in.yuv 1280x720
+--preset slow --tune film --crf 22 -o output91.264 in.yuv 1280x720
+--profile baseline --crf 25 --vbv-maxrate 2500 -o output92.264 in.yuv 1280x720
+--vbv-bufsize 2500 --bitrate 2000 --preset fast -o output93.264 in.yuv 1280x720
+--crf 24 --tune grain --preset veryslow -o output94.264 in.yuv 1280x720
+--vbv-bufsize 4000 --bitrate 3000 --preset slower -o output95.264 in.yuv 1280x720
+--preset ultrafast --crf 20 --tune psnr -o output96.264 in.yuv 1280x720
+--preset slow --tune zerolatency --crf 21 -o output97.264 in.yuv 1280x720
+--vbv-maxrate 1500 --bitrate 1100 --preset fast -o output98.264 in.yuv 1280x720
+--crf 22 --preset slower --me esa -o output99.264 in.yuv 1280x720
+--preset veryslow --crf 17 --vbv-bufsize 2500 -o output100.264 in.yuv 1280x720

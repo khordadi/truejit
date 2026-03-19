@@ -1,0 +1,139 @@
+(;FF[4]GM[1]SZ[9]AP[SGFC:1.17]
+GC[Original: 65 moves; removed 40]
+
+GN[TesujiTyro-mercury(B) NNGS]
+EV[None]
+PB[mercury]
+BR[22k]
+PW[TesujiTyro]
+WR[25k]
+KM[0.5]
+DT[2000-01-14]
+PC[NNGS Worldwide: nngs.cosmic.org 9696]
+RE[B+35.5]
+TM[600]
+US[Brought to you by No Name Go Server]
+CP[
+  This game was played on the No Name Go Server
+  Permission to reproduce this game is given.]
+
+;B[ed];W[df];B[dd];W[ff];B[fe];W[gc];B[ge];W[fc];B[gf];W[fg]
+;B[gg];W[fh];B[gh];W[ee];B[fd];W[ec];B[dc];W[db];B[cc];W[cb]
+;B[bc];W[be];B[cg];W[dg];B[dh];W[eh];B[cf];W[di];B[ch];W[ce]
+;)
+
+(;FF[4]GM[1]SZ[9]AP[SGFC:1.17]
+GC[Original: 44 moves; removed 32]
+
+GN[guest-Chris(B) NNGS]
+EV[None]
+PB[Chris]
+BR[7k*]
+PW[guest]
+WR[UR]
+KM[0.5]
+DT[2000-01-08]
+PC[NNGS Worldwide: nngs.cosmic.org 9696]
+RE[W+18.5]
+TM[300]
+US[Brought to you by No Name Go Server]
+CP[
+  This game was played on the No Name Go Server
+  Permission to reproduce this game is given.]
+
+;B[fd];W[gf];B[gd];W[ef];B[de];W[cc];B[df];W[ee];B[dd];W[ed]
+;B[dc];W[ec];B[cb];W[eb];B[hf];W[hg];B[he];W[hc];B[gg];W[fg]
+;)
+
+(;FF[4]GM[1]SZ[9]AP[SGFC:1.17]
+GC[Original: 62 moves; removed 42]
+
+GN[GnuGo-guest2(B) NNGS]
+EV[None]
+PB[guest2]
+BR[UR]
+PW[GnuGo]
+WR[16k*]
+KM[0.5]
+DT[2000-01-03]
+PC[NNGS Worldwide: nngs.cosmic.org 9696]
+RE[W+Resign]
+TM[300]
+US[Brought to you by No Name Go Server]
+CP[
+  This game was played on the No Name Go Server
+  Permission to reproduce this game is given.]
+
+;B[];W[ee];B[cg];W[fg];B[dd];W[dg];B[gc];W[ge];B[dh];W[eh]
+;B[ci];W[hd];B[gd];W[bh];B[df];W[eg];B[ch];W[hc];B[ef];W[cf]
+;)
+
+(;FF[4]GM[1]SZ[9]AP[SGFC:1.17]
+GC[Original: 54 moves; removed 43]
+
+GN[guest-bodaa(B) NNGS]
+EV[None]
+PB[bodaa]
+BR[7k*]
+PW[guest]
+WR[UR]
+KM[0.5]
+DT[2000-01-25]
+PC[NNGS Worldwide: nngs.cosmic.org 9696]
+RE[W+7.5]
+TM[300]
+US[Brought to you by No Name Go Server]
+CP[
+  This game was played on the No Name Go Server
+  Permission to reproduce this game is given.]
+
+;B[gc];W[gf];B[cd];W[cf];B[eg];W[ef];B[fg];W[ff];B[dg];W[df]
+;B[bh];W[ec];B[eb];W[db];B[fb];W[dc];B[he];W[gg];B[bf];W[cg]
+;)
+
+(;FF[4]GM[1]SZ[9]AP[SGFC:1.17]
+GC[Original: 50 moves; removed 38]
+
+GN[arndt-LullySing(B) NNGS]
+EV[None]
+PB[LullySing]
+BR[24k]
+PW[arndt]
+WR[9k*]
+KM[0.5]
+DT[2000-01-26]
+PC[NNGS Worldwide: nngs.cosmic.org 9696]
+RE[W+24.5]
+TM[600]
+US[Brought to you by No Name Go Server]
+CP[
+  This game was played on the No Name Go Server
+  Permission to reproduce this game is given.]
+
+;B[gg];W[dg];B[eh];W[cd];B[fe];W[gc];B[gd];W[fc];B[eg];W[dh]
+;B[di];W[ci];B[ef];W[df];B[ec];W[fd];B[ge];W[ed];B[dc];W[dd]
+;)
+
+(;FF[4]GM[1]SZ[9]AP[SGFC:1.17]
+GC[Original: 58 moves; removed 41]
+
+GN[GnuGo-ctwardy(B) NNGS]
+EV[None]
+PB[ctwardy]
+BR[NR]
+PW[GnuGo]
+WR[16k*]
+KM[5.5]
+DT[2000-01-07]
+PC[NNGS Worldwide: nngs.cosmic.org 9696]
+RE[W+Resign]
+TM[900]
+US[Brought to you by No Name Go Server]
+CP[
+  This game was played on the No Name Go Server
+  Permission to reproduce this game is given.]
+
+;B[gg];W[cd];B[gc];W[cg];B[ee];W[ec];B[ei];W[cf];B[ea];W[db]
+;B[dh];W[da];B[fc];W[ef];B[df];W[dg];B[eg];W[ff];B[gf];W[de]
+;)
+

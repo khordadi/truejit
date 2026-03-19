@@ -1,0 +1,16 @@
+2rr1bk1/2q2p2/4pnp1/1P2p2p/p3P2P/5PP1/P1N1Q1K1/1NR2R2 b - - bm Bh6; id "arasan17.186"; c0 "Protector 1.4.0-Naum 4.2, Elite Quad 2012 (G. Banks)";
+11
+QR2rq1k/2p3p1/3p1pPp/8/4P3/8/P1r3PP/1R4K1 b - - bm Rxa2; id "WAC.202";
+11
+3rr1k1/1bp3p1/1p4qp/pNp1p3/PnPn1pP1/3P1P2/1P2P1BP/1R1QBR1K b - - bm Nxf3; id "arasan17.109"; c0 "Arasan-bookbuilder, ICC 2010";
+12
+r3k2r/pb1q1p2/8/2p1pP2/4p1p1/B1P1Q1P1/P1P3K1/R4R2 b kq - bm Qd2+; id "WAC.168";
+11
+2rq1Nk1/pb3pp1/4p3/1p6/3b1Pn1/P1N5/1PQ3PP/R1B2R1K b - - bm f5; id "arasan17.227"; c0 "Aronian-Anand, Wijk aan Zee 2013";
+12
+7k/1p1Nr2P/3Rb3/8/3K4/6b1/8/5B2 w - - bm Ne5; id "E_E_T 082 - T&L&S vs T&L&L";
+11
+R7/P5Kp/2P5/k3r2P/8/5p2/p4P2/8 w - - bm Rb8; id "E_E_T 068 - T vs T";
+12
+b7/P4kp1/R4p2/4p3/1Bp1P2p/2P2P2/1q3NP1/4K3 b - - bm h3; id "arasan17.24"; c0 "Deep Junior 8-Deep Fritz 8, SSDF 2007";
+12

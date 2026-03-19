@@ -1,0 +1,49 @@
+#pragma once
+
+#cmakedefine PROFILE_FOR_SPECIALIZATION
+#ifdef PROFILE_FOR_SPECIALIZATION
+// #pragma message "PROFILE_FOR_SPECIALIZATION is defined"
+#endif
+#cmakedefine PROFILE_CALLS
+#ifdef PROFILE_CALLS
+// #pragma message "PROFILE_CALLS is defined"
+#endif
+#cmakedefine PROFILE_BRANCHES
+#ifdef PROFILE_BRANCHES
+// #pragma message "PROFILE_BRANCHES is defined"
+#endif
+#cmakedefine PRINT_WEBASSEMBLY_EXECUTION
+#ifdef PRINT_WEBASSEMBLY_EXECUTION
+// #pragma message "PRINT_WEBASSEMBLY_EXECUTION is defined"
+#endif
+
+#cmakedefine PROFILE_VIRTUAL_MACHINE
+#ifdef PROFILE_VIRTUAL_MACHINE
+// #pragma message "PROFILE_VIRTUAL_MACHINE is defined"
+#endif
+#cmakedefine PROFILE_COMPILATION_SERVICE
+#ifdef PROFILE_COMPILATION_SERVICE
+// #pragma message "PROFILE_COMPILATION_SERVICE is defined"
+#endif
+#cmakedefine PROFILE_COMPILER_CLIENT
+#ifdef PROFILE_COMPILER_CLIENT
+// #pragma message "PROFILE_COMPILER_CLIENT is defined"
+#endif
+#cmakedefine PROFILE_COMPILER_SERVER
+#ifdef PROFILE_COMPILER_SERVER
+// #pragma message "PROFILE_COMPILER_SERVER is defined"
+#endif
+#cmakedefine PROFILE_WASM_SERVICE
+#ifdef PROFILE_WASM_SERVICE
+// #pragma message "PROFILE_WASM_SERVICE is defined"
+#endif
+#cmakedefine PROFILE_PREDICTION_SERVICE
+#ifdef PROFILE_PREDICTION_SERVICE
+// #pragma message "PROFILE_PREDICTION_SERVICE is defined"
+#endif
+#cmakedefine PROFILE_SIGNATURE_SERVICE
+#ifdef PROFILE_SIGNATURE_SERVICE
+// #pragma message "PROFILE_SIGNATURE_SERVICE is defined"
+#endif
+
+

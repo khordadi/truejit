@@ -1,0 +1,9 @@
+add_subdirectory(CompilerClient)
+add_subdirectory(RemoteCompilerClient)
+add_subdirectory(CompilerServer)
+add_subdirectory(LLVMCompiler)
+add_subdirectory(CraneliftCompiler)
+
+#add_library(RemoteCompiler RemoteCompiler.cpp)
+#target_link_libraries(RemoteCompiler PUBLIC CompilerServer LLVMCompiler GRPCCompilerServer LSTMPredictor)
+#target_include_directories(RemoteCompiler PRIVATE ${PROJECT_SOURCE_DIR}/lib)

@@ -1,0 +1,27 @@
+#services:
+#  workers:
+#    image: khordadi/truejit:latest
+#    network_mode: host
+#    command: ["worker", "--orchestrator-ip=172.17.0.1"]
+#    restart: always
+
+services:
+  workers:
+    image: khordadi/truejit:latest
+    # Connect the service to our custom network.
+    networks:
+      - custom_net
+    # The orchestrator can be reached by its service name if it's in the same file.
+    # If not, you might need to find its IP on the 'custom_net' network.
+    command: ["worker", "--orchestrator-ip=172.17.0.1"]
+    restart: always
+
+# Define the custom network here.
+networks:
+  custom_net:
+    driver: bridge
+    ipam: # IP Address Management
+      config:
+        - subnet: 172.20.0.0/16
+
+# docker compose up --scale workers=10

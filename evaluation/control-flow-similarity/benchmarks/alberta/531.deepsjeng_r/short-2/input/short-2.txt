@@ -1,0 +1,16 @@
+r2qr1k1/1b1pppbp/1p4p1/pP2P1B1/3N4/R7/1PP2PPP/3QR1K1 w - a6 bm Nf5; id "arasan17.187"; c0 "Godes-Morozov, Mirotvorsky mem-A corr8185 1981";
+12
+8/8/3k1p2/p2BnP2/4PN2/1P2K1p1/8/5b2 b - - bm Nd3; id "test 25";
+11
+r3q2r/2p1k1p1/p5p1/1p2Nb2/1P2nB2/P7/2PNQbPP/R2R3K b - - bm Rxh2+; id "ECM.1387";
+11
+1b5k/7P/p1p2np1/2P2p2/PP3P2/4RQ1R/q2r3P/6K1 w - - bm Re8+; id "WAC.250";
+12
+8/7p/6p1/3Np1bk/4Pp2/1R3PPK/5r1P/8 w - - bm Nc7; id "E_E_T 084 - T&S vs T&L";
+11
+2kr2r1/2pqbp1p/p1n1b3/1P1pP3/4n3/1BP1BN2/1P4PP/RN1Q1RK1 b - - bm Bh3; id "ECM.1426";
+12
+8/4bBpp/3p4/P6P/2PN2p1/3k1b2/P7/6K1 w - - bm h6; id "arasan17.244"; c0 "Timman, 1c Corus {m} 2008";
+12
+8/7p/8/p4p2/5K2/Bpk3P1/4P2P/8 w - - bm g4; id "test 23";
+12

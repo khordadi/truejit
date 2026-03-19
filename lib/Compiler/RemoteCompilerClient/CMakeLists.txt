@@ -1,0 +1,3 @@
+add_library(RemoteCompilerServerProxy RemoteCompilerClient.cpp)
+target_link_libraries(RemoteCompilerServerProxy PUBLIC GRPCProtocol)
+target_include_directories(RemoteCompilerServerProxy PUBLIC ${PROJECT_SOURCE_DIR}/lib)

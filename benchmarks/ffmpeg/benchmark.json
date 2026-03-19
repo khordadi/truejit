@@ -1,0 +1,12 @@
+{
+  "Args": [
+    "/tmp/truejit/benchmarks/ffmpeg/ffmpeg.wasm",
+    "-y",
+    "-i",
+    "/tmp/truejit/benchmarks/ffmpeg/workloads/0/in.mov",
+    "/tmp/truejit/benchmarks/ffmpeg/workloads/0/out.mp4"
+  ],
+  "PreOpens": [
+    "/tmp/truejit/benchmarks/ffmpeg"
+  ]
+}

@@ -1,0 +1,16 @@
+8/8/6Np/2p3kP/1pPbP3/1P3K2/8/8 w - - bm e5; id "E_E_T 041 - S vs L";
+13
+r2qrb1k/1p1b2p1/p2ppn1p/8/3NP3/1BN5/PPP3QP/1K3RR1 w - - bm e5; id "arasan17.192"; c0 "Spassky-Petrosian, World Chmp (19) 1969";
+14
+8/6p1/P1b1pp2/2p1p3/1k4P1/3PP3/1PK5/5B2 w - - bm Bg2; id "arasan17.34"; c0 "Vincent Lejeune #36";
+13
+3r1r1k/pp5p/4b1pb/6q1/3P4/4p1BP/PP2Q1PK/3RRB2 b - - bm Qxg3+; id "arasan17.178"; c0 "Apicella-Lautier, Clichy 2001";
+13
+3r4/2q5/5pk1/p3n1p1/N3Pp1p/1PPr1P1P/2Q1R1P1/5R1K b - - bm g4; id "arasan17.104"; c0 "Critter 0.60-Deep Fritz 12, Martin Thoresen 2010";
+13
+r4rk1/3b1ppp/p1np4/qp1N1P1Q/3bP3/4R3/PPB3PK/1RB5 b - - bm g6 Be5+; id "arasan17.128"; c0 "Chukichess-Arasan, freechess.org 2011";
+14
+r2qrnk1/pp3ppb/3b1n1p/1Pp1p3/2P1P2N/P5P1/1B1NQPBP/R4RK1 w - - bm Bh3; id "LCTPOS08 (Bh3!)";
+13
+5rk1/p5pp/8/8/2Pbp3/1P4P1/7P/4RN1K b - - bm Bc3; id "WAC.101";
+14
