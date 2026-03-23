@@ -15,8 +15,8 @@ public:
   };
 
   explicit SignatureService(
-      const std::string &PrivateKeyPath = "/tmp/truejit/keys/private_key.pem",
-      const std::string &PublicKeyPath = "/tmp/truejit/keys/public_key.pem");
+      const std::string &PrivateKeyPath = PROJECT_ROOT / "keys/private_key.pem",
+      const std::string &PublicKeyPath = PROJECT_ROOT / "keys/public_key.pem");
   ~SignatureService();
   std::vector<unsigned char> sign(const std::vector<char> &Code) const;
   bool verify(const std::vector<char> &Code,

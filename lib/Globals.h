@@ -8,6 +8,8 @@
 #include <shared_mutex>
 #include <vector>
 
+#define PROJECT_ROOT std::filesystem::path("/users/khordadi/truejit")
+
 using i8 = char;
 using i16 = int16_t;
 using i32 = int32_t;
