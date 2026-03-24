@@ -13,7 +13,7 @@ from utils import metric, mv_profile, static_compile, VirtualMachine, ffmpeg, gc
 
 def generate_static_info(binary):
     objdump = "/usr/local/bin/wasm-objdump"
-    proc = subprocess.run([objdump, "-d", binary],
+    proc = subprocess.run([objdump, "-d", str(binary)],
                           capture_output=True, text=True, check=True)
     lines = proc.stdout.splitlines()
     last_line = lines[-1]
@@ -33,8 +33,8 @@ def generate_static_info(binary):
         funcs.append((fid, name, addr))
 
     # get the binary size from static-compiler output
-    bin_dir = Path(binary.replace("/benchmarks/", "/binaries/")).parent
-    if not bin_dir.exists():
+    bin_dir = Path(str(binary).replace("/benchmarks/", "/binaries/")).parent
+    if not bin_dir.exists() or not any(bin_dir.iterdir()):
         print(f"binary directory {bin_dir} does not exist; trying to compile it.")
         static_compile(binary)
     bin_sizes = {int(f.stem): f.stat().st_size for f in bin_dir.glob("*.o")}  # {fid: size}
@@ -121,7 +121,7 @@ class StartupInfo:
 
 
 def profiles_root(binary, workload=None, mode=None):
-    root = Path(binary.replace('/benchmarks/', '/profiles/')).parent
+    root = Path(str(binary).replace('/benchmarks/', '/profiles/')).parent
 
     if workload is not None:
         root = root / workload
@@ -135,7 +135,7 @@ def profiles_root(binary, workload=None, mode=None):
 
 
 def plans_root(binary, workload=None, mode=None):
-    root = Path(binary.replace('/benchmarks/', '/plans/')).parent
+    root = Path(str(binary).replace('/benchmarks/', '/plans/')).parent
 
     if workload is not None:
         root = root / workload
@@ -563,21 +563,24 @@ def main():
     benchmark = ffmpeg
     # benchmark = gcc_loops
     # generate_static_info(benchmark.binary)
+    # return
 
     # collect profiles for jit and interp
     # record_base(benchmark, 100)
 
     # merge the profiles
-    generate_profile_base(benchmark)
+    # generate_profile_base(benchmark)
+    # return
 
-    # generate_profile_leave_one_out(benchmark)
-    # generate_profile_union(benchmark)
-    # generate_profile_oracle(benchmark)
+    generate_profile_leave_one_out(benchmark)
+    generate_profile_union(benchmark)
+    generate_profile_oracle(benchmark)
+    # return
 
     # generate plans
     # generate_plans(benchmark)
 
-    # run_plans(benchmark)
+    run_plans(benchmark)
 
     return
 

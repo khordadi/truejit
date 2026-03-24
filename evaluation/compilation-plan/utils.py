@@ -6,6 +6,8 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 import time
 
+PROJECT_ROOT = Path('/users/khordadi/truejit')
+
 
 def metric(path):
     if path.exists():
@@ -25,10 +27,10 @@ def mv_profile(dst):
 
 
 def static_compile(wasm_file):
-    static_compiler = '/tmp/truejit/release/tools/static-compiler'
-    if not Path(static_compiler).exists():
+    static_compiler = PROJECT_ROOT / 'release/tools/static-compiler'
+    if not static_compiler.exists():
         raise RuntimeError(f"static-compiler not found at {static_compiler}")
-    subprocess.run([static_compiler, wasm_file], check=True)
+    subprocess.run([str(static_compiler), str(wasm_file)], check=True)
 
 
 class Workload:
@@ -51,7 +53,8 @@ class VirtualMachine:
         build_dir = Path(f'/tmp/vms/{abs(int(hashlib.sha256(build_flags.encode()).hexdigest(), 16))}')
         build_dir.mkdir(parents=True, exist_ok=True)
         subprocess.run(
-            ['cmake', '-DCMAKE_BUILD_TYPE=Release', '-GNinja', '-S', '/tmp/truejit', '-B', str(build_dir), build_flags],
+            ['cmake', '-DCMAKE_BUILD_TYPE=Release', '-GNinja', '-S', str(PROJECT_ROOT), '-B', str(build_dir),
+             build_flags],
             check=True)
         subprocess.run(['cmake', '--build', str(build_dir), '--target', 'vm-with-compiler', '-j64'], check=True)
         self.binary = f'{build_dir}/tools/vm-with-compiler'
@@ -75,8 +78,8 @@ class Benchmark:
         self.workloads = workloads
 
 
-wls = Path('/tmp/truejit/benchmarks/ffmpeg/workloads')
-ffmpeg = Benchmark('ffmpeg', '/tmp/truejit/benchmarks/ffmpeg/ffmpeg.wasm',
+wls = PROJECT_ROOT / 'benchmarks/ffmpeg/workloads'
+ffmpeg = Benchmark('ffmpeg', PROJECT_ROOT / 'benchmarks/ffmpeg/ffmpeg.wasm',
                    [
                        Workload('mov-to-mp4', ['-y', '-i', wls / '0' / 'in.mov', wls / '0' / 'out.mp4'],
                                 [wls / '0']),
@@ -133,5 +136,5 @@ ffmpeg = Benchmark('ffmpeg', '/tmp/truejit/benchmarks/ffmpeg/ffmpeg.wasm',
                                 [wls / '15'])]
                    )
 
-gcc_loops = Benchmark('gcc-loops', '/tmp/truejit/benchmarks/jetstream/gcc_loops/gcc-loops.wasm',
+gcc_loops = Benchmark('gcc-loops', PROJECT_ROOT / 'benchmarks/jetstream/gcc_loops/gcc-loops.wasm',
                       [Workload('default', [], [])])
