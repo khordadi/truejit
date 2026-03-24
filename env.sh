@@ -71,6 +71,10 @@ source $HOME/.cargo/env
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 EOF
 
+# install git-lfs
+sudo apt install -y git-lfs
+git lfs install
+
 # install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
