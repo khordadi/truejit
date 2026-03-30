@@ -2,6 +2,7 @@
 
 #include "../CompilationService/CompilationService.h"
 #include <Globals.h>
+#include <boost/lockfree/stack.hpp>
 #include <boost/thread/synchronized_value.hpp>
 #include <fmt/core.h>
 #include <optional>
@@ -27,11 +28,7 @@ public:
       : Ins(std::move(Init)), Exceptions(std::move(Exceptions)),
         Compile(std::move(Compile)) {}
 
-  virtual ~AsyncCompiler() {
-    Thread.join();
-    // for (auto &F : Futures)
-    // F.get();
-  }
+  virtual ~AsyncCompiler() { Thread.join(); }
   virtual void push(const u32 F) {
     auto &&Vec = Ins.synchronize();
     Vec->push_back(F);
@@ -119,6 +116,114 @@ private:
   }
 };
 
+class DynamicAsyncCompiler final : public AsyncCompiler {
+  // Plan
+  std::unordered_map<u32, std::vector<u32>> Plan;
+
+  // Seen
+  std::set<u32> Seen;
+  std::mutex SeenMutex;
+  bool JustSeen(const u32 Fn) {
+    std::lock_guard Lock(SeenMutex);
+    return Seen.insert(Fn).second;
+  }
+  void SeenIt(const u32 Fn) {
+    std::lock_guard Lock(SeenMutex);
+    Seen.insert(Fn);
+  }
+
+  // History (vm push to it, and the async pop from it)
+  std::vector<u32> History;
+  std::mutex HistoryMutex;
+  void pushHistory(const u32 F) {
+    std::lock_guard Lock(HistoryMutex);
+    History.push_back(F);
+  }
+  std::optional<u32> popHistory() {
+    std::lock_guard Lock(HistoryMutex);
+    if (History.empty())
+      return std::nullopt;
+    auto Back = History.back();
+    History.pop_back();
+    return Back;
+  }
+
+  // CompilationQueue
+  std::queue<u32> CompilationQueue;
+  std::mutex CompilationQueueMutex;
+  void enqueue(const u32 F) {
+    std::lock_guard Lock(CompilationQueueMutex);
+    CompilationQueue.push(F);
+  }
+  std::optional<u32> dequeue() {
+    std::lock_guard Lock(CompilationQueueMutex);
+    if (CompilationQueue.empty())
+      return std::nullopt;
+    auto Back = CompilationQueue.front();
+    CompilationQueue.pop();
+    return Back;
+  }
+
+public:
+  DynamicAsyncCompiler(const CompilationService::CompileFn &Compile,
+                       const std::vector<u32> &Init,
+                       const std::set<u32> &Exceptions)
+      : AsyncCompiler(Compile, Init, Exceptions) {
+    // fmt::println("DynamicAsyncCompiler::DynamicAsyncCompiler()");
+    // auto PlanPath = PROJECT_ROOT /
+    //                 "evaluation/compilation-plan/out/history_map.ffmpeg.json";
+    auto PlanPath = "/tmp/async.json";
+    json J;
+    std::ifstream IFS(PlanPath);
+    IFS >> J;
+    for (const auto &E : J.items())
+      for (const auto &Value : E.value())
+        Plan[std::stoi(E.key())].push_back(Value.get<u32>());
+    start();
+  }
+
+  ~DynamicAsyncCompiler() override = default;
+
+protected:
+  void start() override {
+    Thread = std::thread([this] {
+      auto Threads = 2u;
+      fmt::println("using {} threads", Threads);
+      auto TP = ThreadPool(Threads);
+      std::vector<std::future<void>> Futures;
+      while (not Stop) {
+        const auto Back = dequeue();
+        if (not Back)
+          continue;
+        Futures.push_back(TP.enqueue([this, Back] { Compile(CompilationService::Request{*Back}); }));
+      }
+      for (auto &Future : Futures)
+        Future.get();
+    });
+  }
+  void push(const u32 F) override {
+    if (JustSeen(F)) {
+      // fmt::println("{} is new", F);
+      if (Plan.contains(F)) {
+        // fmt::println("{} is in plan", F);
+        if (const auto Nexts = Plan[F]; Nexts.size() == 1) {
+          // fmt::println(
+          // "{}'s next ({}) is single; pushing its next for compilation",
+          // F, Nexts.front());
+          enqueue(Nexts.front());
+          push(Nexts.front());
+        }
+      }
+    }
+  }
+  std::optional<u32> pop() { Panic("Not used!"); }
+
+  void stop() override {
+    // fmt::println("DynamicAsyncCompiler::stop()");
+    AsyncCompiler::stop();
+  }
+};
+
 namespace static_plan {
 static std::map<std::string, std::map<u32, std::vector<u32>>> Plans;
 static Lock PlansLock;
@@ -164,7 +269,7 @@ class Service {
 public:
   Service(Strategy S, std::shared_ptr<WasmService> WS,
           std::shared_ptr<CompilationService> CS)
-      : S(std::move(S)), WS(std::move(WS)), CS(std::move(CS)) {}
+      : S(S), WS(std::move(WS)), CS(std::move(CS)) {}
 
   std::shared_ptr<AsyncCompiler> operator()(const std::string &Application) {
     auto Compile = [this, Compiler = CS->compiler(Application)](auto Req) {
@@ -188,8 +293,10 @@ public:
       std::ranges::reverse(Plan);
       return std::make_shared<AllAsyncCompiler>(Compile, Plan, Exceptions);
     }
-    if (std::holds_alternative<Dynamic>(S))
-      Panic("Dynamic async compilation is not implemented yet");
+    if (std::holds_alternative<Dynamic>(S)) {
+      return std::make_shared<DynamicAsyncCompiler>(
+          Compile, std::vector<u32>{100, 200}, Exceptions);
+    }
     if (std::holds_alternative<Static>(S)) {
       auto Plan = static_plan::Get(Application);
       std::vector<unsigned int> Init{}; // TODO: add static code
