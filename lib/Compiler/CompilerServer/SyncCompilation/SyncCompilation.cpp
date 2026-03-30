@@ -31,10 +31,8 @@ Service::Service(Strategy S, std::shared_ptr<WasmService> WS,
                  std::shared_ptr<CompilationService> CS,
                  std::shared_ptr<PredictionService> PS)
     : S(std::move(S)), WS(std::move(WS)), CS(std::move(CS)), PS(std::move(PS)) {
-  const auto Cores = std::thread::hardware_concurrency() - 4;
+  const auto Cores = std::thread::hardware_concurrency() - 10;
   TP = std::make_shared<ThreadPool>(Cores);
-  // fmt::println("[thread-pool] using 1 thread");
-  // TP = std::make_shared<ThreadPool>(1);
 }
 
 std::function<std::vector<Response>(Request)>
@@ -50,11 +48,13 @@ Service::operator()(const std::string &Application) {
   if (std::holds_alternative<JustInTime>(S))
     return [CompileFn](auto R) {
       const auto F = R.History.back();
-      const auto Code = CompileFn(CompilationService::Request{F, R.ActivationFrame});
+      const auto Code =
+          CompileFn(CompilationService::Request{F, R.ActivationFrame});
       return std::vector{Response{F, Code}};
     };
 
-  // TODO: remove 'this' from the lambda capture list, and calculate the Ins outside of the lambda
+  // TODO: remove 'this' from the lambda capture list, and calculate the Ins
+  // outside of the lambda
   if (std::holds_alternative<AheadOfTime>(S))
     return [this, CompileAsyncFn, Application](auto R) {
       auto Ins = std::vector{R.History.back()};

@@ -9,8 +9,6 @@
 #include <wabt/ir.h>
 
 class Optimizer;
-class ThreadPool;
-
 class LLVMCompiler final : public Compiler {
 public:
   explicit LLVMCompiler(ModuleOptions Opts);
