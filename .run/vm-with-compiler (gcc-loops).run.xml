@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="vm-with-compiler (gcc-loops)" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--async=dynamic -- $PROJECT_DIR$/benchmarks/jetstream/gcc_loops/gcc-loops.wasm" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="truejit" TARGET_NAME="vm-with-compiler" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="truejit" RUN_TARGET_NAME="vm-with-compiler">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
