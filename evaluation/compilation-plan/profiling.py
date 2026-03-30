@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 import time
 
 from solver import *
-from utils import metric, mv_profile, static_compile, VirtualMachine, ffmpeg, gcc_loops
+from utils import metric, mv_profile, static_compile, VirtualMachine, ffmpeg, gcc_loops, PROJECT_ROOT
 
 
 def generate_static_info(binary):
@@ -224,13 +224,11 @@ def record_base(benchmark, rep=1):
     recorder = Recorder()
 
     for wl in benchmark.workloads:
-        if wl.name != 'mp4-flip-vertical':
-            continue
         print(f'[workload] {wl.name}')
         for mode, options in [
             ('jit', []),
             # ('spec', ['--specialize=planned']),
-            # ('interp', ['--interp=all']),
+            ('interp', ['--interp=all']),
         ]:
             print(f'[mode] {mode}')
             if mode == 'spec':
@@ -559,31 +557,109 @@ def get_history(benchmark_binary, workload_name, mode='jit'):
     raise RuntimeError(f'No startups for {workload_name}')
 
 
-def main():
+class HistoryGraph:
+    def __init__(self, binary, workloads):
+        self.nexts = {}
+        for wl in workloads:
+            history = get_history(binary, wl.name)
+            for i in range(len(history) - 1):
+                if history[i] not in self.nexts:
+                    self.nexts[history[i]] = set()
+                self.nexts[history[i]].add(history[i + 1])
+
+    def get_next(self, id):
+        return self.nexts.get(id, set())
+
+    def get_nexts(self, id):
+        next_ids = []
+        # keep adding to next_ids until there is no next or we have multiple nexts
+        while True:
+            next_id = self.get_next(id)
+            if len(next_id) == 0:
+                break
+            elif len(next_id) > 1:
+                next_ids.extend(next_id)
+                break
+            else:
+                # get the only item in the set without removing it from the set
+                next_id = next(iter(next_id))
+                next_ids.append(next_id)
+                id = next_id
+        return next_ids
+
+    def print(self):
+        for id, next_ids in self.nexts.items():
+            print(f'{id} -> {next_ids}')
+
+    def to_json(self, path):
+        with open(path, 'w') as f:
+            json.dump({str(id): list(next_ids) for id, next_ids in self.nexts.items()}, f, indent=2)
+
+
+# async all pairs
+def ffff():
+    recorder = Recorder()
     benchmark = ffmpeg
-    # benchmark = gcc_loops
-    # generate_static_info(benchmark.binary)
+    for wl in benchmark.workloads:
+        print(f'[workload] {wl.name}')
+        for other_wl in benchmark.workloads:
+            hg = HistoryGraph(benchmark.binary, [other_wl])
+            hg.to_json('/tmp/async.json')
+            profile_path = f'/tmp/async/{wl.name}.{other_wl.name}'
+            recorder.record(benchmark.binary, wl, ['--async=dynamic'], profile_path)
+
+
+# async (leave one out + union)
+def gggg():
+    recorder = Recorder()
+    benchmark = ffmpeg
+    for wl in benchmark.workloads:
+        print(f'[workload] {wl.name}')
+        print('leave one out')
+        wls = [other_wl for other_wl in benchmark.workloads if wl.name != other_wl.name]
+        hg = HistoryGraph(benchmark.binary, wls)
+        hg.to_json('/tmp/async.json')
+        profile_path = profiles_root(benchmark.binary, wl.name, 'async') / 'leave_one_out'
+        recorder.record(benchmark.binary, wl, ['--async=dynamic'], profile_path)
+
+        print('union')
+        wls = [other_wl for other_wl in benchmark.workloads]
+        hg = HistoryGraph(benchmark.binary, wls)
+        hg.to_json('/tmp/async.json')
+        profile_path = profiles_root(benchmark.binary, wl.name, 'async') / 'union'
+        recorder.record(benchmark.binary, wl, ['--async=dynamic'], profile_path)
+
+
+# async (keep all)
+
+
+def main():
+    # benchmark = ffmpeg
+    benchmark = gcc_loops
+    generate_static_info(benchmark.binary)
     # return
 
     # collect profiles for jit and interp
-    # record_base(benchmark, 100)
+    record_base(benchmark)
 
     # merge the profiles
     # generate_profile_base(benchmark)
     # return
 
-    generate_profile_leave_one_out(benchmark)
-    generate_profile_union(benchmark)
-    generate_profile_oracle(benchmark)
+    # generate_profile_leave_one_out(benchmark)
+    # generate_profile_union(benchmark)
+    # generate_profile_oracle(benchmark)
     # return
 
     # generate plans
     # generate_plans(benchmark)
 
-    run_plans(benchmark)
+    # run_plans(benchmark)
 
     return
 
 
 if __name__ == '__main__':
-    main()
+    # main()
+    # ffff()
+    gggg()
