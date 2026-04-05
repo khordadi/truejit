@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS users (
+id   INTEGER PRIMARY KEY,
+name TEXT    NOT NULL,
+age  INTEGER NOT NULL
+);
+INSERT INTO users (name, age)
+WITH RECURSIVE seq(i) AS (SELECT 1 UNION ALL SELECT i+1 FROM seq WHERE i < 10000)
+SELECT 'user_' || i, (i % 80) + 10 FROM seq;
+SELECT COUNT(*), AVG(age) FROM users;
