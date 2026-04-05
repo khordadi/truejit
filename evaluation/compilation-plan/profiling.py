@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 import time
 
 from solver import *
-from utils import metric, mv_profile, static_compile, VirtualMachine, ffmpeg, gcc_loops, PROJECT_ROOT
+from utils import *
 
 
 def generate_static_info(binary):
@@ -217,6 +217,8 @@ class Recorder:
             env = {}
         env['METRICS_DIR'] = str(dst)
 
+        # run  find /users/khordadi/truejit/benchmarks/sqlite/workloads -name 'db.sqlite*' -delete
+        subprocess.run(['find', '/users/khordadi/truejit/benchmarks/sqlite/workloads', '-name', 'db.sqlite*', '-delete'], check=True)
         self.vm.run(binary, workload, options=options, env=env)
 
 
@@ -228,7 +230,7 @@ def record_base(benchmark, rep=1):
         for mode, options in [
             ('jit', []),
             # ('spec', ['--specialize=planned']),
-            ('interp', ['--interp=all']),
+            # ('interp', ['--interp=all']),
         ]:
             print(f'[mode] {mode}')
             if mode == 'spec':
@@ -596,38 +598,31 @@ class HistoryGraph:
             json.dump({str(id): list(next_ids) for id, next_ids in self.nexts.items()}, f, indent=2)
 
 
-# async all pairs
-def ffff():
-    recorder = Recorder()
-    benchmark = ffmpeg
-    for wl in benchmark.workloads:
-        print(f'[workload] {wl.name}')
-        for other_wl in benchmark.workloads:
-            hg = HistoryGraph(benchmark.binary, [other_wl])
-            hg.to_json('/tmp/async.json')
-            profile_path = f'/tmp/async/{wl.name}.{other_wl.name}'
-            recorder.record(benchmark.binary, wl, ['--async=dynamic'], profile_path)
-
-
 # async (leave one out + union)
-def gggg():
+def generate_profile_async(benchmark):
     recorder = Recorder()
-    benchmark = ffmpeg
+        
+
     for wl in benchmark.workloads:
         print(f'[workload] {wl.name}')
         print('leave one out')
-        wls = [other_wl for other_wl in benchmark.workloads if wl.name != other_wl.name]
-        hg = HistoryGraph(benchmark.binary, wls)
+        hg = HistoryGraph(benchmark.binary, [other_wl for other_wl in benchmark.workloads if wl.name != other_wl.name])
         hg.to_json('/tmp/async.json')
         profile_path = profiles_root(benchmark.binary, wl.name, 'async') / 'leave_one_out'
         recorder.record(benchmark.binary, wl, ['--async=dynamic'], profile_path)
 
         print('union')
-        wls = [other_wl for other_wl in benchmark.workloads]
-        hg = HistoryGraph(benchmark.binary, wls)
+        hg = HistoryGraph(benchmark.binary, [other_wl for other_wl in benchmark.workloads])
         hg.to_json('/tmp/async.json')
         profile_path = profiles_root(benchmark.binary, wl.name, 'async') / 'union'
         recorder.record(benchmark.binary, wl, ['--async=dynamic'], profile_path)
+
+        print('all-pairs')
+        for other_wl in benchmark.workloads:
+            hg = HistoryGraph(benchmark.binary, [other_wl])
+            hg.to_json('/tmp/async.json')
+            profile_path = profiles_root(benchmark.binary, wl.name, 'async/static') / other_wl.name
+            recorder.record(benchmark.binary, wl, ['--async=dynamic'], profile_path)
 
 
 # async (keep all)
@@ -635,12 +630,13 @@ def gggg():
 
 def main():
     # benchmark = ffmpeg
-    benchmark = gcc_loops
-    generate_static_info(benchmark.binary)
+    # benchmark = gcc_loops
+    benchmark = sqlite
+    # generate_static_info(benchmark.binary)
     # return
 
     # collect profiles for jit and interp
-    record_base(benchmark)
+    # record_base(benchmark)
 
     # merge the profiles
     # generate_profile_base(benchmark)
@@ -661,5 +657,4 @@ def main():
 
 if __name__ == '__main__':
     # main()
-    # ffff()
-    gggg()
+    generate_profile_async(sqlite)

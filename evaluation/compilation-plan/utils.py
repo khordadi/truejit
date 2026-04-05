@@ -68,6 +68,7 @@ class VirtualMachine:
         options += [f'--dir={str(p)}' for p in workload.pre_opens]
 
         cmd = [self.binary] + options + ['--'] + [binary] + workload.args
+        print(' '.join([str(c) for c in cmd]))
         subprocess.run(cmd, check=True, cwd=cwd, env=env)
 
 
@@ -138,3 +139,57 @@ ffmpeg = Benchmark('ffmpeg', PROJECT_ROOT / 'benchmarks/ffmpeg/ffmpeg.wasm',
 
 gcc_loops = Benchmark('gcc-loops', PROJECT_ROOT / 'benchmarks/jetstream/gcc_loops/gcc-loops.wasm',
                       [Workload('default', [], [])])
+
+wls = PROJECT_ROOT / 'benchmarks/sqlite/workloads'
+sqlite = Benchmark('sqlite', PROJECT_ROOT / 'benchmarks/sqlite/sqlite.wasm',
+                   [
+                       Workload('create-insert-select',
+                                [wls / '0' / 'db.sqlite', '<', wls / '0' / 'workload.sql'],
+                                [wls / '0']),
+                       Workload('bulk-insert-transaction',
+                                [wls / '1' / 'db.sqlite', '<', wls / '1' / 'workload.sql'],
+                                [wls / '1']),
+                       Workload('select-where-index',
+                                [wls / '2' / 'db.sqlite', '<', wls / '2' / 'workload.sql'],
+                                [wls / '2']),
+                       Workload('join-two-tables',
+                                [wls / '3' / 'db.sqlite', '<', wls / '3' / 'workload.sql'],
+                                [wls / '3']),
+                       Workload('multi-table-join',
+                                [wls / '4' / 'db.sqlite', '<', wls / '4' / 'workload.sql'],
+                                [wls / '4']),
+                       Workload('group-by-aggregate',
+                                [wls / '5' / 'db.sqlite', '<', wls / '5' / 'workload.sql'],
+                                [wls / '5']),
+                       Workload('order-by-limit',
+                                [wls / '6' / 'db.sqlite', '<', wls / '6' / 'workload.sql'],
+                                [wls / '6']),
+                       Workload('subquery-correlated',
+                                [wls / '7' / 'db.sqlite', '<', wls / '7' / 'workload.sql'],
+                                [wls / '7']),
+                       Workload('with-recursive-cte',
+                                [wls / '8' / 'db.sqlite', '<', wls / '8' / 'workload.sql'],
+                                [wls / '8']),
+                       Workload('full-text-search',
+                                [wls / '9' / 'db.sqlite', '<', wls / '9' / 'workload.sql'],
+                                [wls / '9']),
+                       Workload('update-delete',
+                                [wls / '10' / 'db.sqlite', '<', wls / '10' / 'workload.sql'],
+                                [wls / '10']),
+                       Workload('window-functions',
+                                [wls / '11' / 'db.sqlite', '<', wls / '11' / 'workload.sql'],
+                                [wls / '11']),
+                       Workload('savepoint-rollback',
+                                [wls / '12' / 'db.sqlite', '<', wls / '12' / 'workload.sql'],
+                                [wls / '12']),
+                       Workload('trigger-on-insert',
+                                [wls / '13' / 'db.sqlite', '<', wls / '13' / 'workload.sql'],
+                                [wls / '13']),
+                       Workload('json-extract',
+                                [wls / '14' / 'db.sqlite', '<', wls / '14' / 'workload.sql'],
+                                [wls / '14']),
+                       Workload('vacuum-analyze',
+                                [wls / '15' / 'db.sqlite', '<', wls / '15' / 'workload.sql'],
+                                [wls / '15']),
+                   ]
+                   )
