@@ -271,6 +271,9 @@ popd
 rm -rf grpc
 
 
+git config --global user.name "Amir Khordadi"
+git config --global user.email "amir.khordadi@ed.ac.uk"
+
 
 cargo install twiggy
 
