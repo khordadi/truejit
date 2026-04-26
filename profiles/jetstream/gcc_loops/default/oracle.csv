@@ -1,0 +1,146 @@
+id,name,size.bytecode,size.static,start.jit,exec.jit,freq.jit,compilation.jit,size.dynamic.jit,start.interp,exec.interp,freq.interp,exec.spec,compilation.spec,size.dynamic.spec
+14,_start,83,992,58360,0,0,4669086,992,60380,0,0,0,4496135,992
+13,__wasm_call_ctors,6,808,4728576,0,1,1815102,808,64910,0,1,0,1806322,808
+142,_GLOBAL__I_000100,58,944,6544528,0,1,2388593,944,65480,0,1,0,2376467,944
+117,std::__2::ios_base::Init::Init(),95,1008,8933851,0,1,2944023,1008,66370,0,1,0,2942428,1008
+116,std::__2::DoIOSInit::DoIOSInit(),1418,4184,11880264,0,1,16727351,4184,68580,0,1,0,16642792,4184
+61,"std::__2::basic_streambuf<char, std::__2::char_traits<char>>::basic_streambuf()",58,912,28608735,0,3,2410093,912,69740,0,3,0,2376797,912
+367,std::__2::locale::locale(),125,1040,31024258,0,14,3215654,1040,81260,0,14,0,3194533,1040
+363,std::__2::locale::classic(),93,960,34240642,0,1,2639043,960,81930,0,1,0,2608488,960
+331,std::__2::locale::__imp::__imp(unsigned long),1586,4384,36880365,0,1,17635172,4384,83140,0,1,0,17575709,4384
+681,memset,394,1200,54516547,0,52,9472081,1200,84580,0,52,0,9344170,1200
+332,void std::__2::locale::__imp::install<std::__2::collate<char>>(std::__2::collate<char>*),308,1328,63991928,0,1,5808797,1328,87980,0,1,0,5772671,1328
+144,"std::__2::__call_once(unsigned long volatile&, void*, void (*)(void*))",38,888,69803395,0,30,2390893,888,90840,0,30,0,2404972,888
+156,void std::__2::__call_once_proxy[abi:nn180100]<std::__2::tuple<std::__2::locale::id::__get()::$_0&&>>(void*),43,552,72195298,0,30,2001333,552,91650,0,30,0,1985376,552
+362,"std::__2::vector<std::__2::locale::facet*, std::__2::__sso_allocator<std::__2::locale::facet*, 30ul>>::__append(unsigned long)",395,1528,74197441,0,30,8693460,1528,93420,0,30,0,8617734,1528
+333,void std::__2::locale::__imp::install<std::__2::collate<wchar_t>>(std::__2::collate<wchar_t>*),308,1328,82892401,0,1,5952027,1328,97010,0,1,0,5896231,1328
+386,"std::__2::ctype<char>::ctype(unsigned long const*, bool, unsigned long)",68,608,88845908,0,1,2654574,608,101710,0,1,0,2594022,608
+334,void std::__2::locale::__imp::install<std::__2::ctype<char>>(std::__2::ctype<char>*),308,1320,91501512,0,1,5941267,1320,102590,0,1,0,5913171,1320
+335,void std::__2::locale::__imp::install<std::__2::ctype<wchar_t>>(std::__2::ctype<wchar_t>*),308,1320,97444629,0,1,5996027,1320,108500,0,1,0,5947571,1320
+336,"void std::__2::locale::__imp::install<std::__2::codecvt<char, char, __mbstate_t>>(std::__2::codecvt<char, char, __mbstate_t>*)",308,1320,103442436,0,1,5970167,1320,112500,0,1,0,5934496,1320
+405,"std::__2::codecvt<wchar_t, char, __mbstate_t>::codecvt(unsigned long)",143,1008,109414423,0,1,3258774,1008,116410,0,1,0,3248089,1008
+599,__newlocale,862,2504,112674007,0,1,11850844,2504,117280,0,1,0,11717007,2504
+597,__get_locale,885,2976,124526042,0,6,16234329,2976,118300,0,6,0,16072797,2976
+678,memcmp,75,584,140762452,0,1,3587035,584,125590,0,1,0,3545009,584
+337,"void std::__2::locale::__imp::install<std::__2::codecvt<wchar_t, char, __mbstate_t>>(std::__2::codecvt<wchar_t, char, __mbstate_t>*)",308,1320,144351176,0,1,5911957,1320,130240,0,1,0,5862766,1320
+338,"void std::__2::locale::__imp::install<std::__2::codecvt<char16_t, char, __mbstate_t>>(std::__2::codecvt<char16_t, char, __mbstate_t>*)",308,1328,150265433,0,1,5970608,1328,134070,0,1,0,5883956,1328
+339,"void std::__2::locale::__imp::install<std::__2::codecvt<char32_t, char, __mbstate_t>>(std::__2::codecvt<char32_t, char, __mbstate_t>*)",308,1328,156237881,0,1,5936007,1328,137650,0,1,0,5901596,1328
+340,"void std::__2::locale::__imp::install<std::__2::codecvt<char16_t, char8_t, __mbstate_t>>(std::__2::codecvt<char16_t, char8_t, __mbstate_t>*)",308,1328,162175778,0,1,5952617,1328,141370,0,1,0,5913731,1328
+341,"void std::__2::locale::__imp::install<std::__2::codecvt<char32_t, char8_t, __mbstate_t>>(std::__2::codecvt<char32_t, char8_t, __mbstate_t>*)",308,1328,168130155,0,1,5927977,1328,144900,0,1,0,5906381,1328
+451,std::__2::numpunct<char>::numpunct(unsigned long),55,592,174059982,0,1,2255043,592,148040,0,1,0,2227642,592
+342,void std::__2::locale::__imp::install<std::__2::numpunct<char>>(std::__2::numpunct<char>*),308,1320,176316055,0,1,5928927,1320,148830,0,1,0,5888446,1320
+452,std::__2::numpunct<wchar_t>::numpunct(unsigned long),58,600,182246922,0,1,2231713,600,152380,0,1,0,2261522,600
+343,void std::__2::locale::__imp::install<std::__2::numpunct<wchar_t>>(std::__2::numpunct<wchar_t>*),308,1320,184479605,0,1,5941587,1320,152980,0,1,0,5925081,1320
+344,"void std::__2::locale::__imp::install<std::__2::num_get<char, std::__2::istreambuf_iterator<char, std::__2::char_traits<char>>>>(std::__2::num_get<char, std::__2::istreambuf_iterator<char, std::__2::char_traits<char>>>*)",308,1328,190423092,0,1,5931937,1328,156590,0,1,0,5919176,1328
+345,"void std::__2::locale::__imp::install<std::__2::num_get<wchar_t, std::__2::istreambuf_iterator<wchar_t, std::__2::char_traits<wchar_t>>>>(std::__2::num_get<wchar_t, std::__2::istreambuf_iterator<wchar_t, std::__2::char_traits<wchar_t>>>*)",308,1328,196358129,0,1,5906847,1328,159890,0,1,0,5877051,1328
+346,"void std::__2::locale::__imp::install<std::__2::num_put<char, std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>>>(std::__2::num_put<char, std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>>*)",308,1320,202267047,0,1,5916927,1320,162970,0,1,0,5902991,1320
+347,"void std::__2::locale::__imp::install<std::__2::num_put<wchar_t, std::__2::ostreambuf_iterator<wchar_t, std::__2::char_traits<wchar_t>>>>(std::__2::num_put<wchar_t, std::__2::ostreambuf_iterator<wchar_t, std::__2::char_traits<wchar_t>>>*)",308,1328,208185634,0,1,5970058,1328,166330,0,1,0,5943681,1328
+348,"void std::__2::locale::__imp::install<std::__2::moneypunct<char, false>>(std::__2::moneypunct<char, false>*)",308,1328,214157981,0,1,5976487,1328,169550,0,1,0,5896656,1328
+349,"void std::__2::locale::__imp::install<std::__2::moneypunct<char, true>>(std::__2::moneypunct<char, true>*)",308,1328,220136338,0,1,5986968,1328,172960,0,1,0,5937531,1328
+350,"void std::__2::locale::__imp::install<std::__2::moneypunct<wchar_t, false>>(std::__2::moneypunct<wchar_t, false>*)",308,1328,226125556,0,1,6015948,1328,176610,0,1,0,5930951,1328
+351,"void std::__2::locale::__imp::install<std::__2::moneypunct<wchar_t, true>>(std::__2::moneypunct<wchar_t, true>*)",308,1328,232143463,0,1,5981367,1328,179720,0,1,0,5933802,1328
+352,"void std::__2::locale::__imp::install<std::__2::money_get<char, std::__2::istreambuf_iterator<char, std::__2::char_traits<char>>>>(std::__2::money_get<char, std::__2::istreambuf_iterator<char, std::__2::char_traits<char>>>*)",308,1328,238126520,0,1,6018898,1328,184710,0,1,0,5948411,1328
+353,"void std::__2::locale::__imp::install<std::__2::money_get<wchar_t, std::__2::istreambuf_iterator<wchar_t, std::__2::char_traits<wchar_t>>>>(std::__2::money_get<wchar_t, std::__2::istreambuf_iterator<wchar_t, std::__2::char_traits<wchar_t>>>*)",308,1328,244147398,0,1,5968647,1328,187850,0,1,0,5969931,1328
+354,"void std::__2::locale::__imp::install<std::__2::money_put<char, std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>>>(std::__2::money_put<char, std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>>*)",308,1328,250117925,0,1,6008477,1328,191150,0,1,0,5944796,1328
+355,"void std::__2::locale::__imp::install<std::__2::money_put<wchar_t, std::__2::ostreambuf_iterator<wchar_t, std::__2::char_traits<wchar_t>>>>(std::__2::money_put<wchar_t, std::__2::ostreambuf_iterator<wchar_t, std::__2::char_traits<wchar_t>>>*)",308,1328,256128552,0,1,5976048,1328,193980,0,1,0,5949681,1328
+356,"void std::__2::locale::__imp::install<std::__2::time_get<char, std::__2::istreambuf_iterator<char, std::__2::char_traits<char>>>>(std::__2::time_get<char, std::__2::istreambuf_iterator<char, std::__2::char_traits<char>>>*)",308,1328,262106409,0,1,6005588,1328,197400,0,1,0,5961421,1328
+357,"void std::__2::locale::__imp::install<std::__2::time_get<wchar_t, std::__2::istreambuf_iterator<wchar_t, std::__2::char_traits<wchar_t>>>>(std::__2::time_get<wchar_t, std::__2::istreambuf_iterator<wchar_t, std::__2::char_traits<wchar_t>>>*)",308,1328,268114327,0,1,5963237,1328,200860,0,1,0,5931851,1328
+358,"void std::__2::locale::__imp::install<std::__2::time_put<char, std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>>>(std::__2::time_put<char, std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>>*)",308,1328,274079774,0,1,5999257,1328,204290,0,1,0,5942996,1328
+359,"void std::__2::locale::__imp::install<std::__2::time_put<wchar_t, std::__2::ostreambuf_iterator<wchar_t, std::__2::char_traits<wchar_t>>>>(std::__2::time_put<wchar_t, std::__2::ostreambuf_iterator<wchar_t, std::__2::char_traits<wchar_t>>>*)",308,1328,280081361,0,1,5981938,1328,207800,0,1,0,5936561,1328
+360,void std::__2::locale::__imp::install<std::__2::messages<char>>(std::__2::messages<char>*),308,1328,286065418,0,1,6025657,1328,210970,0,1,0,5886641,1328
+361,void std::__2::locale::__imp::install<std::__2::messages<wchar_t>>(std::__2::messages<wchar_t>*),308,1328,292093256,0,1,5965607,1328,214570,0,1,0,5938151,1328
+368,std::__2::locale::locale(std::__2::locale const&),51,560,298061853,0,44,2336773,560,217930,0,44,0,2312033,560
+121,std::__2::__stdinbuf<char>::imbue(std::__2::locale const&),106,1160,300400416,0,1,3714225,1160,220530,0,1,0,3680513,1160
+370,std::__2::locale::use_facet(std::__2::locale::id&) const,172,1104,304116531,0,25,4037284,1104,221060,0,25,0,4012749,1104
+401,"std::__2::codecvt<char, char, __mbstate_t>::do_encoding() const",5,520,308155095,0,1,1594512,520,222720,0,1,0,1599926,520
+402,"std::__2::codecvt<char, char, __mbstate_t>::do_always_noconv() const",5,520,309750567,0,3,1599211,520,223310,0,3,0,1575027,520
+369,std::__2::locale::~locale(),74,912,311350800,0,43,2960424,912,224200,0,43,0,2932873,912
+57,std::__2::ios_base::init(void*),104,952,314312793,0,8,2957173,952,225490,0,8,0,2982988,952
+90,"std::__2::basic_streambuf<wchar_t, std::__2::char_traits<wchar_t>>::basic_streambuf()",58,912,317273216,0,3,2423524,912,236900,0,3,0,2402567,912
+132,std::__2::__stdinbuf<wchar_t>::imbue(std::__2::locale const&),106,1160,319698310,0,1,3811434,1160,238700,0,1,0,3753209,1160
+410,"std::__2::codecvt<wchar_t, char, __mbstate_t>::do_encoding() const",119,1152,323511304,0,1,3778514,1152,239950,0,1,0,3767574,1152
+603,__uselocale,68,568,327290869,0,44,2288373,568,240580,0,44,0,2260207,568
+608,mbtowc,345,576,329580172,0,1,3187743,576,241620,0,1,0,3185773,576
+576,__ctype_get_mb_cur_max,17,536,332769035,0,1,1867662,536,243320,0,1,0,1876852,536
+411,"std::__2::codecvt<wchar_t, char, __mbstate_t>::do_always_noconv() const",6,520,334638337,0,3,1602553,520,244670,0,3,0,1603591,520
+588,__cxa_atexit,158,1000,336244519,0,2,3532025,1000,255760,0,2,0,3515884,1000
+560,__main_void,214,1400,339779174,0,1,4869426,1400,258080,0,1,0,4855535,1400
+562,__wasi_args_sizes_get,18,824,344649770,0,1,1912462,824,258700,0,1,0,1929202,824
+550,malloc,12,808,346564242,0,7,1785882,808,260070,0,7,0,1784022,808
+551,dlmalloc,5377,8240,348351084,0,8,81209450,8240,260560,0,8,0,79673084,8240
+555,calloc,109,984,429567873,0,1,3677824,984,272820,0,1,0,3601404,984
+561,__wasi_args_get,18,816,433248168,0,1,1798972,816,276850,0,1,0,1782567,816
+32,main,10396,16840,435049260,0,1,160720816,16840,277960,0,1,0,158076581,16840
+15,example1(),97,576,595888036,220000000,2621441,3582314,576,8021589,84090000000,2621441,215000000,3556814,576
+558,gettimeofday,113,1016,599472571,0,34,3103343,1016,8058709,0,34,0,3126368,1016
+565,__wasi_clock_time_get,20,824,602577254,0,34,1788052,824,8061869,0,34,0,1794092,824
+546,operator new(unsigned long),85,1072,820197140,0,6,4567316,1072,84856646778,0,6,0,4563045,1072
+33,Timer::~Timer(),195,1656,824768335,0,17,4218135,1656,84856657058,0,17,0,4209285,1656
+16,"example2a(int, int)",204,696,828991090,240000000,1048577,6080787,696,84856666018,46440000000,1048577,55000000,3576373,760
+547,operator delete(void*),11,808,1072917007,0,6,2463263,808,131717564765,0,6,0,2215097,808
+553,free,12,808,1075382860,0,6,1651492,808,131717567665,0,6,0,1656381,808
+554,dlfree,1713,2216,1077035682,0,6,23706688,2216,131717568535,0,6,0,23597729,2216
+17,"example2b(int, int)",192,680,1100747721,390000000,524289,5028767,680,131717581215,81850000000,524289,150000000,3506504,576
+18,"example3(int, int*, int*)",28,856,1501991880,0,524289,3084114,856,214262702161,110000000,524289,15000000,2700698,840
+679,memcpy,1008,1888,1505078564,90000000,1572982,15362338,1888,214262704021,540000000,1572982,80000000,15348471,1888
+19,"example4a(int, int*, int*)",184,736,1556464386,310000000,524289,6015037,736,214572283480,51450000000,524289,115000000,4325540,608
+20,"example4b(int, int*, int*)",199,680,1871656561,370000000,524289,5915857,680,266489117705,81010000000,524289,150000000,4378839,576
+21,"example4c(int, int*, int*)",258,768,2253407716,340000000,524289,7951789,768,348223408111,73280000000,524289,230000000,4993310,632
+22,example7(int),32,840,2606753086,30000000,1048577,2853704,840,422156018216,230000000,1048577,15000000,2637443,840
+23,example8(int),4134,3072,2687532375,280000000,65537,47380007,3072,422726416919,81970000000,65537,110000000,46539493,1752
+24,example9(unsigned int*),141,608,3022318243,170000000,524289,4960616,608,505411795919,53490000000,524289,180000000,4775724,592
+25,"example10a(short*, short*, short*, int*, int*, int*)",87,640,3206762188,650000000,524289,4889455,640,559397453098,159060000000,524289,300000000,4279195,576
+26,"example10b(short*, short*, short*, int*, int*, int*)",99,648,3869434805,580000000,1048577,5403316,648,719929352810,83840000000,1048577,230000000,4598284,600
+27,example11(),129,608,4458299813,290000000,524289,4762715,608,804531562768,92550000000,524289,285000000,4639770,608
+28,example12(),138,616,4756701556,170000000,1048577,4797656,616,897912080999,63240000000,1048577,170000000,4791815,616
+29,"example23(unsigned short*, unsigned int*)",107,664,4936686656,290000000,2097153,5544566,664,961725653376,54890000000,2097153,155000000,4746954,608
+30,"example24(short, short)",106,608,5243550339,210000000,524289,4420016,608,1017113786276,89930000000,524289,270000000,4400944,600
+31,example25(),86,592,5464788759,300000000,524289,4310355,592,1107869290862,126810000000,524289,295000000,4230934,592
+34,"std::__2::basic_ostream<char, std::__2::char_traits<char>>& std::__2::__put_character_sequence[abi:nn180100]<char, std::__2::char_traits<char>>(std::__2::basic_ostream<char, std::__2::char_traits<char>>&, char const*, unsigned long)",249,1592,5770516271,0,20,6933929,1592,1235853834140,0,20,0,6863992,1592
+83,"std::__2::basic_ostream<char, std::__2::char_traits<char>>::sentry::sentry(std::__2::basic_ostream<char, std::__2::char_traits<char>>&)",220,1328,5777452640,0,40,5349637,1328,1235853836300,0,40,0,5301706,1328
+52,std::__2::ios_base::getloc() const,17,824,5782803727,0,37,1923782,824,1235853839220,0,37,0,1926997,824
+393,std::__2::ctype<char>::do_widen(char) const,6,520,5784729979,0,1,1607252,520,1235853845010,0,1,0,1620366,520
+37,"std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>> std::__2::__pad_and_output[abi:nn180100]<char, std::__2::char_traits<char>>(std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>, char const*, char const*, char const*, std::__2::ios_base&, char)",384,1720,5786339400,0,38,8027831,1720,1235853847470,0,38,0,7937768,1720
+129,"std::__2::__stdoutbuf<char>::xsputn(char const*, long)",99,1144,5794368931,0,38,5090166,1144,1235853863760,0,38,0,5063725,1144
+634,fwrite,289,1368,5799461137,0,42,7805779,1368,1235853865990,0,42,0,7804568,1368
+625,__towrite,94,624,5807268636,0,22,3010354,624,1235853867850,0,22,0,3028423,624
+84,"std::__2::basic_ostream<char, std::__2::char_traits<char>>::sentry::~sentry()",146,1168,5810281130,0,40,4502766,1168,1235853879700,0,40,0,4450280,1168
+85,"std::__2::basic_ostream<char, std::__2::char_traits<char>>::operator<<(int)",293,1720,5814785816,0,1,6343857,1720,1235853883210,0,1,0,6343456,1720
+210,"std::__2::num_put<char, std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>>::do_put(std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>, std::__2::ios_base&, char, long) const",33,832,5821133513,0,1,2101423,832,1235853889140,0,1,0,2063142,832
+211,"std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>> std::__2::num_put<char, std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>>::__do_put_integral[abi:nn180100]<long>(std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>, std::__2::ios_base&, char, long, char const*) const",618,1800,5823236176,0,1,10177272,1800,1235853890450,0,1,0,10261076,1800
+212,"std::__2::__libcpp_snprintf_l(char*, unsigned long, __locale_struct*, char const*, ...)",89,1064,5833414748,0,18,3171594,1064,1235853893940,0,18,0,3176573,1064
+655,vsnprintf,180,1152,5836587792,0,18,4010905,1152,1235853896540,0,18,0,4029329,1152
+650,vfprintf,398,1568,5840600277,0,18,7002908,1568,1235853900810,0,18,0,6900247,1568
+651,printf_core,8995,18856,5847604275,0,36,209404926,18856,1235853902440,0,36,0,207122868,18856
+633,__fwritex,238,1344,6057013291,0,56,7528819,1344,1235853919970,0,56,0,7511273,1344
+652,pop_arg,565,1808,6064545200,0,18,5861427,1808,1235853926120,0,18,0,5825191,1808
+656,sn_write,183,1176,6070409677,0,18,4289116,1176,1235853940280,0,18,0,4217475,1176
+213,"std::__2::__num_put<char>::__widen_and_group_int(char*, char*, char*, char*, char*&, char*&, std::__2::locale const&)",1071,2680,6074703992,0,18,18633702,2680,1235853948020,0,18,0,18516629,2680
+461,std::__2::numpunct<char>::do_grouping() const,69,888,6093340645,0,18,2726363,888,1235853951790,0,18,0,2745757,888
+394,"std::__2::ctype<char>::do_widen(char const*, char const*, char*) const",200,816,6096068698,0,18,6264858,816,1235853953970,0,18,0,6205092,816
+86,"std::__2::basic_ostream<char, std::__2::char_traits<char>>::operator<<(unsigned int)",293,1720,6102341636,0,17,6222957,1720,1235853976710,0,17,0,6231446,1720
+216,"std::__2::num_put<char, std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>>::do_put(std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>, std::__2::ios_base&, char, unsigned long) const",33,832,6108567873,0,17,1921373,832,1235853980690,0,17,0,1944337,832
+217,"std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>> std::__2::num_put<char, std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>>::__do_put_integral[abi:nn180100]<unsigned long>(std::__2::ostreambuf_iterator<char, std::__2::char_traits<char>>, std::__2::ios_base&, char, unsigned long, char const*) const",575,1688,6110490486,0,17,9341761,1688,1235853981760,0,17,0,9252600,1688
+644,__stdout_write,60,1008,6119859047,0,1,2968494,1008,1235854677541,0,1,0,2943677,1008
+615,__isatty,103,968,6122829001,0,1,2968873,968,1235854678691,0,1,0,2962853,968
+567,__wasi_fd_fdstat_get,18,824,6125798954,0,1,1774792,824,1235854680001,0,1,0,1771182,824
+619,__stdio_write,316,1368,6127580526,0,1,7044059,1368,1235854686561,0,1,0,7004738,1368
+618,writev,115,984,6134626005,0,1,2916774,984,1235854688311,0,1,0,2931693,984
+572,__wasi_fd_write,22,824,6137543899,0,1,1813802,824,1235854689811,0,1,0,1836602,824
+589,__wasm_call_dtors,15,864,6139380391,0,1,1772212,864,1235854716671,0,1,0,1766106,864
+587,__funcs_on_exit,183,1040,6141155143,0,1,4183315,1040,1235854717281,0,1,0,4150064,1040
+115,__cxx_global_array_dtor,24,832,6145339548,0,1,1864682,832,1235854719201,0,1,0,1871747,832
+119,std::__2::ios_base::Init::~Init(),5,512,6147205500,0,1,1364732,512,1235854720131,0,1,0,1446516,512
+118,__cxx_global_array_dtor.1,55,984,6148572332,0,1,2282943,984,1235854721391,0,1,0,2304367,984
+78,"std::__2::basic_ostream<char, std::__2::char_traits<char>>::flush()",164,1240,6150856355,0,2,4520035,1240,1235854722051,0,2,0,4467680,1240
+128,std::__2::__stdoutbuf<char>::sync(),161,1264,6155378280,0,2,5087507,1264,1235854724221,0,2,0,5071590,1264
+400,"std::__2::codecvt<char, char, __mbstate_t>::do_unshift(__mbstate_t&, char*, char*, char*&) const",12,536,6160467197,0,2,1709622,536,1235854725831,0,2,0,1746397,536
+611,fflush,362,1648,6162180039,0,4,8523160,1648,1235854728901,0,4,0,8331289,1648
+107,"std::__2::basic_ostream<wchar_t, std::__2::char_traits<wchar_t>>::flush()",164,1240,6170708239,0,2,4880186,1240,1235854738221,0,2,0,4468914,1240
+112,"std::__2::basic_ostream<wchar_t, std::__2::char_traits<wchar_t>>::sentry::sentry(std::__2::basic_ostream<wchar_t, std::__2::char_traits<wchar_t>>&)",220,1328,6175589635,0,2,5800137,1328,1235854739571,0,2,0,5271321,1328
+139,std::__2::__stdoutbuf<wchar_t>::sync(),161,1264,6181391222,0,2,5362236,1264,1235854741481,0,2,0,5045960,1264
+409,"std::__2::codecvt<wchar_t, char, __mbstate_t>::do_unshift(__mbstate_t&, char*, char*, char*&) const",380,1368,6186755488,0,2,8541020,1368,1235854743221,0,2,0,7845693,1368
+609,wcrtomb,312,856,6195298749,0,2,5464797,856,1235854745141,0,2,0,4976471,856
+113,"std::__2::basic_ostream<wchar_t, std::__2::char_traits<wchar_t>>::sentry::~sentry()",145,1168,6200767796,0,2,5025466,1168,1235854751341,0,2,0,4508199,1168
+624,__stdio_exit,388,1712,6205797982,0,1,9301981,1712,1235854759731,0,1,0,8373063,1712
+640,__ofl_lock,9,520,6215102153,10000000,1,1726612,520,1235854760431,10000000,1,10000000,1600251,520
