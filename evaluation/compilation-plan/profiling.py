@@ -201,8 +201,8 @@ def get_profile(profile_path):
 
 
 class Recorder:
-    def __init__(self):
-        self.vm = VirtualMachine()
+    def __init__(self, build_flags=None):
+        self.vm = VirtualMachine(build_flags=build_flags)
 
     # runs a benchmark/workload/mode and saves the records in its directory
     def record(self, binary, workload, options, profile_path, env=None):
@@ -228,13 +228,17 @@ def record_base(benchmark, rep=1):
     for wl in benchmark.workloads:
         print(f'[workload] {wl.name}')
         for mode, options in [
-            ('jit', []),
-            # ('spec', ['--specialize=planned']),
+            # ('jit', []),
+            ('spec', ['--specialize=planned']),
             # ('interp', ['--interp=all']),
         ]:
             print(f'[mode] {mode}')
             if mode == 'spec':
-                shutil.copy(profiles_root(benchmark.binary, wl.name) / 'spec_candidates.json', '/tmp/plan.json')
+                specializing_profiler = VirtualMachine(['PROFILE_FOR_SPECIALIZATION=On'])
+                specializing_profiler.run(benchmark.binary, wl)
+                # cp /tmp/plan.json to profiles_root(benchmark.binary, wl.name) / 'spec_candidates.json'
+                subprocess.run(['cp', '/tmp/plan.json', profiles_root(benchmark.binary, wl.name) / 'spec_candidates.json'], check=True)
+                # shutil.copy(profiles_root(benchmark.binary, wl.name) / 'spec_candidates.json', '/tmp/plan.json')
             profile_path = profiles_root(benchmark.binary, wl.name, mode)
             for r in range(rep):
                 print(f'[rep] {r + 1}/{rep}')
@@ -243,8 +247,9 @@ def record_base(benchmark, rep=1):
 
 def concat_profiles(profiles):
     result = profiles[0]
-    for profile in profiles[1:]:
-        result = pd.concat([result, profile])
+    if len(profiles) > 1:
+        for profile in profiles[1:]:
+            result = pd.concat([result, profile])
     result = result.groupby(['id', 'name']).agg(lambda x: int(x.mean()))
     result = result.sort_values(by='start.jit', ascending=True)
     result['id'] = result.index.get_level_values('id')
@@ -449,7 +454,8 @@ def generate_plans(benchmark):
             # oracle
             profiles.append(('oracle', profiles_root(benchmark.binary, wl.name) / 'oracle.csv'))
             # leave-one-out
-            profiles.append(('leave_one_out', profiles_root(benchmark.binary, wl.name) / 'leave_one_out.csv'))
+            if len(benchmark.workloads) > 1:
+                profiles.append(('leave_one_out', profiles_root(benchmark.binary, wl.name) / 'leave_one_out.csv'))
             # union
             profiles.append(('union', profiles_root(benchmark.binary) / 'union.csv'))
 
@@ -539,8 +545,10 @@ class Profile:
         self.dynamic_code_size = []
         self.static_code_size = []
 
+        self.counter = 0
         for path in profile_path.iterdir():
             if path.is_dir() and any(path.iterdir()):
+                self.counter += 1
                 self.e2e.append(int(metric(path / 'e2e.txt')))
                 self.exec.append(int(metric(path / 'exec.txt')))
                 self.waiting.append(int(metric(path / 'waiting.txt')))
@@ -630,17 +638,17 @@ def generate_profile_async(benchmark):
 
 def main():
     # benchmark = ffmpeg
-    # benchmark = gcc_loops
-    benchmark = sqlite
+    benchmark = gcc_loops
+    # benchmark = sqlite
     # generate_static_info(benchmark.binary)
     # return
 
     # collect profiles for jit and interp
-    # record_base(benchmark)
+    record_base(benchmark)
 
     # merge the profiles
-    # generate_profile_base(benchmark)
-    # return
+    generate_profile_base(benchmark)
+    return
 
     # generate_profile_leave_one_out(benchmark)
     # generate_profile_union(benchmark)
@@ -652,9 +660,20 @@ def main():
 
     # run_plans(benchmark)
 
+    # run heuristic plan for each workload
+    recorder = Recorder()
+    plan_path = plans_root(benchmark.binary) / 'heuristic.json'
+    print(plan_path)
+    for wl in benchmark.workloads:
+        print(f'[workload] {wl.name}')
+        profile_path = profiles_root(benchmark.binary, wl.name) / 'heuristic'
+        if profile_path.exists():
+            shutil.rmtree(profile_path)
+        recorder.record(benchmark.binary, wl, ['--interp=planned', '--async=planned', '--static=planned', '--specialize=planned'], profile_path, env={'PLAN': plan_path})
+
+
     return
 
 
 if __name__ == '__main__':
-    # main()
-    generate_profile_async(sqlite)
+    main()
