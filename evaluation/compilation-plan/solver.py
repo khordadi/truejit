@@ -42,7 +42,7 @@ class ObjectiveFunction:
 
 
 class EndToEndTime(ObjectiveFunction):
-    priorities = ['static', 'async', 'specialize', 'jit', 'interpret']
+    priorities = ['jit', 'static', 'async', 'specialize', 'interpret']
 
     def __init__(self):
         super().__init__()
@@ -213,3 +213,157 @@ class Solver:
 
     def set_defaults(self, defaults):
         self.plan = pd.concat([self.plan, defaults])
+
+
+class PlanEvaluation:
+    def __init__(self, static_info, base_profile, plan, history=None):
+        e2e = 0
+        exec = 0
+        waiting = 0
+        compilation = 0
+        dynamic_code_size = 0
+
+        # merge on both ('id', 'name')
+        df = pd.merge(static_info, base_profile, on=['id', 'name', 'size.bytecode', 'size.static'], how='outer')
+        print(f'[plan evaluation] merged static_info | base_profile: {df.shape[0]} rows')
+
+        df = pd.merge(df, plan, on='id', how='outer')
+        print(f'[plan evaluation] merged static_info | base_profile | plan: {df.shape[0]} rows')
+        df.drop('name', axis=1, inplace=True)
+        df.fillna(0, inplace=True)
+
+        # iterate the rows of df
+        for fn in history:
+            row = df[df['id'] == fn].iloc[0]
+            mode = row['mode']
+            if mode == 'interpret':
+                e2e += row['exec.interp']
+                exec += row['exec.interp']
+                waiting += 0
+                compilation += 0
+                dynamic_code_size += 0
+            elif mode == 'jit':
+                e2e += row['exec.jit'] + row['compilation.jit']
+                exec += row['exec.jit']
+                waiting += row['compilation.jit']
+                compilation += row['compilation.jit']
+                dynamic_code_size += row['size.dynamic.jit']
+            elif mode == 'static':
+                e2e += row['exec.jit']  # like jit without compilation/waiting
+                exec += row['exec.jit']  # like jit
+                waiting += 0
+                compilation += 0
+                dynamic_code_size += row['size.dynamic.jit']  # also add the dynamic code
+            elif mode == 'async':
+                e2e += row['exec.jit'] + .5 * row[
+                    'compilation.jit']  # assume async compilation happens in parallel with execution, so we only add half of the compilation time to e2e
+                exec += row['exec.jit']
+                waiting += .5 * row[
+                    'compilation.jit']  # assume async compilation happens in parallel with execution, so we only add half of the compilation time to waiting
+                compilation += row['compilation.jit']
+                dynamic_code_size += row['size.dynamic.jit']
+            elif mode == 'specialize':
+                e2e += row['exec.spec'] + row['compilation.spec']
+                exec += row['exec.spec']
+                waiting += row['compilation.spec']
+                compilation += row['compilation.spec']
+                dynamic_code_size += row['size.dynamic.spec']
+            else:
+                raise ValueError(f'Unknown mode: {mode}')
+
+        # merge static_info and plan on 'id' to get the static code size of all functions in the plan
+        df = pd.merge(static_info, plan, on='id', how='inner')
+        static_code_size = 0
+        for i, row in df.iterrows():
+            if row['mode'] == 'static':
+                static_code_size += row['size.static']
+
+        plan_modes = plan['mode'].value_counts().to_dict()
+        self.jit = plan_modes.get('jit', 0)
+        self.interpret = plan_modes.get('interpret', 0)
+        self.async_compilation = plan_modes.get('async', 0)
+        self.specialize = plan_modes.get('specialize', 0)
+        self.static = plan_modes.get('static', 0)
+
+        self.e2e = e2e
+        self.exec = exec
+        self.waiting = waiting
+        self.compilation = compilation
+        self.dynamic_code_size = dynamic_code_size
+        self.static_code_size = static_code_size
+
+    def print(self):
+        print({
+            'jit': self.jit,
+            'interpret': self.interpret,
+            'async_compilation': self.async_compilation,
+            'specialize': self.specialize,
+            'static': self.static,
+            'e2e': self.e2e,
+            'exec': self.exec,
+            'waiting': self.waiting,
+            'compilation': self.compilation,
+            'dynamic_code_size': self.dynamic_code_size,
+            'static_code_size': self.static_code_size,
+        })
+        # return json.dumps({
+        #     'jit': self.jit,
+        #     'interpret': self.interpret,
+        #     'async_compilation': self.async_compilation,
+        #     'specialize': self.specialize,
+        #     'static': self.static,
+        #     'e2e': self.e2e,
+        #     'exec': self.exec,
+        #     'waiting': self.waiting,
+        #     'compilation': self.compilation,
+        #     'dynamic_code_size': self.dynamic_code_size,
+        #     'static_code_size': self.static_code_size,
+        # }, indent=2)
+
+
+class Planner:
+    def __init__(self, goal, constraints, default):
+        self.goal = goal
+        self.constraints = constraints
+        self.default = default
+
+    def plan(self, static_info, base_profile):
+        all_ids = static_info['id'].tolist()
+        if self.goal is None:
+            return pd.DataFrame({'id': all_ids, 'mode': [self.default] * len(all_ids)})
+        solver = Solver(base_profile)
+        solver.solve(self.goal, self.constraints, timeout=10)
+        plan = solver.plan
+        unplanned_ids = set(all_ids) - set(plan['id'].tolist())
+        defaults = pd.DataFrame({'id': list(unplanned_ids), 'mode': [self.default] * len(unplanned_ids)})
+        return pd.concat([plan, defaults])
+
+
+
+
+
+
+if __name__ == '__main__':
+    import os
+    import sys
+    from pathlib import Path
+    from solver import *
+    from profiling import *
+    from utils import *
+    import numpy as np
+
+    benchmark = ffmpeg
+    static_info = get_static_info(benchmark.binary)
+
+    wl = ffmpeg.workloads[0]
+    profile = pd.read_csv(profiles_root(benchmark.binary, wl.name) / 'profile.csv')
+
+    planner = Planner(EndToEndTime(), [Constraint(StaticCodeSize(), upper_bound=100_000)], 'interpret')
+    plan = planner.plan(static_info, profile)
+    # summary of df
+    print(plan['mode'].value_counts())
+
+    history = get_history(benchmark.binary, wl.name)
+
+    evaluation = PlanEvaluation(static_info, profile, plan, history)
+    evaluation.print()
