@@ -225,10 +225,8 @@ class PlanEvaluation:
 
         # merge on both ('id', 'name')
         df = pd.merge(static_info, base_profile, on=['id', 'name', 'size.bytecode', 'size.static'], how='outer')
-        print(f'[plan evaluation] merged static_info | base_profile: {df.shape[0]} rows')
 
         df = pd.merge(df, plan, on='id', how='outer')
-        print(f'[plan evaluation] merged static_info | base_profile | plan: {df.shape[0]} rows')
         df.drop('name', axis=1, inplace=True)
         df.fillna(0, inplace=True)
 
@@ -326,6 +324,7 @@ class Planner:
         self.goal = goal
         self.constraints = constraints
         self.default = default
+        self._plan = None
 
     def plan(self, static_info, base_profile):
         all_ids = static_info['id'].tolist()
@@ -336,7 +335,22 @@ class Planner:
         plan = solver.plan
         unplanned_ids = set(all_ids) - set(plan['id'].tolist())
         defaults = pd.DataFrame({'id': list(unplanned_ids), 'mode': [self.default] * len(unplanned_ids)})
-        return pd.concat([plan, defaults])
+        self._plan = pd.concat([plan, defaults])
+        return self._plan
+
+    def to_json(self, path):
+        asyncs = []  # to maintain the order
+        for i, row in self._plan.iterrows():
+            if row['mode'] == 'async':
+                asyncs.append(row['id'])
+        with open(path, 'w') as f:
+            f.write(json.dumps({
+                'async': asyncs,
+                'interpret': self._plan[self._plan['mode'] == 'interpret']['id'].tolist(),
+                'specialize': self._plan[self._plan['mode'] == 'specialize']['id'].tolist(),
+                'static': self._plan[self._plan['mode'] == 'static']['id'].tolist(),
+                'jit': self._plan[self._plan['mode'] == 'jit']['id'].tolist(),
+            }))
 
 
 
@@ -356,14 +370,14 @@ if __name__ == '__main__':
     static_info = get_static_info(benchmark.binary)
 
     wl = ffmpeg.workloads[0]
-    profile = pd.read_csv(profiles_root(benchmark.binary, wl.name) / 'profile.csv')
+    base_profile = pd.read_csv(profiles_root(benchmark.binary, wl.name) / 'profile.csv')
 
     planner = Planner(EndToEndTime(), [Constraint(StaticCodeSize(), upper_bound=100_000)], 'interpret')
-    plan = planner.plan(static_info, profile)
+    plan = planner.plan(static_info, base_profile)
     # summary of df
     print(plan['mode'].value_counts())
 
     history = get_history(benchmark.binary, wl.name)
 
-    evaluation = PlanEvaluation(static_info, profile, plan, history)
+    evaluation = PlanEvaluation(static_info, base_profile, plan, history)
     evaluation.print()
