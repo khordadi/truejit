@@ -273,7 +273,7 @@ rm -rf grpc
 
 git config --global user.name "Amir Khordadi"
 git config --global user.email "amir.khordadi@ed.ac.uk"
-git clone https://github.com/khordadi/truejit
+git clone https://github.com/khordadi/truejit ~/truejit
 
 
 cargo install twiggy
