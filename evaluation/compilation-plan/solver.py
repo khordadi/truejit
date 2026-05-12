@@ -326,11 +326,11 @@ class Planner:
         self.default = default
         self._plan = None
 
-    def plan(self, static_info, base_profile):
+    def plan(self, static_info, dataset):
         all_ids = static_info['id'].tolist()
         if self.goal is None:
             return pd.DataFrame({'id': all_ids, 'mode': [self.default] * len(all_ids)})
-        solver = Solver(base_profile)
+        solver = Solver(dataset)
         solver.solve(self.goal, self.constraints, timeout=10)
         plan = solver.plan
         unplanned_ids = set(all_ids) - set(plan['id'].tolist())

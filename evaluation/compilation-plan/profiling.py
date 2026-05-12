@@ -7,6 +7,8 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 import time
 
+from fontTools.cu2qu import benchmark
+
 from solver import *
 from utils import *
 
@@ -228,9 +230,9 @@ def record_base(benchmark, rep=1):
     for wl in benchmark.workloads:
         print(f'[workload] {wl.name}')
         for mode, options in [
-            # ('jit', []),
+            ('jit', []),
             ('spec', ['--specialize=planned']),
-            # ('interp', ['--interp=all']),
+            ('interp', ['--interp=all']),
         ]:
             print(f'[mode] {mode}')
             if mode == 'spec':
@@ -244,6 +246,11 @@ def record_base(benchmark, rep=1):
                 print(f'[rep] {r + 1}/{rep}')
                 recorder.record(benchmark.binary, wl, options, profile_path)
 
+
+# def record_base_v2(benchmark, rep=1):
+#     recorder = Recorder()
+#
+#     profile_path = Path('out') / benchmark.name / wl.name /
 
 def concat_profiles(profiles):
     result = profiles[0]
@@ -554,8 +561,10 @@ class Profile:
                 self.waiting.append(int(metric(path / 'waiting.txt')))
                 self.compilation.append(int(metric(path / 'compilation.txt')))
 
-                self.dynamic_code_size.append(sum(eval(metric(path / 'dynamic-sizes.txt'))))
-                self.static_code_size.append(sum(eval(metric(path / 'static-sizes.txt'))))
+                dynamic_code_size = sum(eval(metric(path / 'dynamic-sizes.txt')))
+                static_code_size = sum(eval(metric(path / 'static-sizes.txt')))
+                self.dynamic_code_size.append(dynamic_code_size + static_code_size)
+                self.static_code_size.append(static_code_size)
 
 
 def get_history(benchmark_binary, workload_name, mode='jit'):
@@ -637,14 +646,18 @@ def generate_profile_async(benchmark):
 
 
 def main():
-    # benchmark = ffmpeg
-    benchmark = gcc_loops
+    benchmark = ffmpeg
+    for wl in benchmark.workloads:
+        print(wl.name)
+    return
+    # benchmark = gcc_loops
     # benchmark = sqlite
     # generate_static_info(benchmark.binary)
     # return
 
     # collect profiles for jit and interp
     record_base(benchmark)
+    return
 
     # merge the profiles
     generate_profile_base(benchmark)
