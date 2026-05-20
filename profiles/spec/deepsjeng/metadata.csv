@@ -1,0 +1,202 @@
+id,name,size.bytecode,size.static
+12,__wasm_call_ctors,3,512
+13,undefined_weak:__wasilibc_find_relpath_alloc,4,504
+14,_start,84,992
+15,"psq_eval(state_t*, t_eval_comps*)",149,672
+16,init_psq_score(state_t*),130,1064
+17,preprocess_prepare(),399,1704
+18,"is_draw(gamestate_t*, state_t*)",308,800
+19,"check_legal(state_t*, int)",264,1632
+20,"check_castle_blocker(state_t*, int)",1525,2272
+21,"setup_epd_line(gamestate_t*, state_t*, char const*)",1674,6448
+22,"run_epd_testsuite(gamestate_t*, state_t*, char const*)",346,2080
+23,"drawn_endgames(state_t*, int, int, int)",3677,7144
+24,SetupPrecalculatedData(),10824,12192
+25,SetupCastleMasks(state_t*),247,768
+26,"RankAttacks(unsigned long long, unsigned int)",46,560
+27,"FileAttacks(unsigned long long, unsigned int)",64,584
+28,"DiagonalAttacks(unsigned long long, unsigned int)",65,584
+29,"AntiDiagAttacks(unsigned long long, unsigned int)",66,584
+30,"BishopAttacks(state_t*, int)",129,640
+31,"RookAttacks(state_t*, int)",109,632
+32,main,396,1624
+33,init_parameters(gamestate_t*),170,920
+34,"is_attacked(state_t*, int, int)",676,1992
+35,in_check(state_t*),49,864
+36,"attacks_to(state_t*, int)",384,1528
+37,"feval(state_t*, int, t_eval_comps*)",5586,11744
+38,"eval(state_t*, int, int, int)",706,2144
+39,retrieve_eval(state_t*),52,592
+40,PopCount(unsigned long long),7,520
+41,FindFirst(unsigned long long),39,552
+42,FindFirstRemove(unsigned long long*),58,560
+43,FindLast(unsigned long long),68,584
+44,ThickPopCount(unsigned long long),7,520
+45,clear_tt(),33,856
+46,clear_dp_tt(),37,536
+47,initialize_zobrist(state_t*),769,2760
+48,initialize_hash(state_t*),175,656
+49,"StoreTT(state_t*, int, int, int, unsigned int, int, int, int, int)",914,1480
+50,"ProbeTT(state_t*, int*, int, int, unsigned int*, int*, int*, int*, int*, int)",609,1224
+51,alloc_hash(),127,1120
+52,"qsearch(state_t*, int, int, int, int)",2477,5656
+53,search_time_check(state_t*),596,1640
+54,"fast_order_moves(state_t*, int*, int*, int, unsigned int)",403,1392
+55,"remove_one_fast(int*, int*, int*, int)",430,928
+56,"search(state_t*, int, int, int, int, int)",8488,16408
+57,"order_moves(state_t*, int*, int*, int, unsigned int)",1040,2864
+58,"history_good(state_t*, int, int)",4200,4720
+59,"search_root(state_t*, int, int, int)",2817,5872
+60,"think(gamestate_t*, state_t*)",2922,6128
+61,clear_pawn_tt(),24,832
+62,static_pawn_eval(state_t*),4128,5720
+63,"make(state_t*, int)",2744,3008
+64,"unmake(state_t*, int)",1440,1808
+65,"see(state_t*, int, int, int, int)",953,2352
+66,"gen_quiet(state_t*, int*)",1494,3464
+67,"gen(state_t*, int*)",2740,5048
+68,"gen_captures(state_t*, int*)",1804,3664
+69,"gen_good_checks(state_t*, int*)",864,2592
+70,"gen_check_blocks(state_t*, int*, int)",972,2528
+71,"gen_evasions(state_t*, int*, int)",215,1224
+72,elo_to_depth(int),83,592
+73,elo_to_blunder(int),87,600
+74,compact_move(int),40,560
+75,logL(int),47,552
+76,dumpsearchstat(state_t*),4,512
+77,"allocate_time(gamestate_t*, int)",417,2024
+78,"comp_to_san(state_t*, int, char*)",1317,3584
+79,"comp_to_coord(state_t*, int, char*)",630,2136
+80,"display_board(state_t*, int)",1171,3496
+81,"myprintf(char const*, ...)",115,1112
+82,"init_game(gamestate_t*, state_t*)",154,1184
+83,reset_piece_square(state_t*),416,1312
+84,extract_ponder_move(state_t*),483,1704
+85,extract_current_bestline(state_t*),81,1024
+86,"hash_extract_pv(state_t*, int, char*)",700,2080
+87,"post_thinking(state_t*, int, int, char*, int)",625,2152
+88,"rdifftime(int, int)",5,520
+89,rtime(),6,520
+90,"post_fh_thinking(state_t*, int, int, char*, int)",573,1808
+91,"post_fl_thinking(state_t*, int, int, char*, int)",538,1744
+92,"post_multipv_thinking(state_t*, int, int, int)",789,2352
+93,start_up(),17,824
+94,interrupt(),6,520
+95,myrandom(),138,624
+96,mysrand(unsigned int),76,568
+97,rank(int),11,528
+98,file(int),11,520
+99,"sum_dist(int, int)",54,552
+100,"taxicab_dist(int, int)",63,560
+101,"taxicab_dist_bit(int, int)",64,560
+102,"check_phase(gamestate_t*, state_t*)",305,1264
+103,malloc,12,808
+104,dlmalloc,5377,8240
+105,prepend_alloc,1091,1680
+106,free,12,808
+107,dlfree,1713,2216
+108,calloc,109,984
+109,realloc,1140,2192
+110,dispose_chunk,1638,2120
+111,_Exit,13,792
+112,__main_void,214,1400
+113,__wasi_args_get,18,816
+114,__wasi_args_sizes_get,18,824
+115,__wasi_fd_close,16,824
+116,__wasi_fd_fdstat_get,18,824
+117,__wasi_fd_fdstat_set_flags,18,824
+118,__wasi_fd_prestat_get,18,824
+119,__wasi_fd_prestat_dir_name,20,824
+120,__wasi_fd_read,22,824
+121,__wasi_fd_seek,22,824
+122,__wasi_fd_write,22,824
+123,__wasi_path_open,38,992
+124,__wasi_proc_exit,12,792
+125,abort,5,504
+126,sbrk,79,888
+127,isalpha,15,528
+128,dummy,3,512
+129,__wasm_call_dtors,15,864
+130,exit,24,896
+131,dummy,4,512
+132,fclose,153,1288
+133,fflush,362,1648
+134,__stdio_exit,389,1712
+135,__toread,134,1056
+136,__uflow,86,1032
+137,fgets,303,1384
+138,__fmodeflags,103,1032
+139,__wasilibc_populate_preopens,226,1296
+140,internal_register_preopened_fd_unlocked,280,1320
+141,__wasilibc_find_relpath,95,904
+142,__wasilibc_find_abspath,344,1408
+143,__wasilibc_nocwd_openat_nomode,282,1240
+144,close,41,936
+145,__wasilibc_open_nomode,163,1024
+146,fcntl,275,1504
+147,__isatty,103,968
+148,__lseek,101,976
+149,__stdio_seek,18,840
+150,writev,115,984
+151,__stdio_write,316,1368
+152,readv,114,984
+153,read,114,984
+154,__stdio_read,253,1224
+155,__stdio_close,15,840
+156,__fdopen,390,1712
+157,fopen,102,1112
+158,__ofl_lock,9,520
+159,__ofl_unlock,3,512
+160,__ofl_add,53,944
+161,setbuf,23,840
+162,setvbuf,125,648
+163,sprintf,56,904
+164,sscanf,56,904
+165,__stdout_write,60,1008
+166,__towrite,94,624
+167,__fwritex,238,1344
+168,fwrite,289,1368
+169,dummy,5,512
+170,__lctrans,13,808
+171,strerror,87,904
+172,wcrtomb,311,856
+173,wctomb,26,848
+174,frexp,144,1200
+175,fputs,38,944
+176,vfprintf,398,1568
+177,printf_core,8995,18856
+178,pop_arg,565,1808
+179,pad,159,1168
+180,long_double_not_supported,29,856
+181,vprintf,20,840
+182,vsnprintf,180,1152
+183,sn_write,183,1176
+184,vsprintf,21,840
+185,__shlim,73,608
+186,__shgetc,228,1136
+187,__intscan,1623,3464
+188,scalbn,176,984
+189,fmod,540,912
+190,__floatscan,4813,8760
+191,hexfloat,1405,3600
+192,scanexp,597,1712
+193,mbrtowc,368,752
+194,mbsinit,20,544
+195,vfscanf,3082,9912
+196,long_double_not_supported,29,856
+197,vsscanf,89,1024
+198,string_read,95,1064
+199,atoi,184,648
+200,memchr,371,800
+201,memcmp,75,584
+202,memcpy,1008,1888
+203,memset,393,1200
+204,strcat,25,920
+205,strchr,31,864
+206,__strchrnul,359,1144
+207,__stpcpy,374,776
+208,strcpy,16,840
+209,strdup,48,960
+210,strlen,205,656
+211,strnlen,27,880
+212,__multi3,116,640

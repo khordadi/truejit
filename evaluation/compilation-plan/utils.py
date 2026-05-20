@@ -1,4 +1,5 @@
 import hashlib
+import os
 import shutil
 import subprocess
 from pathlib import Path
@@ -62,21 +63,40 @@ class VirtualMachine:
     def run(self, binary, workload, options=None, env=None):
         if options is None:
             options = []
-        if env is None:
-            env = {}
         cwd = workload.pre_opens[0] if len(workload.pre_opens) > 0 else Path(binary).parent
         options += [f'--dir={str(p)}' for p in workload.pre_opens]
 
-        cmd = [self.binary] + options + ['--'] + [binary] + workload.args
-        print(' '.join([str(c) for c in cmd]))
-        subprocess.run(cmd, check=True, cwd=cwd, env=env)
+        # Parse '<' (stdin) and '>' (stdout) redirection markers out of workload args.
+        raw = [str(a) for a in workload.args]
+        real_args, stdin_path, stdout_path = [], None, None
+        i = 0
+        while i < len(raw):
+            if raw[i] == '<':
+                stdin_path = raw[i + 1]; i += 2
+            elif raw[i] == '>':
+                stdout_path = raw[i + 1]; i += 2
+            else:
+                real_args.append(raw[i]); i += 1
+
+        cmd = [self.binary] + options + ['--'] + [binary] + real_args
+        print(' '.join(str(c) for c in cmd))
+
+        full_env = {**os.environ, **(env or {})}
+        stdin_f  = open(stdin_path,  'rb') if stdin_path  else None
+        stdout_f = open(stdout_path, 'wb') if stdout_path else None
+        try:
+            subprocess.run(cmd, check=True, cwd=cwd, env=full_env, stdin=stdin_f, stdout=stdout_f)
+        finally:
+            if stdin_f:  stdin_f.close()
+            if stdout_f: stdout_f.close()
 
 
 class Benchmark:
-    def __init__(self, name, binary, workloads):
+    def __init__(self, name, binary, workloads, suite=None):
         self.name = name
         self.binary = binary
         self.workloads = workloads
+        self.suite = suite
 
 
 wls = PROJECT_ROOT / 'benchmarks/ffmpeg/workloads'
@@ -135,10 +155,10 @@ ffmpeg = Benchmark('ffmpeg', PROJECT_ROOT / 'benchmarks/ffmpeg/ffmpeg.wasm',
                                 ['-y', '-i', wls / '15' / 'in.mp4', '-vf', 'gblur=sigma=10',
                                  wls / '15' / 'out_blur.mp4'],
                                 [wls / '15'])]
-                   )
+                   , suite='FFmpeg')
 
 gcc_loops = Benchmark('gcc-loops', PROJECT_ROOT / 'benchmarks/jetstream/gcc_loops/gcc-loops.wasm',
-                      [Workload('default', [], [])])
+                      [Workload('default', [], [])], suite='JetStream')
 
 wls = PROJECT_ROOT / 'benchmarks/sqlite/workloads'
 sqlite = Benchmark('sqlite', PROJECT_ROOT / 'benchmarks/sqlite/sqlite.wasm',
@@ -192,4 +212,4 @@ sqlite = Benchmark('sqlite', PROJECT_ROOT / 'benchmarks/sqlite/sqlite.wasm',
                                 [wls / '15' / 'db.sqlite', '<', wls / '15' / 'workload.sql'],
                                 [wls / '15']),
                    ]
-                   )
+                   , suite='SQLite')

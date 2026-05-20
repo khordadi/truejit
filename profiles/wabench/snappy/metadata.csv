@@ -1,0 +1,112 @@
+id,name,size.bytecode,size.static
+7,__wasm_call_ctors,3,512
+8,_start,70,976
+9,main,420,4032
+10,snappy::MaxCompressedLength(unsigned long),15,536
+11,"snappy::GetUncompressedLength(char const*, unsigned long, unsigned long*)",190,712
+12,"snappy::internal::CompressFragment(char const*, unsigned long, char*, unsigned short*, int)",3334,6848
+13,snappy::SnappyDecompressor::RefillTag(),623,2456
+14,"snappy::Compress(snappy::Source*, snappy::Sink*)",1101,3472
+15,"snappy::RawUncompress(char const*, unsigned long, char*)",85,984
+16,"snappy::RawUncompress(snappy::Source*, char*)",622,2384
+17,void snappy::SnappyDecompressor::DecompressAllTags<snappy::SnappyArrayWriter>(snappy::SnappyArrayWriter*),1562,3608
+18,"snappy::RawCompress(char const*, unsigned long, char*, unsigned long*)",137,1112
+19,"std::__2::pair<unsigned char const*, long> snappy::DecompressBranchless<char*>(unsigned char const*, unsigned char const*, long, char*, long)",1343,2728
+20,"snappy::(anonymous namespace)::IncrementalCopy(char const*, char*, char*, char*)",563,2064
+21,snappy_compress,48,976
+22,snappy_max_compressed_length,11,808
+23,snappy_uncompress,110,1088
+24,snappy_uncompressed_length,18,824
+25,snappy::Source::~Source(),5,512
+26,snappy::Sink::~Sink(),5,512
+27,snappy::ByteArraySource::~ByteArraySource(),11,808
+28,snappy::ByteArraySource::Available() const,8,528
+29,snappy::ByteArraySource::Peek(unsigned long*),18,544
+30,snappy::ByteArraySource::Skip(unsigned long),29,536
+31,snappy::UncheckedByteArraySink::~UncheckedByteArraySink(),11,808
+32,"snappy::UncheckedByteArraySink::Append(char const*, unsigned long)",50,880
+33,"snappy::UncheckedByteArraySink::GetAppendBuffer(unsigned long, char*)",8,528
+34,"snappy::UncheckedByteArraySink::AppendAndTakeOwnership(char*, unsigned long, void (*)(void*, char const*, unsigned long), void*)",65,1008
+35,"snappy::UncheckedByteArraySink::GetAppendBufferVariable(unsigned long, unsigned long, char*, unsigned long, unsigned long*)",15,536
+36,std::type_info::~type_info(),41,536
+37,__cxxabiv1::__shim_type_info::~__shim_type_info(),77,904
+38,__cxxabiv1::__shim_type_info::noop1() const,32,536
+39,__cxxabiv1::__shim_type_info::noop2() const,32,536
+40,__cxxabiv1::__class_type_info::~__class_type_info(),77,904
+41,__cxxabiv1::__class_type_info::~__class_type_info(),94,968
+42,__cxxabiv1::__si_class_type_info::~__si_class_type_info(),77,904
+43,__cxxabiv1::__si_class_type_info::~__si_class_type_info(),95,968
+44,"is_equal(std::type_info const*, std::type_info const*, bool)",317,1160
+45,std::type_info::operator==[abi:v160000](std::type_info const&) const,123,600
+46,std::type_info::name[abi:v160000]() const,63,552
+47,"__cxxabiv1::__class_type_info::can_catch(__cxxabiv1::__shim_type_info const*, void*&) const",700,1432
+48,__dynamic_cast,1005,1680
+49,"__cxxabiv1::__class_type_info::process_found_base_class(__cxxabiv1::__dynamic_cast_info*, void*, int) const",372,688
+50,"__cxxabiv1::__class_type_info::has_unambiguous_public_base(__cxxabiv1::__dynamic_cast_info*, void*, int) const",185,1072
+51,"__cxxabiv1::__si_class_type_info::has_unambiguous_public_base(__cxxabiv1::__dynamic_cast_info*, void*, int) const",249,1184
+52,"__cxxabiv1::__class_type_info::process_static_type_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int) const",690,760
+53,"__cxxabiv1::__class_type_info::process_static_type_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int) const",182,600
+54,"__cxxabiv1::__si_class_type_info::search_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int, bool) const",1113,1848
+55,"__cxxabiv1::__class_type_info::search_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int, bool) const",657,1384
+56,"__cxxabiv1::__si_class_type_info::search_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int, bool) const",308,1280
+57,"__cxxabiv1::__class_type_info::search_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int, bool) const",214,1128
+58,"void (*std::__2::(anonymous namespace)::__libcpp_atomic_load[abi:v160000]<void (*)()>(void (* const*)(), int))()",55,552
+59,std::get_new_handler(),33,832
+60,operator new(unsigned long),243,1192
+61,operator delete(void*),74,880
+62,malloc,12,808
+63,dlmalloc,6541,9304
+64,free,12,808
+65,dlfree,1698,2224
+66,calloc,108,984
+67,_Exit,13,792
+68,__main_void,214,1392
+69,__wasi_args_get,18,816
+70,__wasi_args_sizes_get,18,824
+71,__wasi_fd_close,16,824
+72,__wasi_fd_fdstat_get,18,824
+73,__wasi_fd_seek,22,824
+74,__wasi_fd_write,22,824
+75,__wasi_proc_exit,12,792
+76,abort,5,504
+77,sbrk,79,888
+78,__assert_fail,78,904
+79,dummy,3,512
+80,__wasm_call_dtors,15,864
+81,fprintf,56,904
+82,printf,60,912
+83,__ofl_lock,10,520
+84,__stdio_exit,388,1712
+85,__towrite,94,624
+86,__fwritex,234,1368
+87,fwrite,278,1384
+88,fputs,38,944
+89,__overflow,165,1192
+90,puts,109,984
+91,close,34,864
+92,__stdio_close,14,840
+93,writev,115,984
+94,__stdio_write,316,1368
+95,__lseek,101,976
+96,__stdio_seek,18,840
+97,__isatty,103,968
+98,__stdout_write,60,1008
+99,dummy,5,512
+100,__lctrans,13,808
+101,strerror,87,904
+102,wcrtomb,311,856
+103,wctomb,26,848
+104,frexp,145,1200
+105,vfprintf,398,1568
+106,printf_core,9070,18952
+107,pop_arg,565,1808
+108,pad,159,1168
+109,long_double_not_supported,30,856
+110,memchr,371,800
+111,memcmp,75,584
+112,memcpy,1000,1824
+113,memmove,1218,2168
+114,memset,393,1200
+115,strcmp,105,600
+116,strlen,178,648
+117,strnlen,25,880

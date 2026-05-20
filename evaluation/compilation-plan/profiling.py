@@ -7,8 +7,6 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 import time
 
-from fontTools.cu2qu import benchmark
-
 from solver import *
 from utils import *
 

@@ -1,0 +1,130 @@
+id,name,size.bytecode,size.static
+13,__wasm_call_ctors,5,808
+14,undefined_weak:__wasilibc_find_relpath_alloc,4,504
+15,_start,84,992
+16,main,5035,12808
+17,"setup(int*, int*, int*, int)",1628,2720
+18,"zran3(void*, int, int, int, int, int, int)",7736,14696
+19,"resid(void*, void*, void*, int, int, int, double*, int)",1236,3040
+20,"mg3P(double*, double*, double*, double*, double*, int, int, int, int)",2208,6104
+21,"comm3(void*, int, int, int, int)",1305,2704
+22,"rep_nrm(void*, int, int, int, char*, int)",684,2120
+23,"showall(void*, int, int, int)",351,1568
+24,"psinv(void*, void*, int, int, int, double*, int)",1219,2984
+25,"interp(void*, int, int, int, void*, int, int, int, int)",4297,7560
+26,_GLOBAL__sub_I_mg.cpp,135,1160
+27,"c_print_results(char*, char, int, int, int, int, double, double, char*, int, char*, char*, char*, char*, char*, char*, char*, char*, char*, char*)",1002,3072
+28,"randlc(double*, double)",327,1584
+29,"vranlc(int, double*, double, double*)",362,1800
+30,timer_clear(int),20,536
+31,timer_start(int),64,920
+32,timer_stop(int),87,944
+33,timer_read(int),18,536
+34,wtime_(double*),117,1176
+35,malloc,12,808
+36,dlmalloc,5377,8240
+37,prepend_alloc,1091,1680
+38,free,12,808
+39,dlfree,1713,2216
+40,calloc,109,984
+41,realloc,1140,2192
+42,dispose_chunk,1638,2120
+43,gettimeofday,113,1016
+44,_Exit,13,792
+45,__main_void,214,1400
+46,__wasi_args_get,18,816
+47,__wasi_args_sizes_get,18,824
+48,__wasi_clock_time_get,20,824
+49,__wasi_fd_close,16,824
+50,__wasi_fd_fdstat_get,18,824
+51,__wasi_fd_fdstat_set_flags,18,824
+52,__wasi_fd_prestat_get,18,824
+53,__wasi_fd_prestat_dir_name,20,824
+54,__wasi_fd_read,22,824
+55,__wasi_fd_seek,22,824
+56,__wasi_fd_write,22,824
+57,__wasi_path_open,38,992
+58,__wasi_proc_exit,12,792
+59,abort,5,504
+60,sbrk,79,888
+61,dummy,3,512
+62,__wasm_call_dtors,15,864
+63,exit,24,896
+64,ldexp,14,808
+65,scalbn,175,984
+66,dummy,4,512
+67,fclose,153,1288
+68,fflush,362,1648
+69,__stdio_exit,389,1712
+70,__toread,134,1056
+71,__uflow,85,1032
+72,fgetc,47,864
+73,__fmodeflags,103,1032
+74,__wasilibc_populate_preopens,226,1296
+75,internal_register_preopened_fd_unlocked,280,1320
+76,__wasilibc_find_relpath,95,904
+77,__wasilibc_find_abspath,344,1408
+78,__wasilibc_nocwd_openat_nomode,282,1240
+79,close,41,936
+80,__wasilibc_open_nomode,163,1024
+81,fcntl,275,1504
+82,__isatty,103,968
+83,__lseek,101,976
+84,__stdio_seek,18,840
+85,writev,115,984
+86,__stdio_write,316,1368
+87,readv,114,984
+88,read,114,984
+89,__stdio_read,253,1224
+90,__stdio_close,15,840
+91,__fdopen,390,1712
+92,fopen,102,1112
+93,fscanf,56,904
+94,__ofl_lock,9,520
+95,__ofl_unlock,3,512
+96,__ofl_add,53,944
+97,printf,60,912
+98,__towrite,94,624
+99,__overflow,165,1192
+100,putchar,90,888
+101,__fwritex,238,1344
+102,fwrite,289,1368
+103,fputs,37,944
+104,puts,109,984
+105,sprintf,56,904
+106,__stdout_write,60,1008
+107,dummy,5,512
+108,__lctrans,13,808
+109,strerror,87,904
+110,wcrtomb,311,856
+111,wctomb,26,848
+112,frexp,145,1200
+113,vfprintf,398,1568
+114,printf_core,8995,18856
+115,pop_arg,565,1808
+116,pad,159,1168
+117,long_double_not_supported,29,856
+118,__shlim,73,608
+119,__shgetc,228,1136
+120,__intscan,1623,3464
+121,fmod,540,912
+122,__floatscan,4813,8760
+123,hexfloat,1405,3600
+124,scanexp,597,1712
+125,mbrtowc,368,752
+126,mbsinit,20,544
+127,vfscanf,3082,9912
+128,long_double_not_supported,30,856
+129,vsnprintf,180,1152
+130,sn_write,183,1176
+131,vsprintf,22,840
+132,memchr,371,800
+133,memcmp,75,584
+134,memcpy,1008,1888
+135,memset,393,1200
+136,strchr,31,864
+137,__strchrnul,358,1144
+138,strdup,48,960
+139,strlen,205,656
+140,strnlen,27,880
+141,__multi3,116,640

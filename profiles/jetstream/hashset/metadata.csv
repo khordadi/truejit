@@ -1,0 +1,69 @@
+id,name,size.bytecode,size.static
+8,__wasm_call_ctors,3,512
+9,_start,85,984
+10,benchmark(),322527,643672
+11,"WTF::HashTable<JSC::DFG::Node*, JSC::DFG::Node*, WTF::IdentityExtractor, WTF::PtrHash<JSC::DFG::Node*>, WTF::HashTraits<JSC::DFG::Node*>, WTF::HashTraits<JSC::DFG::Node*>>::add(JSC::DFG::Node*&&)",477,1432
+12,"WTF::HashTable<unsigned int, unsigned int, WTF::IdentityExtractor, WTF::IntHash<unsigned int>, WTF::UnsignedWithZeroKeyHashTraits<unsigned int>, WTF::UnsignedWithZeroKeyHashTraits<unsigned int>>::add(unsigned int&&)",473,1424
+13,main,186,1408
+14,"WTF::HashTable<JSC::DFG::Node*, JSC::DFG::Node*, WTF::IdentityExtractor, WTF::PtrHash<JSC::DFG::Node*>, WTF::HashTraits<JSC::DFG::Node*>, WTF::HashTraits<JSC::DFG::Node*>>::rehash(unsigned int, JSC::DFG::Node**)",361,1336
+15,"WTF::HashTable<unsigned int, unsigned int, WTF::IdentityExtractor, WTF::IntHash<unsigned int>, WTF::UnsignedWithZeroKeyHashTraits<unsigned int>, WTF::UnsignedWithZeroKeyHashTraits<unsigned int>>::rehash(unsigned int, unsigned int*)",390,1424
+16,abort_message,95,1056
+17,std::get_new_handler(),12,528
+18,operator new(unsigned long),85,1072
+19,operator delete(void*),11,808
+20,malloc,12,808
+21,dlmalloc,5377,8240
+22,prepend_alloc,1091,1680
+23,free,12,808
+24,dlfree,1713,2216
+25,calloc,108,984
+26,gettimeofday,113,1016
+27,_Exit,13,792
+28,__main_void,214,1392
+29,__wasi_args_get,18,816
+30,__wasi_args_sizes_get,18,824
+31,__wasi_clock_time_get,20,824
+32,__wasi_fd_close,16,824
+33,__wasi_fd_fdstat_get,18,824
+34,__wasi_fd_seek,22,824
+35,__wasi_fd_write,22,824
+36,__wasi_proc_exit,12,792
+37,abort,5,504
+38,sbrk,79,888
+39,dummy,3,512
+40,__wasm_call_dtors,15,864
+41,fprintf,57,904
+42,__stdio_exit,388,1712
+43,__towrite,94,624
+44,__overflow,165,1192
+45,fputc,70,904
+46,__fwritex,238,1344
+47,fwrite,289,1368
+48,__ofl_lock,9,520
+49,printf,60,912
+50,__wasilibc_populate_preopens,3,512
+51,close,40,936
+52,__stdio_close,14,840
+53,writev,115,984
+54,__stdio_write,316,1368
+55,__lseek,101,976
+56,__stdio_seek,18,840
+57,__isatty,103,968
+58,__stdout_write,60,1008
+59,dummy,5,512
+60,__lctrans,13,808
+61,strerror,87,904
+62,wcrtomb,311,856
+63,wctomb,26,848
+64,frexp,144,1200
+65,fputs,38,944
+66,vfprintf,398,1568
+67,printf_core,8995,18856
+68,pop_arg,565,1808
+69,pad,159,1168
+70,long_double_not_supported,30,856
+71,memcpy,1008,1888
+72,memset,394,1200
+73,strlen,206,656
+74,memchr,371,800
+75,strnlen,25,880

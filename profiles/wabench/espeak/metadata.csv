@@ -1,0 +1,428 @@
+id,name,size.bytecode,size.static
+16,__wasm_call_ctors,6,808
+17,undefined_weak:__wasilibc_find_relpath_alloc,4,504
+18,_start,70,984
+19,"compile_line(char*, char*, int*)",4909,4440
+20,"strchr[abi:v160000](char*, int) [enable_if:true]",95,912
+21,compile_dictlist_start(),375,1120
+22,compile_dictlist_end(_IO_FILE*),487,1248
+23,"compile_dictlist_file(char const*, char const*)",1126,1960
+24,"copy_rule_string(char*, int&)",2865,4568
+25,compile_rule(char*),3780,4952
+26,"output_rule_group(_IO_FILE*, int, char**, char*)",990,2432
+27,"string_sorter(char**, char**)",109,920
+28,"compile_dictrules(_IO_FILE*, _IO_FILE*)",2566,2992
+29,"CompileDictionary(char const*, char const*, _IO_FILE*, char*)",1554,2584
+30,"fopen_log(char const*, char const*)",264,1120
+31,"strncpy0(char*, char const*, int)",151,960
+32,"LookupMnem(MNEM_TAB*, char*)",245,1032
+33,"LookupMnem(MNEM_TAB*, int)",227,640
+34,Translator::LoadDictionary(char const*),1307,1984
+35,Translator::InitGroups(),1436,1720
+36,HashDictionary(char const*),287,688
+37,"EncodePhonemes(char*, char*, char*)",2089,2008
+38,"DecodePhonemes(char const*, char*)",762,840
+39,"Translator::WriteMnemonic(int*, int)",273,656
+40,"Translator::GetTranslatedPhonemeString(char*, int)",1386,1656
+41,Translator::Unpronouncable(char*),832,1520
+42,Translator::IsVowel(int),101,920
+43,"Translator::IsLetter(int, int)",527,672
+44,"Translator::SetLetterBits(int, char const*)",221,664
+45,"GetVowelStress(unsigned char*, unsigned char*, int&, int&)",2734,1528
+46,"ChangeWordStress(char*, int)",1121,1440
+47,"Translator::SetWordStress(char*, unsigned int, int, int)",10058,3984
+48,"Translator::DecodeRule(char const*, char*)",2311,2800
+49,"Translator::AppendPhonemes(char*, char const*)",807,1168
+50,"Translator::MatchRule(char**, char const*, char*, MatchRecord*, int)",7730,7832
+51,"Translator::TranslateRules(char*, char*, char*, int)",4155,3824
+52,"TransposeAlphabet(char*, int, int, int)",1352,1688
+53,print_dflags(int),170,1032
+54,"Translator::LookupDict2(char*, char*, char*, unsigned int*, int)",3540,3368
+55,"Translator::LookupDictList(char*, char*, unsigned int*, int)",1876,2008
+56,"Translator::Lookup(char*, char*)",119,944
+57,"Translator::RemoveEnding(char*, int)",2195,2384
+58,"Translator::LookupNum2(int, int, char*)",2351,2544
+59,"Translator::LookupNum3(int, char*, int, int, int)",1978,2800
+60,"Translator::LookupThousands(int, int, char*)",456,1536
+61,"Translator::TranslateNumber_1(char*, char*, unsigned int*, int)",4187,4296
+62,"Translator::TranslateNumber(char*, char*, unsigned int*, int)",295,1040
+63,Translator::CalcPitches_Tone(int),1184,1072
+64,Translator::CalcPitches(int),2937,2096
+65,count_pitch_vowels(),1342,960
+66,"calc_pitchesX(int*, int, int)",874,1400
+67,"calc_pitches(int*, int, int)",1044,1520
+68,"calc_pitch_segmentX(int, int, TONE_TABLE*, int)",1181,1648
+69,"set_pitch(int, int, int)",686,800
+70,"calc_pitch_segment2(int, int, int, int, int)",836,1416
+71,"calc_pitch_segment(int, int, TONE_TABLE*, int)",1955,1872
+72,"count_increments(int, int, int)",323,680
+73,Eof(),210,936
+74,Translator::LookupSpecial(char*),349,1248
+75,Translator::LookupCharName(int),323,1168
+76,"Translator::AnnouncePunctuation(int, int, char*, int)",1736,2712
+77,LookupSoundicon(int),368,1064
+78,UngetC(int),165,896
+79,GetC(),1413,1552
+80,"LoadSoundFile(char const*, int)",959,1760
+81,GetC_get(),619,1136
+82,GetC_unget(int),221,920
+83,AddNameData(char const*),509,1232
+84,"Translator::ReadClause(_IO_FILE*, char*, unsigned short*, int)",9363,7568
+85,"ProcessSsmlTag(wchar_t*, char*, int&, int, int)",6955,8360
+86,"wcschr[abi:v160000](wchar_t*, wchar_t) [enable_if:true]",99,912
+87,PushParamStack(int),345,656
+88,"GetSsmlAttribute(wchar_t*, char const*)",695,1408
+89,"attrcmp(wchar_t const*, char const*)",514,664
+90,"attrlookup(wchar_t const*, MNEM_TAB const*)",356,1088
+91,"ProcessParamStack(char*, int&)",1337,2032
+92,"SetProsodyParameter(int, wchar_t*, PARAM_STACK*)",720,1256
+93,"PopParamStack(int, char*, int&)",438,1096
+94,"attrnumber(wchar_t const*, int, int)",445,1352
+95,"attrcopy_utf8(char*, wchar_t const*, int)",518,1216
+96,"GetVoiceAttributes(wchar_t*, int)",1096,2040
+97,"__libcpp_wcschr[abi:v160000](wchar_t const*, wchar_t)",99,912
+98,InitText2(),792,1384
+99,"attr_prosody_value(int, wchar_t const*, int*)",1260,2456
+100,VoiceFromStack(),824,1512
+101,"std::__2::enable_if<std::is_arithmetic<double>::value && std::is_arithmetic<float>::value, std::__2::__promote<double, float, void>>::type::type pow[abi:v160000]<double, float>(double, float)",108,928
+102,SetSpeed(int),691,872
+103,"espeak_SetParameter(int, int, int)",431,1064
+104,Translator::CalcLengths(),10732,5416
+105,DoEmbedded2(int&),274,1112
+106,GetFileLength(char const*),231,976
+107,Alloc(int),170,1000
+108,Free(void*),119,880
+109,"MarkerEvent(int, unsigned int, int, unsigned char*)",54,552
+110,main,3911,7376
+111,init_path(),166,1064
+112,initialise(),360,1160
+113,PitchAdjust(int),414,720
+114,PhonemeTabName(),50,528
+115,LoadPhData(),988,1464
+116,"ReadPhFile(char**, char const*)",698,1560
+117,"LookupSound(PHONEME_TAB*, PHONEME_TAB*, int, int*, int)",1534,1904
+118,"LookupSound2(int, unsigned int, int)",1034,1536
+119,"LookupSpect(PHONEME_TAB*, PHONEME_TAB*, PHONEME_TAB*, int, int*, int*, PHONEME_LIST*)",4404,2992
+120,LookupEnvelope(int),148,576
+121,SelectPhonemeTable(int),135,912
+122,SetUpPhonemeTable(int),548,1120
+123,SelectPhonemeTableName(char const*),349,1112
+124,SynthesizeInit(),121,768
+125,VowelCloseness(frame_t*),265,648
+126,"FormantTransition2(frameref_t*, int&, unsigned int, unsigned int, PHONEME_TAB*, int)",2130,2448
+127,CopyFrame(frame_t*),355,1096
+128,"AdjustFormants(frame_t*, int, int, int, int, int, int)",1221,1312
+129,"set_frame_rms(frame_t*, int)",472,720
+130,"DuplicateLastFrame(frameref_t*, int, int)",296,1048
+131,AllocFrame(),164,552
+132,"formants_reduce_hf(frame_t*, int)",256,640
+133,"Generate(PHONEME_LIST*, int, int)",10200,7832
+134,"DoEmbedded(int&, int)",1126,2232
+135,"DoMarker(int, int, int, int)",343,1032
+136,EndAmplitude(),197,560
+137,DoPause(int),372,1104
+138,"DoSample(PHONEME_TAB*, PHONEME_TAB*, int, int)",272,1176
+139,"DoAmplitude(int, unsigned char*)",248,992
+140,"DoPitch(unsigned char*, int, int)",438,1216
+141,"DoSpect(PHONEME_TAB*, PHONEME_TAB*, PHONEME_TAB*, int, PHONEME_LIST*, int)",3256,2640
+142,StartSyllable(),101,536
+143,EndPitch(int),457,1016
+144,DoVoice(voice_t*),173,928
+145,"DoSample2(int, int, int, int)",809,1272
+146,SmoothSpect(),4156,2552
+147,"SpeakNextClause(_IO_FILE*, void const*, int)",2043,2512
+148,Translator::Translator(),964,1824
+149,Translator::~Translator(),170,952
+150,Translator::~Translator(),95,968
+151,"lookupwchar(short const*, int)",294,640
+152,IsBracket(int),210,944
+153,"utf8_out(unsigned int, char*)",666,816
+154,"utf8_in(int*, char*, int)",784,904
+155,"strchr_w(char const*, int)",171,952
+156,LoadConfig(),803,1696
+157,PhonemeCode(unsigned int),308,632
+158,"Translator::ChangePhonemes(PHONEME_LIST2*, int, int, PHONEME_TAB*, int)",74,576
+159,Translator::SubstitutePhonemes(PHONEME_LIST2*),2773,2200
+160,"Translator::MakePhonemeList(int, int, int)",9700,4736
+161,"Translator::TranslateLetter(char*, char*, int)",1318,2200
+162,"Translator::SetSpellingStress(char*, int)",1300,1000
+163,"Translator::TranslateWord(char*, int, int, int)",7728,6504
+164,"Translator::TranslateWord2(char*, int, int, int, int, int, int)",8512,6096
+165,"SetPlist2(PHONEME_LIST2*, unsigned char)",132,600
+166,"Translator::TranslateChar(char*, int, int, int)",70,592
+167,"Translator::TranslateClause(_IO_FILE*, void const*, int*, char**)",16033,10040
+168,EmbeddedCommand(unsigned int&),1143,1552
+169,"wcschr[abi:v160000](wchar_t const*, wchar_t) [enable_if:true]",99,912
+170,InitText(),279,896
+171,Translator_English::Translator_English(),282,1048
+172,Translator_English::Unpronouncable(char*),1529,1616
+173,Translator_English::~Translator_English(),77,904
+174,Translator_English::~Translator_English(),84,952
+175,"SetupTranslator(Translator*, int*, int*)",439,760
+176,SelectTranslator(char const*),4163,5872
+177,Translator_Russian::Translator_Russian(),509,1616
+178,"Translator_Russian::ChangePhonemes(PHONEME_LIST2*, int, int, PHONEME_TAB*, int)",1411,1592
+179,Translator_Afrikaans::Translator_Afrikaans(),328,1160
+180,"Translator_Afrikaans::TranslateChar(char*, int, int, int)",257,1040
+181,Translator_Russian::~Translator_Russian(),77,904
+182,Translator_Russian::~Translator_Russian(),83,952
+183,Translator_Afrikaans::~Translator_Afrikaans(),77,904
+184,Translator_Afrikaans::~Translator_Afrikaans(),84,952
+185,VoiceReset(),750,896
+186,"LoadVoice(char*, int)",8781,8232
+187,VoiceLookup(char*),548,1272
+188,VoiceFormant(char*),948,1784
+189,"PhonemeReplacement(int, char*)",564,1328
+190,LookupPh(char const*),592,744
+191,"DisplayVoices(_IO_FILE*, espeak_VOICE**, char*)",1435,2368
+192,"SetVoiceScores(espeak_VOICE*, espeak_VOICE**)",881,1544
+193,"ScoreVoice(espeak_VOICE*, int, int, espeak_VOICE*)",3028,2104
+194,"VoiceScoreSorter(void const*, void const*)",234,1016
+195,SelectVoice(espeak_VOICE*),269,1128
+196,espeak_ListVoices(),962,1576
+197,"SelectVoiceByName(espeak_VOICE**, char const*)",826,1784
+198,GetVoices(char const*),858,1688
+199,"VoiceNameSorter(void const*, void const*)",377,1160
+200,"ReadVoiceFile(_IO_FILE*, char const*)",1942,3024
+201,espeak_SetVoiceByName(char const*),309,1168
+202,WcmdqStop(),45,520
+203,WcmdqFree(),149,552
+204,WcmdqUsed(),28,832
+205,WcmdqInc(),120,536
+206,WavegenOpenSound(),12,520
+207,WavegenInitSound(),13,520
+208,"WavegenInit(int, int)",1269,2184
+209,WavegenInitPkData(int),33,536
+210,"PeaksToHarmspect(wavegen_peaks_t*, int, int*, int)",3078,1744
+211,"SetEmbedded(int, int)",1253,2152
+212,"SetWithRange0(int, int)",188,592
+213,GetAmplitude(),136,592
+214,WavegenSetEcho(),533,1200
+215,WavegenSetVoice(voice_t*),160,912
+216,"SetPitch(int, unsigned char*, int, int)",799,896
+217,"SetSynth(int, int, frame_t*, frame_t*)",4240,2320
+218,"OpenWaveFile(char const*, int)",473,1208
+219,CloseWaveFile(int),825,1712
+220,Wavegen(),7242,3344
+221,AdvanceParameters(),2956,1792
+222,WavegenFill(int),1568,2600
+223,"PlaySilence(int, int)",778,840
+224,"PlayWave(int, int, unsigned char*, int, int)",1505,1104
+225,"Wavegen2(int, int, int, frame_t*, frame_t*)",154,1016
+226,"SetAmplitude(int, unsigned char*, int)",257,648
+227,WcmdqIncHead(),121,536
+228,WavegenFile(),265,1032
+229,std::type_info::~type_info(),41,536
+230,__cxxabiv1::__shim_type_info::~__shim_type_info(),77,904
+231,__cxxabiv1::__shim_type_info::noop1() const,32,536
+232,__cxxabiv1::__shim_type_info::noop2() const,32,536
+233,__cxxabiv1::__class_type_info::~__class_type_info(),77,904
+234,__cxxabiv1::__class_type_info::~__class_type_info(),94,968
+235,__cxxabiv1::__si_class_type_info::~__si_class_type_info(),77,904
+236,__cxxabiv1::__si_class_type_info::~__si_class_type_info(),95,968
+237,"is_equal(std::type_info const*, std::type_info const*, bool)",317,1160
+238,std::type_info::operator==[abi:v160000](std::type_info const&) const,123,600
+239,std::type_info::name[abi:v160000]() const,63,552
+240,"__cxxabiv1::__class_type_info::can_catch(__cxxabiv1::__shim_type_info const*, void*&) const",700,1432
+241,__dynamic_cast,1005,1680
+242,"__cxxabiv1::__class_type_info::process_found_base_class(__cxxabiv1::__dynamic_cast_info*, void*, int) const",372,688
+243,"__cxxabiv1::__class_type_info::has_unambiguous_public_base(__cxxabiv1::__dynamic_cast_info*, void*, int) const",185,1072
+244,"__cxxabiv1::__si_class_type_info::has_unambiguous_public_base(__cxxabiv1::__dynamic_cast_info*, void*, int) const",249,1184
+245,"__cxxabiv1::__class_type_info::process_static_type_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int) const",690,760
+246,"__cxxabiv1::__class_type_info::process_static_type_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int) const",182,600
+247,"__cxxabiv1::__si_class_type_info::search_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int, bool) const",1113,1848
+248,"__cxxabiv1::__class_type_info::search_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int, bool) const",657,1384
+249,"__cxxabiv1::__si_class_type_info::search_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int, bool) const",308,1280
+250,"__cxxabiv1::__class_type_info::search_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int, bool) const",214,1128
+251,"void (*std::__2::(anonymous namespace)::__libcpp_atomic_load[abi:v160000]<void (*)()>(void (* const*)(), int))()",55,552
+252,std::get_new_handler(),33,832
+253,operator new(unsigned long),243,1192
+254,operator delete(void*),74,880
+255,malloc,12,808
+256,dlmalloc,6541,9304
+257,free,12,808
+258,dlfree,1698,2224
+259,calloc,109,984
+260,realloc,1131,2192
+261,dispose_chunk,1618,2120
+262,closedir,17,864
+263,fdclosedir,45,984
+264,readdir,643,2256
+265,close,34,864
+266,_Exit,13,792
+267,__main_void,214,1400
+268,__wasilibc_iftodt,53,552
+269,__wasi_args_get,18,816
+270,__wasi_args_sizes_get,18,824
+271,__wasi_environ_get,18,824
+272,__wasi_environ_sizes_get,18,824
+273,__wasi_fd_close,16,824
+274,__wasi_fd_fdstat_get,18,824
+275,__wasi_fd_fdstat_set_flags,18,824
+276,__wasi_fd_prestat_get,18,824
+277,__wasi_fd_prestat_dir_name,20,824
+278,__wasi_fd_read,22,824
+279,__wasi_fd_readdir,24,824
+280,__wasi_fd_seek,22,824
+281,__wasi_fd_write,22,824
+282,__wasi_path_filestat_get,30,952
+283,__wasi_path_open,38,992
+284,__wasi_proc_exit,12,792
+285,abort,6,504
+286,__wasilibc_nocwd_openat_nomode,283,1240
+287,fdopendir,164,1248
+288,__wasilibc_nocwd_opendirat,62,960
+289,__wasilibc_nocwd_faccessat,210,1160
+290,__wasilibc_nocwd_fstatat,425,1488
+291,fstatat,54,872
+292,__wasilibc_open_nomode,163,1024
+293,access,165,1032
+294,stat,165,1032
+295,opendir,161,1000
+296,__wasilibc_stat,165,1040
+297,internal_register_preopened_fd,280,1320
+298,__wasilibc_find_relpath,95,904
+299,__wasilibc_find_abspath,313,1408
+300,__wasilibc_populate_preopens,182,1296
+301,sbrk,79,888
+302,isalnum,24,544
+303,isalpha,15,528
+304,isdigit,11,528
+305,isspace,17,536
+306,iswalnum,37,848
+307,iswalpha,69,592
+308,iswdigit,11,528
+309,iswlower,14,848
+310,iswpunct,71,584
+311,iswspace,30,856
+312,iswupper,14,848
+313,tolower,20,528
+314,towlower,14,824
+315,casemap,317,808
+316,towupper,13,824
+317,__wasilibc_ensure_environ,27,824
+318,__wasilibc_initialize_environ,194,1360
+319,getenv,154,1120
+320,dummy,3,512
+321,__wasm_call_dtors,16,864
+322,__mo_lookup,584,1648
+323,__lctrans_impl,44,888
+324,__get_locale,886,2976
+325,setlocale,1126,3440
+326,__cos,148,1312
+327,__rem_pio2_large,4405,7152
+328,__rem_pio2,1284,4152
+329,__sin,156,1328
+330,cos,249,1656
+331,__math_invalid,13,528
+332,__math_xflow,14,760
+333,__math_oflow,20,832
+334,__math_uflow,21,832
+335,pow,1183,2984
+336,checkint,87,600
+337,specialcase,204,1208
+338,scalbn,175,984
+339,__lctrans,13,808
+340,__lctrans_cur,57,872
+341,__getopt_msg,101,1208
+342,getopt,772,1776
+343,getopt_long,22,824
+344,__getopt_long,1469,2872
+345,mblen,16,840
+346,mbtowc,340,576
+347,dummy,4,512
+348,fclose,153,1288
+349,feof,15,536
+350,fflush,362,1648
+351,__stdio_exit,389,1712
+352,__toread,134,1056
+353,__uflow,85,1032
+354,fgetc,48,864
+355,fgets,303,1384
+356,__fmodeflags,103,1032
+357,fcntl,275,1504
+358,__isatty,103,968
+359,__lseek,101,976
+360,__stdio_seek,18,840
+361,writev,115,984
+362,__stdio_write,316,1368
+363,readv,114,984
+364,read,114,984
+365,__stdio_read,253,1224
+366,__stdio_close,15,840
+367,__fdopen,390,1712
+368,fopen,102,1112
+369,fprintf,56,904
+370,__towrite,94,624
+371,__overflow,165,1192
+372,fputc,69,904
+373,fputs,38,944
+374,fread,198,1288
+375,fseek,179,1176
+376,ftell,164,1032
+377,__fwritex,234,1368
+378,fwrite,278,1384
+379,__ofl_lock,9,520
+380,__ofl_unlock,3,512
+381,__ofl_add,56,952
+382,printf,60,912
+383,putc,69,904
+384,sprintf,56,904
+385,sscanf,56,904
+386,__stdout_write,60,1008
+387,ungetc,105,984
+388,strerror,87,904
+389,wcrtomb,311,856
+390,wctomb,26,848
+391,frexp,145,1200
+392,vfprintf,398,1568
+393,printf_core,9070,18952
+394,pop_arg,565,1808
+395,pad,159,1168
+396,long_double_not_supported,30,856
+397,vsnprintf,180,1152
+398,sn_write,184,1176
+399,vsprintf,21,840
+400,__shlim,73,608
+401,__shgetc,228,1136
+402,__intscan,1636,3464
+403,fmod,540,912
+404,__floatscan,4829,8760
+405,hexfloat,1401,3600
+406,scanexp,602,1712
+407,mbrtowc,368,752
+408,mbsinit,20,544
+409,vfscanf,3085,9968
+410,long_double_not_supported,29,856
+411,vsscanf,89,1024
+412,string_read,95,1064
+413,atoi,178,648
+414,__qsort_r,869,2384
+415,sift,442,1968
+416,trinkle,904,2896
+417,qsort,23,832
+418,wrapper_cmp,17,824
+419,wcstof,206,1304
+420,do_read,186,736
+421,memchr,371,800
+422,memcmp,75,584
+423,memcpy,1000,1824
+424,memset,393,1200
+425,strcat,25,920
+426,strchr,31,864
+427,__strchrnul,354,1144
+428,strcmp,105,600
+429,__stpcpy,374,776
+430,strcpy,16,840
+431,strdup,48,960
+432,strlen,179,648
+433,strncmp,145,624
+434,__stpncpy,496,1280
+435,strncpy,18,840
+436,strnlen,28,880
+437,strspn,249,768
+438,strcspn,242,1104
+439,strtok,131,1032
+440,wcschr,70,896
+441,wcslen,43,544
+442,__multi3,116,640

@@ -1,0 +1,283 @@
+id,name,size.bytecode,size.static
+12,__wasm_call_ctors,8,864
+13,undefined_weak:__wasilibc_find_relpath_alloc,4,504
+14,_start,70,984
+15,ComputeNonbondedWorkArrays::ComputeNonbondedWorkArrays(),1335,3392
+16,ResizeArrayRaw<Vector>::resize(int),604,1792
+17,__cxx_global_array_dtor,17,824
+18,ComputeNonbondedWorkArrays::~ComputeNonbondedWorkArrays(),1349,3456
+19,SelfCompute::doWork(PatchList*),472,1480
+20,PairCompute::doWork(PatchList*),748,2008
+21,ResizeArray<Vector>::~ResizeArray(),74,960
+22,ResizeArray<unsigned short>::~ResizeArray(),74,960
+23,ResizeArray<double>::~ResizeArray(),74,960
+24,ResizeArray<unsigned short>::~ResizeArray(),80,992
+25,ResizeArray<double>::~ResizeArray(),80,992
+26,ResizeArray<Vector>::~ResizeArray(),80,992
+27,_GLOBAL__sub_I_Compute.C,37,896
+28,ComputeList::ComputeList(),23,544
+29,ComputeList::~ComputeList(),196,1216
+30,"ComputeList::readfile(_IO_FILE*, PatchList*)",976,2784
+31,ComputeList::runComputes(PatchList*),130,1136
+32,ComputeNonbondedUtil::calc_pair_energy_fep(nonbonded*),16035,56376
+33,"pairlist_from_pairlist(double, double, double, double, CompAtom const*, unsigned short const*, int, unsigned short*, double, double*)",973,1824
+34,"fep_vdw_forceandenergies(double, double, double, double, double, double, double, double, double, int, int, double, double, double, double*, double*, double*)",987,2960
+35,ComputeNonbondedUtil::calc_pair_energy_fullelect_fep(nonbonded*),20604,65896
+36,ComputeNonbondedUtil::calc_pair_energy_merge_fullelect_fep(nonbonded*),17669,60616
+37,ComputeNonbondedUtil::calc_pair_energy_slow_fullelect_fep(nonbonded*),16371,54568
+38,ComputeNonbondedUtil::calc_self_energy_fep(nonbonded*),16066,54288
+39,ComputeNonbondedUtil::calc_self_energy_fullelect_fep(nonbonded*),20099,62856
+40,ComputeNonbondedUtil::calc_self_energy_merge_fullelect_fep(nonbonded*),17496,58896
+41,ComputeNonbondedUtil::calc_self_energy_slow_fullelect_fep(nonbonded*),16264,53904
+42,ComputeNonbondedUtil::calc_pair_les(nonbonded*),8599,22328
+43,ComputeNonbondedUtil::calc_pair_energy_les(nonbonded*),8995,23536
+44,ComputeNonbondedUtil::calc_pair_fullelect_les(nonbonded*),9867,25168
+45,ComputeNonbondedUtil::calc_pair_energy_fullelect_les(nonbonded*),10532,27184
+46,ComputeNonbondedUtil::calc_pair_merge_fullelect_les(nonbonded*),9033,22992
+47,ComputeNonbondedUtil::calc_pair_energy_merge_fullelect_les(nonbonded*),9525,24792
+48,ComputeNonbondedUtil::calc_pair_slow_fullelect_les(nonbonded*),8904,23096
+49,ComputeNonbondedUtil::calc_pair_energy_slow_fullelect_les(nonbonded*),9183,23672
+50,ComputeNonbondedUtil::calc_self_les(nonbonded*),8906,23352
+51,ComputeNonbondedUtil::calc_self_energy_les(nonbonded*),9303,24224
+52,ComputeNonbondedUtil::calc_self_fullelect_les(nonbonded*),10269,25848
+53,ComputeNonbondedUtil::calc_self_energy_fullelect_les(nonbonded*),10996,27280
+54,ComputeNonbondedUtil::calc_self_merge_fullelect_les(nonbonded*),9278,24800
+55,ComputeNonbondedUtil::calc_self_energy_merge_fullelect_les(nonbonded*),9771,25904
+56,ComputeNonbondedUtil::calc_self_slow_fullelect_les(nonbonded*),9151,23848
+57,ComputeNonbondedUtil::calc_self_energy_slow_fullelect_les(nonbonded*),9429,24760
+58,ComputeNonbondedUtil::calc_pair_pprof(nonbonded*),10375,25968
+59,ComputeNonbondedUtil::calc_pair_energy_pprof(nonbonded*),10727,26368
+60,ComputeNonbondedUtil::calc_pair_fullelect_pprof(nonbonded*),12551,30424
+61,ComputeNonbondedUtil::calc_pair_energy_fullelect_pprof(nonbonded*),13264,32280
+62,ComputeNonbondedUtil::calc_pair_merge_fullelect_pprof(nonbonded*),11161,26456
+63,ComputeNonbondedUtil::calc_pair_energy_merge_fullelect_pprof(nonbonded*),11604,28088
+64,ComputeNonbondedUtil::calc_pair_slow_fullelect_pprof(nonbonded*),10848,26016
+65,ComputeNonbondedUtil::calc_pair_energy_slow_fullelect_pprof(nonbonded*),11110,26656
+66,ComputeNonbondedUtil::calc_self_pprof(nonbonded*),10780,26928
+67,ComputeNonbondedUtil::calc_self_energy_pprof(nonbonded*),11136,27752
+68,ComputeNonbondedUtil::calc_self_fullelect_pprof(nonbonded*),13052,30688
+69,ComputeNonbondedUtil::calc_self_energy_fullelect_pprof(nonbonded*),13749,32440
+70,ComputeNonbondedUtil::calc_self_merge_fullelect_pprof(nonbonded*),11513,28264
+71,ComputeNonbondedUtil::calc_self_energy_merge_fullelect_pprof(nonbonded*),11960,29120
+72,ComputeNonbondedUtil::calc_self_slow_fullelect_pprof(nonbonded*),11196,27648
+73,ComputeNonbondedUtil::calc_self_energy_slow_fullelect_pprof(nonbonded*),11462,28440
+74,ComputeNonbondedUtil::calc_pair(nonbonded*),8532,22360
+75,ComputeNonbondedUtil::calc_pair_energy(nonbonded*),8912,23280
+76,ComputeNonbondedUtil::calc_pair_fullelect(nonbonded*),9771,24800
+77,ComputeNonbondedUtil::calc_pair_energy_fullelect(nonbonded*),10421,26928
+78,ComputeNonbondedUtil::calc_pair_merge_fullelect(nonbonded*),8947,22960
+79,ComputeNonbondedUtil::calc_pair_energy_merge_fullelect(nonbonded*),9426,24360
+80,ComputeNonbondedUtil::calc_pair_slow_fullelect(nonbonded*),8810,22504
+81,ComputeNonbondedUtil::calc_pair_energy_slow_fullelect(nonbonded*),9090,23672
+82,ComputeNonbondedUtil::calc_self(nonbonded*),8843,23576
+83,ComputeNonbondedUtil::calc_self_energy(nonbonded*),9224,24752
+84,ComputeNonbondedUtil::calc_self_fullelect(nonbonded*),10173,25688
+85,ComputeNonbondedUtil::calc_self_energy_fullelect(nonbonded*),10885,27552
+86,ComputeNonbondedUtil::calc_self_merge_fullelect(nonbonded*),9192,24336
+87,ComputeNonbondedUtil::calc_self_energy_merge_fullelect(nonbonded*),9672,25168
+88,ComputeNonbondedUtil::calc_self_slow_fullelect(nonbonded*),9057,23704
+89,ComputeNonbondedUtil::calc_self_energy_slow_fullelect(nonbonded*),9336,24728
+90,ComputeNonbondedUtil::calc_pair_energy_int(nonbonded*),9998,24872
+91,ComputeNonbondedUtil::calc_pair_energy_fullelect_int(nonbonded*),11684,29000
+92,ComputeNonbondedUtil::calc_pair_energy_merge_fullelect_int(nonbonded*),10571,25928
+93,ComputeNonbondedUtil::calc_self_energy_int(nonbonded*),10358,26280
+94,ComputeNonbondedUtil::calc_self_energy_fullelect_int(nonbonded*),12190,28848
+95,ComputeNonbondedUtil::calc_self_energy_merge_fullelect_int(nonbonded*),10870,27528
+96,ComputeNonbondedUtil::calc_error(nonbonded*),16,824
+97,"ComputeNonbondedUtil::select(SimParameters*, Molecule*, LJTable*)",8079,15520
+98,LJTable::LJTable(),20,544
+99,LJTable::readfile(_IO_FILE*),556,2176
+100,LJTable::~LJTable(),29,864
+101,Molecule::Molecule(),130,1096
+102,Molecule::~Molecule(),221,1296
+103,Molecule::readfile(_IO_FILE*),708,2616
+104,ObjectArena<char>::getNewArray(int),361,1392
+105,"ResizeArrayRaw<char*>::ins(char* const&, int)",480,2080
+106,ResizeArray<char*>::~ResizeArray(),74,960
+107,ResizeArray<char*>::~ResizeArray(),80,992
+108,Patch::Patch(),33,560
+109,Patch::~Patch(),92,1056
+110,Patch::moveatoms(),227,1608
+111,Patch::zeroforces(),450,944
+112,"Patch::setforces(Vector*, Vector*)",209,816
+113,"Patch::readfile(_IO_FILE*, Molecule*)",3371,4784
+114,PatchList::PatchList(Lattice&),55,936
+115,PatchList::~PatchList(),107,1064
+116,PatchList::moveatoms(),65,976
+117,PatchList::zeroresults(),83,1040
+118,PatchList::setresults(ResultSet*),1001,2296
+119,"PatchList::readfile(_IO_FILE*, Molecule*)",427,1768
+120,ResultSet::writefile(_IO_FILE*),951,2368
+121,ResultSet::readfile(_IO_FILE*),753,2400
+122,"equal(double*, double*)",422,1816
+123,"equal(double*, double*, double*, double*)",530,2088
+124,ResultSet::check(),312,1408
+125,ResultSet::samemode(ResultSet&),71,968
+126,ResultSet::compare(ResultSet&),1081,3136
+127,SimParameters::SimParameters(),259,1248
+128,"SimParameters::setparam(char const*, char const*)",2407,7248
+129,SimParameters::readfile(_IO_FILE*),553,2008
+130,"Lattice::set(Vector, Vector, Vector, Vector)",1199,2384
+131,NAMD_bug(char const*),53,896
+132,NAMD_die(char const*),54,896
+133,main,13654,19064
+134,std::type_info::~type_info(),41,536
+135,__cxxabiv1::__shim_type_info::~__shim_type_info(),77,904
+136,__cxxabiv1::__shim_type_info::noop1() const,32,536
+137,__cxxabiv1::__shim_type_info::noop2() const,32,536
+138,__cxxabiv1::__class_type_info::~__class_type_info(),77,904
+139,__cxxabiv1::__class_type_info::~__class_type_info(),94,968
+140,__cxxabiv1::__si_class_type_info::~__si_class_type_info(),77,904
+141,__cxxabiv1::__si_class_type_info::~__si_class_type_info(),95,968
+142,"is_equal(std::type_info const*, std::type_info const*, bool)",317,1160
+143,std::type_info::operator==[abi:v160000](std::type_info const&) const,123,600
+144,std::type_info::name[abi:v160000]() const,63,552
+145,"__cxxabiv1::__class_type_info::can_catch(__cxxabiv1::__shim_type_info const*, void*&) const",700,1432
+146,__dynamic_cast,1005,1680
+147,"__cxxabiv1::__class_type_info::process_found_base_class(__cxxabiv1::__dynamic_cast_info*, void*, int) const",372,688
+148,"__cxxabiv1::__class_type_info::has_unambiguous_public_base(__cxxabiv1::__dynamic_cast_info*, void*, int) const",185,1072
+149,"__cxxabiv1::__si_class_type_info::has_unambiguous_public_base(__cxxabiv1::__dynamic_cast_info*, void*, int) const",249,1184
+150,"__cxxabiv1::__class_type_info::process_static_type_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int) const",690,760
+151,"__cxxabiv1::__class_type_info::process_static_type_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int) const",182,600
+152,"__cxxabiv1::__si_class_type_info::search_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int, bool) const",1113,1848
+153,"__cxxabiv1::__class_type_info::search_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int, bool) const",657,1384
+154,"__cxxabiv1::__si_class_type_info::search_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int, bool) const",308,1280
+155,"__cxxabiv1::__class_type_info::search_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int, bool) const",214,1128
+156,"void (*std::__2::(anonymous namespace)::__libcpp_atomic_load[abi:v160000]<void (*)()>(void (* const*)(), int))()",55,552
+157,std::get_new_handler(),33,832
+158,operator new(unsigned long),243,1192
+159,operator new[](unsigned long),78,896
+160,operator delete(void*),74,880
+161,operator delete[](void*),74,880
+162,malloc,12,808
+163,dlmalloc,6541,9304
+164,free,12,808
+165,dlfree,1698,2224
+166,calloc,109,984
+167,realloc,1131,2192
+168,dispose_chunk,1618,2120
+169,_Exit,13,792
+170,__main_void,214,1400
+171,__wasi_args_get,18,816
+172,__wasi_args_sizes_get,18,824
+173,__wasi_fd_close,16,824
+174,__wasi_fd_fdstat_get,18,824
+175,__wasi_fd_fdstat_set_flags,18,824
+176,__wasi_fd_prestat_get,18,824
+177,__wasi_fd_prestat_dir_name,20,824
+178,__wasi_fd_read,22,824
+179,__wasi_fd_seek,22,824
+180,__wasi_fd_write,22,824
+181,__wasi_path_open,38,992
+182,__wasi_proc_exit,12,792
+183,abort,5,504
+184,sbrk,80,888
+185,__funcs_on_exit,183,1040
+186,__cxa_atexit,158,1000
+187,__wasm_call_dtors,15,864
+188,exit,25,896
+189,__cos,148,1312
+190,__rem_pio2_large,4405,7152
+191,__rem_pio2,1284,4152
+192,__sin,156,1328
+193,cos,250,1656
+194,erfc2,713,4952
+195,erfc,389,2328
+196,__math_xflow,14,760
+197,__math_uflow,20,832
+198,__math_oflow,21,832
+199,exp,361,1440
+200,specialcase,160,1088
+201,__math_invalid,14,528
+202,pow,1183,2984
+203,checkint,87,600
+204,specialcase,203,1208
+205,__math_xflowf,14,752
+206,__math_oflowf,16,824
+207,__math_uflowf,16,824
+208,__math_invalidf,14,528
+209,powf,775,2384
+210,scalbn,175,984
+211,dummy,4,512
+212,fclose,154,1288
+213,fflush,362,1648
+214,__stdio_exit,389,1712
+215,__toread,134,1056
+216,__uflow,86,1032
+217,fgets,303,1384
+218,__fmodeflags,103,1032
+219,internal_register_preopened_fd,280,1320
+220,__wasilibc_find_relpath,95,904
+221,__wasilibc_find_abspath,313,1408
+222,__wasilibc_populate_preopens,183,1296
+223,__wasilibc_nocwd_openat_nomode,282,1240
+224,close,35,864
+225,__wasilibc_open_nomode,163,1024
+226,fcntl,275,1504
+227,__isatty,103,968
+228,__lseek,101,976
+229,__stdio_seek,18,840
+230,writev,115,984
+231,__stdio_write,316,1368
+232,readv,114,984
+233,read,114,984
+234,__stdio_read,253,1224
+235,__stdio_close,15,840
+236,__fdopen,390,1712
+237,fopen,102,1112
+238,fprintf,56,904
+239,fscanf,56,904
+240,__towrite,94,624
+241,__fwritex,234,1368
+242,fwrite,278,1384
+243,__ofl_lock,9,520
+244,__ofl_unlock,3,512
+245,__ofl_add,56,952
+246,printf,60,912
+247,fputs,38,944
+248,__overflow,165,1192
+249,puts,109,984
+250,sscanf,56,904
+251,__stdout_write,60,1008
+252,dummy,5,512
+253,__lctrans,13,808
+254,strerror,87,904
+255,wcrtomb,311,856
+256,wctomb,26,848
+257,frexp,145,1200
+258,vfprintf,398,1568
+259,printf_core,9070,18952
+260,pop_arg,565,1808
+261,pad,159,1168
+262,long_double_not_supported,29,856
+263,__shlim,73,608
+264,__shgetc,228,1136
+265,__intscan,1636,3464
+266,fmod,540,912
+267,__floatscan,4829,8760
+268,hexfloat,1401,3600
+269,scanexp,602,1712
+270,mbrtowc,368,752
+271,mbsinit,20,544
+272,vfscanf,3085,9968
+273,long_double_not_supported,29,856
+274,vsscanf,89,1024
+275,string_read,94,1064
+276,atof,14,824
+277,atoi,177,648
+278,strtod,118,1096
+279,memchr,371,800
+280,memcmp,75,584
+281,memcpy,1000,1824
+282,memmove,1218,2168
+283,memset,393,1200
+284,strchr,31,864
+285,__strchrnul,354,1144
+286,strcmp,104,600
+287,strdup,48,960
+288,strlen,178,648
+289,strnlen,28,880
+290,strspn,249,768
+291,strcspn,242,1104
+292,strtok,131,1032
+293,__multi3,116,640
